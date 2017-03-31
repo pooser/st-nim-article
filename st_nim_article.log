@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  31 MAR 2017 13:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  31 MAR 2017 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -376,9 +376,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  (./keywords/keywords.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 48.
  (./st_nim_article.bbl
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
@@ -414,11 +414,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
 Here is how much of TeX's memory you used:
  6325 strings out of 494820
  92069 string characters out of 3178050
- 182955 words of memory out of 3000000
+ 183955 words of memory out of 3000000
  9428 multiletter control sequences out of 15000+200000
  8274 words of font info for 29 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 34i,7n,30p,1154b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,7n,30p,1466b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -432,7 +432,7 @@ m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (1 page, 148785 bytes).
+Output written on st_nim_article.pdf (1 page, 148227 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
