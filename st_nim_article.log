@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  4 APR 2017 15:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  10 APR 2017 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,7 +393,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout2 = `design/design.aux'.
 
  (./design/design.tex
-<design/figs/30_Element_Pieces_Removed.png, id=42, 632.3625pt x 409.53pt>
+<design/figs/30_Element_Pieces_Removed.png, id=54, 632.3625pt x 409.53pt>
 File: design/figs/30_Element_Pieces_Removed.png Graphic file (type png)
 
 <use design/figs/30_Element_Pieces_Removed.png>
@@ -408,7 +408,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 
-<design/figs/Scint_Geo.pdf, id=47, 597.23125pt x 845.1575pt>
+<design/figs/Scint_Geo.pdf, id=59, 597.23125pt x 845.1575pt>
 File: design/figs/Scint_Geo.pdf Graphic file (type pdf)
 
 <use design/figs/Scint_Geo.pdf>
@@ -417,57 +417,58 @@ Package pdftex.def Info: design/figs/Scint_Geo.pdf used on input line 19.
  [2
 
  <./design/figs/30_Element_Pieces_Removed.png> <./design/figs/Scint_Geo.pdf>]
-<design/figs/ST_Cross_Section.PNG, id=68, 488.57532pt x 292.09125pt>
+<design/figs/ST_Cross_Section.PNG, id=80, 488.57532pt x 292.09125pt>
 File: design/figs/ST_Cross_Section.PNG Graphic file (type png)
 
 <use design/figs/ST_Cross_Section.PNG>
-Package pdftex.def Info: design/figs/ST_Cross_Section.PNG used on input line 31
+Package pdftex.def Info: design/figs/ST_Cross_Section.PNG used on input line 33
 .
 (pdftex.def)             Requested size: 222.0pt x 132.72343pt.
 
-<design/figs/Labeled_Partially_Assembled_Detector.png, id=71, 834.86906pt x 509
+<design/figs/Labeled_Partially_Assembled_Detector.png, id=83, 834.86906pt x 509
 .65407pt>
 File: design/figs/Labeled_Partially_Assembled_Detector.png Graphic file (type p
 ng)
  <use design/figs/Labeled_Partially_Assembled_Detector.png>
 Package pdftex.def Info: design/figs/Labeled_Partially_Assembled_Detector.png u
-sed on input line 40.
+sed on input line 46.
 (pdftex.def)             Requested size: 222.0pt x 135.5165pt.
 
-<design/figs/Labeled_ST1_Penny.png, id=73, 603.75563pt x 353.06906pt>
+<design/figs/Labeled_ST1_Penny.png, id=85, 603.75563pt x 353.06906pt>
 File: design/figs/Labeled_ST1_Penny.png Graphic file (type png)
 
 <use design/figs/Labeled_ST1_Penny.png>
-Package pdftex.def Info: design/figs/Labeled_ST1_Penny.png used on input line 4
-8.
+Package pdftex.def Info: design/figs/Labeled_ST1_Penny.png used on input line 5
+4.
 (pdftex.def)             Requested size: 222.0pt x 129.82pt.
-
-<design/figs/ST_Electronics.png, id=75, 687.31781pt x 435.12563pt>
+ [3 <./design/figs/ST_Cross_Section.PNG>] <design/figs/ST_Electronics.png, id=9
+4, 687.31781pt x 435.12563pt>
 File: design/figs/ST_Electronics.png Graphic file (type png)
 
 <use design/figs/ST_Electronics.png>
-Package pdftex.def Info: design/figs/ST_Electronics.png used on input line 56.
+Package pdftex.def Info: design/figs/ST_Electronics.png used on input line 64.
 (pdftex.def)             Requested size: 222.0pt x 140.53773pt.
- [3 <./design/figs/ST_Cross_Section.PNG> <./design/figs/Labeled_Partially_Assem
-bled_Detector.png>]
-<design/figs/SiPM_Readout_System.png, id=86, 499.8675pt x 228.10219pt>
+ [4 <./design/figs/Labeled_Partially_Assembled_Detector.png> <./design/figs/Lab
+eled_ST1_Penny.png> <./design/figs/ST_Electronics.png>]
+<design/figs/SiPM_Readout_System.png, id=105, 499.8675pt x 228.10219pt>
 File: design/figs/SiPM_Readout_System.png Graphic file (type png)
 
 <use design/figs/SiPM_Readout_System.png>
 Package pdftex.def Info: design/figs/SiPM_Readout_System.png used on input line
- 69.
+ 76.
 (pdftex.def)             Requested size: 222.0pt x 101.30501pt.
-) [4 <./design/figs/Labeled_ST1_Penny.png> <./design/figs/ST_Electronics.png> <
-./design/figs/SiPM_Readout_System.png>]
+) [5
+
+ <./design/figs/SiPM_Readout_System.png>]
 \openout2 = `fabrication/fabrication.aux'.
 
- (./fabrication/fabrication.tex) [5
+ (./fabrication/fabrication.tex) [6
 
 
 
 ] (./st_nim_article.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
- [6
+ [7
 
 
 ]
@@ -479,17 +480,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `st_nim_article.out' has not changed.
-(rerunfilecheck)             Checksum: 26DB74F3B56DE4F5511722C5AA96E561;213.
+(rerunfilecheck)             Checksum: 3EBA6E708288DF7BB8BE19F06BF5A483;418.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 6434 strings out of 494820
- 94375 string characters out of 3178050
- 188150 words of memory out of 3000000
- 9488 multiletter control sequences out of 15000+200000
+ 6441 strings out of 494820
+ 94471 string characters out of 3178050
+ 188211 words of memory out of 3000000
+ 9491 multiletter control sequences out of 15000+200000
  8274 words of font info for 29 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 34i,8n,30p,1414b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,30p,1414b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -505,10 +506,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (6 pages, 2053959 bytes).
+Output written on st_nim_article.pdf (7 pages, 2056652 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
