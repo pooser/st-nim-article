@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -9,5 +9,35 @@
 E.~Pooser, The {GlueX} start counter and beam asymmetry {$\Sigma$} in single
   $\pi^{0}$ photoproduction, Ph.D. thesis, Florida International University
   (2016).
+
+\bibitem{eljen}
+\url{http://www.eljentechnology.com/}.
+
+\bibitem{ej200_specs}
+General Purpose Plastic Scintillator EJ-200, EJ-204, EJ-208, EJ-212, technical
+  note available at
+  \url{http://www.eljentechnology.com/images/products/data_sheets/EJ-200_EJ-204_EJ-208_EJ-212.pdf}.
+
+\bibitem{rohacell}
+\url{http://www.rohacell.com}.
+
+\bibitem{mcneal}
+\url{http://www.mcnealplasticmachining.com/}.
+
+\bibitem{hamamatsu}
+\url{http://www.hamamatsu.com/us/en/index.html}.
+
+\bibitem{sipm_spec}
+Multi-Pixel Photon Counter, technical note available at
+  \url{https://halldweb1.jlab.org/wiki/images/4/49/S10362-33_series_kapd1023e05.pdf}.
+
+\bibitem{buehler}
+\url{https://shop.buehler.com/consumables/grinding-polishing/polishing-suspensions/alumina-suspensions}.
+
+\bibitem{caswell}
+\url{http://www.caswellplating.com/buffing-polishing/buffing-wheels/canton-flannel-wheels.html#}.
+
+\bibitem{novus}
+\url{https://www.novuspolish.com/polish_mates.html}.
 
 \end{thebibliography}
