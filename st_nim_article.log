@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  11 APR 2017 15:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  12 APR 2017 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,32 +400,6 @@ File: design/figs/30_Element_Pieces_Removed.png Graphic file (type png)
 Package pdftex.def Info: design/figs/30_Element_Pieces_Removed.png used on inpu
 t line 9.
 (pdftex.def)             Requested size: 222.0pt x 143.76881pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-[]\OT1/cmr/m/n/10 EJ-200 scin-til-la-tor ma-te-rial from El-jen
- []
-
-
-Underfull \hbox (badness 5105) in paragraph at lines 15--16
-\OT1/cmr/m/n/10 Technology[[]], which pro-vides a de-cay time
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 15--16
-\OT1/cmr/m/n/10 on the or-der of 2 ns and a long at-ten-u-a-tion
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 15--16
-\OT1/cmr/m/n/10 solenoid mag-net. More-over, the SiPMs were
- []
 
 <design/figs/Scint_Geo.pdf, id=68, 597.23125pt x 845.1575pt>
 File: design/figs/Scint_Geo.pdf Graphic file (type pdf)
@@ -444,45 +418,43 @@ Package pdftex.def Info: design/figs/ST_Cross_Section.PNG used on input line 36
 .
 (pdftex.def)             Requested size: 222.0pt x 132.72343pt.
 
-<design/figs/Labeled_Partially_Assembled_Detector.png, id=88, 834.86906pt x 509
-.65407pt>
-File: design/figs/Labeled_Partially_Assembled_Detector.png Graphic file (type p
-ng)
- <use design/figs/Labeled_Partially_Assembled_Detector.png>
-Package pdftex.def Info: design/figs/Labeled_Partially_Assembled_Detector.png u
-sed on input line 49.
-(pdftex.def)             Requested size: 222.0pt x 135.5165pt.
+<design/figs/st1_mounted.png, id=88, 790.955pt x 350.30875pt>
+File: design/figs/st1_mounted.png Graphic file (type png)
+
+<use design/figs/st1_mounted.png>
+Package pdftex.def Info: design/figs/st1_mounted.png used on input line 49.
+(pdftex.def)             Requested size: 222.0pt x 98.32097pt.
  [3 <./design/figs/Scint_Geo.pdf> <./design/figs/ST_Cross_Section.PNG>]
-<design/figs/Labeled_ST1_Penny.png, id=108, 603.75563pt x 353.06906pt>
-File: design/figs/Labeled_ST1_Penny.png Graphic file (type png)
-
-<use design/figs/Labeled_ST1_Penny.png>
-Package pdftex.def Info: design/figs/Labeled_ST1_Penny.png used on input line 5
-7.
-(pdftex.def)             Requested size: 222.0pt x 129.82pt.
-
-<design/figs/ST_Electronics.png, id=110, 687.31781pt x 435.12563pt>
+<design/figs/ST_Electronics.png, id=108, 687.31781pt x 435.12563pt>
 File: design/figs/ST_Electronics.png Graphic file (type png)
 
 <use design/figs/ST_Electronics.png>
-Package pdftex.def Info: design/figs/ST_Electronics.png used on input line 67.
+Package pdftex.def Info: design/figs/ST_Electronics.png used on input line 59.
 (pdftex.def)             Requested size: 222.0pt x 140.53773pt.
- [4 <./design/figs/Labeled_Partially_Assembled_Detector.png> <./design/figs/Lab
-eled_ST1_Penny.png> <./design/figs/ST_Electronics.png>]
-<design/figs/SiPM_Readout_System.png, id=123, 499.8675pt x 228.10219pt>
-File: design/figs/SiPM_Readout_System.png Graphic file (type png)
 
-<use design/figs/SiPM_Readout_System.png>
-Package pdftex.def Info: design/figs/SiPM_Readout_System.png used on input line
- 79.
-(pdftex.def)             Requested size: 222.0pt x 101.30501pt.
+<design/figs/st_full_readout.png, id=111, 362.35374pt x 279.0425pt>
+File: design/figs/st_full_readout.png Graphic file (type png)
+
+<use design/figs/st_full_readout.png>
+Package pdftex.def Info: design/figs/st_full_readout.png used on input line 69.
+
+(pdftex.def)             Requested size: 222.0pt x 170.96078pt.
+ [4 <./design/figs/st1_mounted.png> <./design/figs/ST_Electronics.png> <./desig
+n/figs/st_full_readout.png>]
+<design/figs/st3.png, id=123, 520.94624pt x 277.035pt>
+File: design/figs/st3.png Graphic file (type png)
+
+<use design/figs/st3.png>
+Package pdftex.def Info: design/figs/st3.png used on input line 78.
+(pdftex.def)             Requested size: 222.0pt x 118.05746pt.
 ) [5
 
- <./design/figs/SiPM_Readout_System.png>]
+ <./design/figs/st3.png>]
 \openout2 = `fabrication/fabrication.aux'.
 
- (./fabrication/fabrication.tex
-<fabrication/figs/Initial_Paddle_Prop_UW.PNG, id=131, 1179.40625pt x 667.49374p
+
+(./fabrication/fabrication.tex
+<fabrication/figs/Initial_Paddle_Prop_UW.PNG, id=133, 1179.40625pt x 667.49374p
 t>
 File: fabrication/figs/Initial_Paddle_Prop_UW.PNG Graphic file (type png)
  <use fabrication/figs/Initial_Paddle_Prop_UW.PNG>
@@ -494,7 +466,7 @@ Underfull \hbox (badness 1226) in paragraph at lines 20--21
 []\OT1/cmr/m/n/10 To pol-ish the ma-chined scin-til-la-tor sur-faces,
  []
 
-<fabrication/figs/polshing_effects.PNG, id=136, 614.295pt x 351.56343pt>
+<fabrication/figs/polshing_effects.PNG, id=138, 614.295pt x 351.56343pt>
 File: fabrication/figs/polshing_effects.PNG Graphic file (type png)
 
 <use fabrication/figs/polshing_effects.PNG>
@@ -508,7 +480,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./fabrication/figs/Initial_Paddle_Prop_UW.PNG>]
-<fabrication/figs/Polished_Paddle_Prop_UW.PNG, id=149, 1179.40625pt x 658.46pt>
+<fabrication/figs/Polished_Paddle_Prop_UW.PNG, id=151, 1179.40625pt x 658.46pt>
 File: fabrication/figs/Polished_Paddle_Prop_UW.PNG Graphic file (type png)
 <use fabrication/figs/Polished_Paddle_Prop_UW.PNG>
 Package pdftex.def Info: fabrication/figs/Polished_Paddle_Prop_UW.PNG used on i
@@ -574,10 +546,10 @@ Package rerunfilecheck Info: File `st_nim_article.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 6506 strings out of 494820
- 95824 string characters out of 3178050
- 189565 words of memory out of 3000000
- 9537 multiletter control sequences out of 15000+200000
+ 6488 strings out of 494820
+ 95262 string characters out of 3178050
+ 189720 words of memory out of 3000000
+ 9522 multiletter control sequences out of 15000+200000
  8876 words of font info for 31 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  34i,8n,30p,1425b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -597,10 +569,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (8 pages, 2771569 bytes).
+Output written on st_nim_article.pdf (8 pages, 5446567 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
+ 258 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
  41 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
