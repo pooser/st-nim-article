@@ -2,10 +2,7 @@
 \documentclass[review,twocolumn,3p]{elsarticle}
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
-
-%\journal{Journal of \LaTeX\ Templates}
 \journal{Nuclear Instruments and Methods in Physics Research A}
-
 \newcommand{\gx}{\textsc{GlueX}}
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -50,6 +47,8 @@
 \end{frontmatter}
 
 \linenumbers
+\begingroup
+\let\clearpage\relax
 %\include{introduction/introduction}
 \include{design/design}
 \include{fabrication/fabrication}
@@ -58,6 +57,7 @@
 %\include{performace/performance}
 %\include{conclusions/conclusions}
 %\include{acknoledgements/acknowledgements}
+\endgroup
 
 \section*{References}
 \bibliography{bibliography/bibliography}
