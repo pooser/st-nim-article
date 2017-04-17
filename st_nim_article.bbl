@@ -40,4 +40,14 @@ Multi-Pixel Photon Counter, technical note available at
 \bibitem{novus}
 \url{https://www.novuspolish.com/polish_mates.html}.
 
+\bibitem{nndc_sr90}
+$^{90}Sr$ Decay Radiation Data, national Nuclear Data Center, Nuclear Structure
+  and Decay Database (NuDat) available at
+  \url{http://www.nndc.bnl.gov/nudat2/decaysearchdirect.jsp?nuc=90SR&unc=nds}.
+
+\bibitem{nndc_y90}
+$^{90}Y$ Decay Radiation Data, national Nuclear Data Center, Nuclear Structure
+  and Decay Database (NuDat) available at
+  \url{http://www.nndc.bnl.gov/nudat2/decaysearchdirect.jsp?nuc=90Y&unc=nds}.
+
 \end{thebibliography}

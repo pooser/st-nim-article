@@ -37,12 +37,47 @@ Once the scintillators were polished, their performance was remeasured so that a
 \end{figure}
 On average, at the tip of the nose, the scintillators exhibited a $\approx15\%$ improvement in time resolution.  Moreover, there was a substantial reduction in erratic fluctuations in performance.
 
-\subsection{Testing Machined Scintillator Paddles} \label{sec:fab_test}
+\subsection{Testing Machined Scintillators} \label{sec:fab_test}
 
-Each of the 50 machined scintillators were tested to study light output and time resolution.  They were measured in an identical manner utilizing a custom fabricated test stand shown in Fig. \ref{fig:test_stand_model}. The test stand allows each scintillator paddle to be measured in an identical and reproducible fashion.  There exist 12 precise locations in which a $^{90}Sr$ source and trigger PMT can be placed so that each of the 50 scintillators are tested at the same locations.  More specifically 4 locations in the straight section, 3 in the bend, and 5 in the nose were tested.
+The polished machined scintillators were tested in order to measure their light output and time resolution properties.  They were measured in an identical and reproducible manner utilizing a custom fabricated test stand shown in Fig.~\ref{fig:test_stand_model}. 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{fabrication/figs/test_stand_model}
-	\caption[CAD Drawing of custom test stand]{CAD Drawing of custom test stand.  The test stand was used in the misalignment studies.}
+	\caption[CAD Drawing of custom test stand]{CAD Drawing of custom test stand.}
 	\label{fig:test_stand_model}
 \end{figure}
+The test stand facilitated the precise measurement of the aforementioned scintillator properties at 12 well-defined locations along the length of the scintillator paddles.  Specifically 4 locations in the straight section, 3 in the bend, and 5 in the nose were tested.  
+
+The measurements were conducted with a collimated $\mathrm{^{90}Sr}$ source oriented orthogonal to the wide flat surface of the scintillators.  The $\mathrm{^{90}Sr}$ source provided minimum ionizing electrons ranging in energy from $\mathrm{0.5-2.3~MeV}$ \textit{via} beta-decay \cite{nndc_sr90}\cite{nndc_y90}.  A trigger Photo-Multiplier Tube (PMT) was placed underneath the scintillator on the opposite side of the $\mathrm{^{90}Sr}$ source and provided the TDC start time and ADC gate.  A prototype SiPM detector identical to the SiPMs installed in the final ST assembly, was utilized to collect the light from the scintillators.  
+
+The analog signals from the SiPM and the trigger PMT were then processed through Nuclear Instrumentation Modules (NIM) so that both the ADC and TDC spectra could be analyzed.  The signal processing electronics diagram is illustrated in Fig.~\ref{fig:nimelectronicsdiagram}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/nim_electronics_diagram}
+	\caption[Electronics diagram for testing scintillator]{Electronics diagram for testing scintillator}
+	\label{fig:nimelectronicsdiagram}
+\end{figure}
+
+Utilizing a dedicated data acquisition computer configured with CEBAF Online Data Acquisition (CODA) software, 10,000 event triggers and associated data were collected at each of the locations along the scintillator path.  Subsequently, the ADC and TDC data were analyzed to measure the light output and time resolutions respectively of the whole lot of polished machined scintillators.  
+
+Once the 30 machined scintillator paddles which exhibited the best time resolution and light output properties from the lot of 50 were selected, they were carefully wrapped in Reynolds food grade aluminum foil.  The aluminum foil is $\mathrm{16.5~\mu~m}$ thick and possesses good reflectivity properties.  Moreover, the aluminum foil protects the surfaces of the scintillators during both the testing and assembly processes.
+  
+The measured time resolutions for the 30 best scintillators, which comprise the ST, were found to be satisfactory and even well below design resolution in the nose region which is illustrated in Fig. \ref{fig:time_res_comp_final_30}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/time_res_comp_final_30}
+	\caption[Time resolution of the 30 best scintillator paddles]{Time resolution of 30 the best scintillator paddles.  The time resolution performance of the selected scintillators is remarkably similar while illustrating a spread of $\approx 50\ ps$ in the nose region.}
+	\label{fig:time_res_comp_final_30}
+\end{figure}
+
+The unique geometry of the machined scintillator paddles exhibit a phenomenon of an increase in light collection in the nose region as the light source moves towards the tip at the downstream end.  It is hypothesized that the relatively poor time resolution in the straight section is due to a reflective smearing effect in which light is able to traverse from the straight section down to the tip of the nose, and then back up to the upstream end.
+
+The overall time resolution of the individual scintillators are shown in Fig. \ref{fig:final_30_tr_wrapped}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication//figs/final_30_tr_wrapped}
+	\caption[Average time resolution of the 30 best scintillator paddles]{Average time resolution of 30 best scintillator paddles.  The red data points correspond to the maximum time resolution obtained in all 12 data points. The blue data points are the weighted average of all 12 data points.  The green data points indicate the minimum time resolution obtained in all 12 data points.}
+	\label{fig:final_30_tr_wrapped}
+\end{figure}
+
+
