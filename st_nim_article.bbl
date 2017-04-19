@@ -38,11 +38,6 @@ Multi-Pixel Photon Counter, technical note available at
 K.~S. Krane, Introductory Nuclear Physics, John Wiley \& Sons, 1988, Ch.
   Detecting Nuclear Radiations, pp. 201--202.
 
-\bibitem{puneet_sim_wiki}
-P.~Khetarpal, Start Counter Geant4 Simulations, start Counter Geant4
-  Simulations Wiki available at
-  \url{https://halldweb.jlab.org/wiki/index.php/Start_Counter_Simulations}.
-
 \bibitem{cadmesh_g4}
 C.~M. Poole, \href{http://arxiv.org/pdf/1105.0963.pdf}{A cad interface for
   geant4}, paper submitted to Cornell Archive (arXiv) May 5, 2011 (2011).
@@ -54,6 +49,18 @@ A.~L. .~C. Moison, A more physical approach to model the surface treatment of
   IEEE, Nuclear Science Symposium; Anaheim, November 2-4 available at
   \url{http://geant4.slac.stanford.edu/UsersWorkshop/PDF/Peter/moisan.pdf}
   (1996).
+
+\bibitem{puneet_sim_wiki}
+P.~Khetarpal, Start Counter Geant4 Simulations, start Counter Geant4
+  Simulations Wiki available at
+  \url{https://halldweb.jlab.org/wiki/index.php/Start_Counter_Simulations}.
+
+\bibitem{puneet_sim_talk}
+P.~Khetarpal,
+  \href{http://argus.phys.uregina.ca/gluex/DocDB/0019/001921/002/khetarpal_feb2012.pdf}{Start
+  counter: Optics simulations}, talk Given at the February 16, 2012 GlueX
+  Collaboration meeting (2012).
+\newline\urlprefix\url{http://argus.phys.uregina.ca/gluex/DocDB/0019/001921/002/khetarpal_feb2012.pdf}
 
 \bibitem{buehler}
 \url{https://shop.buehler.com/consumables/grinding-polishing/polishing-suspensions/alumina-suspensions}.
