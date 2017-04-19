@@ -31,6 +31,30 @@ General Purpose Plastic Scintillator EJ-200, EJ-204, EJ-208, EJ-212, technical
 Multi-Pixel Photon Counter, technical note available at
   \url{https://halldweb1.jlab.org/wiki/images/4/49/S10362-33_series_kapd1023e05.pdf}.
 
+\bibitem{geant4_website}
+\url{https://geant4.web.cern.ch/geant4/}.
+
+\bibitem{krane_ch7}
+K.~S. Krane, Introductory Nuclear Physics, John Wiley \& Sons, 1988, Ch.
+  Detecting Nuclear Radiations, pp. 201--202.
+
+\bibitem{puneet_sim_wiki}
+P.~Khetarpal, Start Counter Geant4 Simulations, start Counter Geant4
+  Simulations Wiki available at
+  \url{https://halldweb.jlab.org/wiki/index.php/Start_Counter_Simulations}.
+
+\bibitem{cadmesh_g4}
+C.~M. Poole, \href{http://arxiv.org/pdf/1105.0963.pdf}{A cad interface for
+  geant4}, paper submitted to Cornell Archive (arXiv) May 5, 2011 (2011).
+\newline\urlprefix\url{http://arxiv.org/pdf/1105.0963.pdf}
+
+\bibitem{scint_surface_sim}
+A.~L. .~C. Moison, A more physical approach to model the surface treatment of
+  scintillation counters and its implementation into detect, paper presented at
+  IEEE, Nuclear Science Symposium; Anaheim, November 2-4 available at
+  \url{http://geant4.slac.stanford.edu/UsersWorkshop/PDF/Peter/moisan.pdf}
+  (1996).
+
 \bibitem{buehler}
 \url{https://shop.buehler.com/consumables/grinding-polishing/polishing-suspensions/alumina-suspensions}.
 
