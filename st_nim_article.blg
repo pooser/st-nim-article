@@ -10,38 +10,38 @@ A level-1 auxiliary file: simulation/simulation.aux
 A level-1 auxiliary file: misalignment/misalignment.aux
 A level-1 auxiliary file: fabrication/fabrication.aux
 Database file #1: bibliography/bibliography.bib
-You've used 18 entries,
+You've used 19 entries,
             2937 wiz_defined-function locations,
-            735 strings with 7625 characters,
-and the built_in function-call counts, 3038 in all, are:
-= -- 266
-> -- 36
+            737 strings with 7677 characters,
+and the built_in function-call counts, 3171 in all, are:
+= -- 275
+> -- 37
 < -- 2
-+ -- 24
++ -- 25
 - -- 6
-* -- 72
-:= -- 332
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 20
+* -- 73
+:= -- 341
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 140
-empty$ -- 450
+cite$ -- 19
+duplicate$ -- 147
+empty$ -- 474
 format.name$ -- 6
-if$ -- 889
+if$ -- 930
 int.to.chr$ -- 0
-int.to.str$ -- 18
+int.to.str$ -- 19
 missing$ -- 2
-newline$ -- 64
+newline$ -- 67
 num.names$ -- 6
-pop$ -- 154
+pop$ -- 166
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 263
+skip$ -- 275
 stack$ -- 0
-substring$ -- 64
+substring$ -- 66
 swap$ -- 16
 text.length$ -- 2
 text.prefix$ -- 0
@@ -49,5 +49,5 @@ top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 9
-width$ -- 20
-write$ -- 122
+width$ -- 21
+write$ -- 127
