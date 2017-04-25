@@ -4,7 +4,7 @@ In order to successfully identify the 2 ns electron beam bunch structure deliver
 
 \subsection{Polishing Machined Scintillators} \label{sec:fab_polish}
 
-The surfaces of the machined scintillators incurred a plethora of surface defects and chemical contaminants known to harm scintillator surfaces while undergoing edge polishing at McNeal Enterprises.  Therefore, in an effort to recover the scintillator surfaces and performance capabilities, polishing was required.
+The surfaces of the machined scintillators incurred a plethora of surface defects and chemical contaminants known to harm scintillator surfaces while undergoing edge polishing at McNeil Enterprises.  Therefore, in an effort to recover the scintillator surfaces and performance capabilities, polishing was required.
 
 Prior to polishing the machined scintillators, a coarse measurement of the paddles performance was conducted to understand the magnitude of damage the paddles had incurred, relative to prototypes, as a result of mishandling.  The time resolution and light output was measured at three precise locations along the length of the scintillators. One measurement was taken in the middle of the straight section, one in the middle of the bend, and one at the tip of the nose. 
 
@@ -62,7 +62,7 @@ Utilizing a dedicated data acquisition computer configured with CEBAF Online Dat
 
 Once the 30 machined scintillator paddles which exhibited the best time resolution and light output properties from the lot of 50 were selected, they were carefully wrapped in Reynolds food grade aluminum foil.  The aluminum foil is $\mathrm{16.5~\mu~m}$ thick and possesses good reflectivity properties.  Moreover, the aluminum foil protects the surfaces of the scintillators during both the testing and assembly processes.
   
-The measured time resolutions for the 30 best scintillators, which comprise the ST, were found to be satisfactory and even well below design resolution in the nose region which is illustrated in Fig. \ref{fig:time_res_comp_final_30}.
+The measured time resolutions for the 30 best scintillators, which comprise the ST, were found to be satisfactory and even well below design resolution in the nose region which is illustrated in Fig.~\ref{fig:time_res_comp_final_30}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{fabrication/figs/time_res_comp_final_30}
@@ -72,7 +72,7 @@ The measured time resolutions for the 30 best scintillators, which comprise the 
 
 The unique geometry of the machined scintillator paddles exhibit a phenomenon of an increase in light collection in the nose region as the light source moves towards the tip at the downstream end.  It is hypothesized that the relatively poor time resolution in the straight section is due to a reflective smearing effect in which light is able to traverse from the straight section down to the tip of the nose, and then back up to the upstream end.
 
-The average time resolution of the individual scintillators selected for the final ST assembly are shown in Fig. \ref{fig:final_30_tr_wrapped}.
+The average time resolution of the individual scintillators selected for the final ST assembly are shown in Fig.~\ref{fig:final_30_tr_wrapped}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{fabrication//figs/final_30_tr_wrapped}
@@ -80,7 +80,97 @@ The average time resolution of the individual scintillators selected for the fin
 		\label{fig:final_30_tr_wrapped}
 	\end{figure}
 
-\subsection{Assembly}
+\subsection{Assembly} \label{sec:fab_ass}
+
+In order to assemble the ST an assembly jig, illustrated in Fig~\ref{fig:ajcaddrawing}, was fabricated.  
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{fabrication/figs/aj_cad_drawing}
+		\caption{CAD drawing of the ST assembly jig.}
+		\label{fig:ajcaddrawing}
+	\end{figure}
+The jig consisted of a rotating cylindrical mounting bracket rigidly attached to a 2'' diameter shaft housed in two cast iron mounted steel ball bearings.  The rotating bracket was engineered such that it was free to rotate unless engaged by a spring loaded locking plunger which would cause the assembly jig to move in discretized $12^{\circ}$ intervals.  This provided the ability to orient paddles parallel to the table top so that alignment and coupling could be performed reliably and reproducibly.
+
+While mounted to the assembly jig, the upstream chassis (and Rohacell) was attached to the rotating bracket.  A vertical bar running parallel to the table above the Rohacell served as a mount for the pneumatic cylinders so that the scintillators could be held firmly in place during installation.  Furthermore, it provided a surface in which a portable flex arm could hold the CMOS camera to monitor the coupling of the scintillators and SiPMs.
+
+A pressurized gas system was implemented to provide manual control of the two pneumatic cylinders with soft, semi-dense rubber feet attached to the ends.  The rubber feet would hold the scintillator being installed firmly in place by activating two switches which controlled each pneumatic cylinder independently \textit{via} bi-directional solenoids connected in a 5 psi nitrogen gas system.
+
+Two free floating acrylic rings, with 30 tapped holes $12^{\circ}$ apart, were fabricated so as to firmly hold the scintillator paddles in place during assembly. 
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_assembly}
+		\caption{Free floating acrylic rings.  Left: Rohacell prior to being painted with black latex paint. Each free floating ring is supported by 30 swivel pad screws. Right: Rohacell after being painted black.  One wrapped scintillator paddled is being held firmly in place by two swivel pad screws.}
+		\label{fig:free_floating_rings}
+	\end{figure}
+Each tapped hole housed a $10^{\circ}$ swivel pad thumb screw which had silicone foam foot $(0.25 \times 0.25\ \mathrm{in^{2}})$ adhered to it in order to provide a soft barrier between swivel pad and the scintillator surface. 
+
+The camera and its associated software were utilized to measure scintillator/SiPM coupling distances and shimming heights with a precision of $\mathrm{< 10\ \mu m}$ in real time.  The camera was calibrated such that at various magnification settings the distance to pixel ratio was known.
+
+The 10 ST1 boards were mounted to the pre-fixed tapped holes along the lip of the upstream support hub.  Black 1 mm spacers were installed between the ST1 PCB and the support hub to avoid any possibility of the electrical contact between the two.  
+
+The position of the ST1 was adjusted such that the distance between the top edge of the scintillator and the top edge of the active area of the SiPM was offset by 30 mils ($\mathrm{762\ \mu m}$).  The offset was measured with the CMOS camera. 
+
+The paddle being installed was carefully positioned such that the upstream end was located a approximately a millimeter away (downstream) from the active area of the SiPM and were held in place. A piece of 0.8~mil bundling wrap was wrapped firmly around the scintillator and the Rohacell structure as seen in Fig.~\ref{fig:aligning_st1_to_hub}. 
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{fabrication/figs/aligning_st1_to_hub}
+		\caption{Aligning ST1 to support hub.  Left: CMOS camera and lamp prepared to monitor ST1 positioning.  Right: Reference scintillator wrapped to Rohacell during ST1 alignment.}
+		\label{fig:aligning_st1_to_hub}
+	\end{figure}
+The distance between the top edge of the scintillator and the top edge of the active area of the SiPM was then measured in order to determine the amount of shimming necessary for radial alignment as illustrated in Fig.~\ref{fig:shimming_effects}. 
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_va}
+		\caption[Shimming effects]{Shimming effects.  Left: Before and Right: after shimming.}
+		\label{fig:shimming_effects}
+	\end{figure}
+
+Three different thickness's (5, 10, 20 mil) of Kapton polyimide heavy duty film (type HN, $\rho = 1.42\ \mathrm{g/cm^{3}}$) were cut into $\mathrm{0.5 \times 12\ in^{2}}$ strips and utilized for shimming the scintillators in the radial direction.  On average, each paddle required 30~mils of radial shimming.
+
+With the appropriate shimming in place, the paddle was carefully positioned such that the center of the upstream paddle was aligned with the center of the SIPM and the swivel screws were extended.  
+
+A piece of computer paper sandwiched between two pieces of Al foil ($\approx 150\ \mathrm{\mu m}$ thick) was then placed parallel to the active are of the SiPM and the paddle was then pressed firmly against the outer most piece of Al foil which is seen in Fig.~\ref{fig:sipm_coupling}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_coupling}
+	\caption{Steps of coupling paddles to SiPM.  Left: Paddle prior to being coupled to SiPM.  Center:  Paddle pressed firmly against spacing material and SiPM.  Right: Paddle properly coupled to SiPM at a distance of $162\ \mu m$.}
+	\label{fig:sipm_coupling}
+\end{figure}
+The piece of computer paper was carefully removed. Then, the Al foil pieces were removed individually so as to ensure no damage was incurred on the paddle surface or SiPM.  Utilizing this method provided a coupling distance $\mathrm{<\ 200\ \mu m}$.
+
+In order to secure paddles to the Rohacell support structure the Start Counter was wrapped along its length using self-adhesive transparent bundling wrap (0.8 mil thick, 6 in wide) at six different locations perpendicular to the central axis of rotation. Four locations were wrapped along the straight section at equal distance $(\approx 8\ \mathrm{cm})$ from one another, one in the bend and one in the nose section.  Five layers of bundling wrap were applied to each section and the acrylic rings were removed as illustrated in Fig.~\ref{fig:st_iso_eel}.
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_iso_eel}
+	\caption[Isometric view of assembled Start Counter]{Isometric view of assembled Start Counter. The pieces are black electrical tape which mark the ends of bundling wrap are clearly visible.}
+	\label{fig:st_iso_eel}
+\end{figure}
+
+In order to make the ST light tight, an inner cone of black Tedlar polyvinyl fluoride $\rho \approx 1.5\ \mathrm{g/cm^{3}}$ \cite{tedlar_pvf} was taped to the Rohacell as seen in Fig.~\ref{fig:light_tightening_cone}. 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_lt_ic_bw}
+	\caption{Inner Tedlar cone.  Shown is before and after wrapping with bundling wrap.  The cone was specifically engineered to have the same dimensions of the Rohacell support structure to avoid crumpling of the light tightening material.}
+	\label{fig:light_tightening_cone}
+\end{figure}
+A few gaps existed in the Rohacell at the glue joints, and were filled in with black RTV silicone caulking. Moreover, it was painted with black latex paint for light tightening purposes.
+
+The support hub was also was wrapped with Tedlar and taped down with black electrical tape. The spacing between the ST1 PCBs along with the bottom side of the support hub, was filled with RTV black opaque silicone caulking.  Similarly, RTV silicone caulking was then applied to the inner edge of the collar which encompassed the ST1 PCBs at their our diameter.
+
+A cone of Tedlar was wrapped around the nose region and taped down with electrical tape as seen in Fig.~\ref{fig:light_tight_st}. 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{fabrication/figs/st_lt}
+	\caption{Light tight Start Counter.  Left: Outer cone Tedlar piece.  Right: Fully light tight Start Counter mounted to the Fall 2015 commissioning target.}
+	\label{fig:light_tight_st}
+\end{figure}
+The tips of the inner and outer cones in the nose region were then taped together with electrical tape and trimmed of excess material. Furthermore, a cylindrical piece of Tedlar was taped down at the bend region and to the collar covering the ST1 boards.  The fully assembled and cabled ST mounted to the commissioning target can be seen in Fig.~\ref{fig:light_tight_st}. 
+
+
+
+
+
+
 
 
 
