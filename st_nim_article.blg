@@ -9,10 +9,11 @@ A level-1 auxiliary file: design/design.aux
 A level-1 auxiliary file: simulation/simulation.aux
 A level-1 auxiliary file: misalignment/misalignment.aux
 A level-1 auxiliary file: fabrication/fabrication.aux
+A level-1 auxiliary file: calibration/calibration.aux
 Database file #1: bibliography/bibliography.bib
 You've used 20 entries,
             2937 wiz_defined-function locations,
-            739 strings with 7767 characters,
+            740 strings with 7794 characters,
 and the built_in function-call counts, 3304 in all, are:
 = -- 284
 > -- 38
