@@ -87,4 +87,10 @@ $^{90}Y$ Decay Radiation Data, national Nuclear Data Center, Nuclear Structure
 \bibitem{tedlar_pvf}
 \url{http://www.dupont.com/products-and-services/membranes-films/pvf-films.html}.
 
+\bibitem{dong_fadc}
+H.~Dong, Description and instructions for the firmware of processing fpga of
+  the adc250 boards version 0x0c0d, fADC250 Manual Available at
+  \url{https://coda.jlab.org/drupal/system/files/pdfs/HardwareManual/fADC250/FADC250_Processing_FPGA_Firmware_ver_0x0C0D_Description_Instructions.pdf}
+  (February 2017).
+
 \end{thebibliography}
