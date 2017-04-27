@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  27 APR 2017 11:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  27 APR 2017 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,11 +715,7 @@ Package pdftex.def Info: fabrication/figs/st_iso_eel.png used on input line 144
 .
 (pdftex.def)             Requested size: 222.0pt x 223.0078pt.
 
-
-LaTeX Warning: Reference `fig:light_tightening_cone' on page 16 undefined on in
-put line 149.
-
-<fabrication/figs/st_lt_ic_bw.jpg, id=357, 536.2434pt x 355.5684pt>
+<fabrication/figs/st_lt_ic_bw.jpg, id=358, 536.2434pt x 355.5684pt>
 File: fabrication/figs/st_lt_ic_bw.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_lt_ic_bw.jpg>
@@ -728,47 +724,33 @@ Package pdftex.def Info: fabrication/figs/st_lt_ic_bw.jpg used on input line 15
 (pdftex.def)             Requested size: 222.0pt x 147.20004pt.
  [16 <./fabrication/figs/st_va.jpg> <./fabrication/figs/st_coupling.jpg> <./fab
 rication/figs/st_iso_eel.png>]
-
-LaTeX Warning: Reference `fig:light_tight_st' on page 17 undefined on input lin
-e 160.
-
-<fabrication/figs/st_lt.jpg, id=365, 626.8218pt x 264.0264pt>
+<fabrication/figs/st_lt.jpg, id=367, 626.8218pt x 264.0264pt>
 File: fabrication/figs/st_lt.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_lt.jpg>
 Package pdftex.def Info: fabrication/figs/st_lt.jpg used on input line 163.
 (pdftex.def)             Requested size: 222.0pt x 93.51045pt.
-
-
-LaTeX Warning: Reference `fig:light_tight_st' on page 17 undefined on input lin
-e 167.
-
 )
 \openout2 = `calibration/calibration.aux'.
 
- (./calibration/calibration.tex) [17
-\@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Inner Te
-dlar cone. Shown is before and after wrapping with bundling wrap. The cone was 
-specifically engineered to have the same dimensions of the Rohacell support str
-ucture to avoid crumpling of the light tightening material.}}{17}{figure.36}}
-\newlabel{fig:light_tightening_cone}{{36}{17}{Inner Tedlar cone. Shown is befor
-e and after wrapping with bundling wrap. The cone was specifically engineered t
-o have the same dimensions of the Rohacell support structure to avoid crumpling
- of the light tightening material}{figure.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Light ti
-ght Start Counter. Left: Outer cone Tedlar piece. Right: Fully light tight Star
-t Counter mounted to the Fall 2015 commissioning target.}}{17}{figure.37}}
-\newlabel{fig:light_tight_st}{{37}{17}{Light tight Start Counter. Left: Outer c
-one Tedlar piece. Right: Fully light tight Start Counter mounted to the Fall 20
-15 commissioning target}{figure.37}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Calibration}{17}{sectio
-n.5}}
-\newlabel{sec:calib}{{5}{17}{Calibration}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Time-Walk Correcti
-on}{17}{subsection.5.1}}
-\newlabel{sec:calib_tw}{{5.1}{17}{Time-Walk Correction}{subsection.5.1}{}}
- <./fabrication/figs/st_lt_ic_bw.jpg> <./fabrication/figs/st_lt.jpg>]
+ (./calibration/calibration.tex
+
+LaTeX Warning: Reference `fig:time_walk_effect' on page 17 undefined on input l
+ine 9.
+
+<calibration/figs/time_walk_effect.png, id=369, 578.16pt x 433.62pt>
+File: calibration/figs/time_walk_effect.png Graphic file (type png)
+
+<use calibration/figs/time_walk_effect.png>
+Package pdftex.def Info: calibration/figs/time_walk_effect.png used on input li
+ne 12.
+(pdftex.def)             Requested size: 222.0pt x 166.4976pt.
+
+
+LaTeX Warning: Reference `fig:time_walk_effect' on page 17 undefined on input l
+ine 16.
+
+[17 <./fabrication/figs/st_lt_ic_bw.jpg> <./fabrication/figs/st_lt.jpg>])
 (./st_nim_article.bbl
 Underfull \hbox (badness 3138) in paragraph at lines 17--20
 []\OT1/cmr/m/n/8 General Pur-pose Plas-tic Scin-til-la-tor EJ-200, EJ-
@@ -830,7 +812,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
 Underfull \vbox (badness 3049) has occurred while \output is active []
 
-
+ [18
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Example 
+of the time-walk effect. Three coincident analog signals A, B, \& C of varying 
+amplitudes crossing a fixed threshold in a LED. The discriminator logic output 
+signals vary in time relative to the amplitude of the incoming analog signal. T
+he signals shown above are simulated analog signals being fed into the LED's th
+us, they have negative polarity.}}{18}{figure.38}}
+\newlabel{fig:time_walk_effect}{{38}{18}{Example of the time-walk effect. Three
+ coincident analog signals A, B, \& C of varying amplitudes crossing a fixed th
+reshold in a LED. The discriminator logic output signals vary in time relative 
+to the amplitude of the incoming analog signal. The signals shown above are sim
+ulated analog signals being fed into the LED's thus, they have negative polarit
+y}{figure.38}{}}
+ <./calibration/figs/time_walk_effect.png>]
 Underfull \hbox (badness 5490) in paragraph at lines 78--81
 \OT1/cmr/m/n/8 Cen-ter, Nu-clear Struc-ture and De-cay Database
  []
@@ -860,7 +855,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [18]
+ [19
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./st_nim_article.aux (./authors/authors.aux) (./abstract/abstract.aux)
 (./keywords/keywords.aux) (./design/design.aux) (./simulation/simulation.aux)
@@ -877,13 +874,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 6794 strings out of 494820
- 102812 string characters out of 3178050
- 201760 words of memory out of 3000000
- 9716 multiletter control sequences out of 15000+200000
+ 6805 strings out of 494820
+ 103079 string characters out of 3178050
+ 201262 words of memory out of 3000000
+ 9723 multiletter control sequences out of 15000+200000
  9177 words of font info for 32 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 34i,7n,32p,1425b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,7n,32p,1425b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
@@ -903,10 +900,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (18 pages, 10236898 bytes).
+Output written on st_nim_article.pdf (19 pages, 10301379 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 404 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
