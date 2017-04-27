@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  26 APR 2017 16:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  27 APR 2017 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,12 +384,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout2 = `design/design.aux'.
 
  (./design/design.tex
-<design/figs/st_target_iso.png, id=81, 986.9372pt x 517.18219pt>
+<design/figs/st_target_iso.png, id=81, 1063.72406pt x 539.01375pt>
 File: design/figs/st_target_iso.png Graphic file (type png)
 
 <use design/figs/st_target_iso.png>
 Package pdftex.def Info: design/figs/st_target_iso.png used on input line 9.
-(pdftex.def)             Requested size: 222.0pt x 116.32939pt.
+(pdftex.def)             Requested size: 222.0pt x 112.48889pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -403,22 +403,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<design/figs/st_target_cs.png, id=107, 962.09438pt x 258.9675pt>
-File: design/figs/st_target_cs.png Graphic file (type png)
+<design/figs/st_2d_labels.png, id=107, 1245.15187pt x 590.95781pt>
+File: design/figs/st_2d_labels.png Graphic file (type png)
 
-<use design/figs/st_target_cs.png>
-Package pdftex.def Info: design/figs/st_target_cs.png used on input line 18.
-(pdftex.def)             Requested size: 222.0pt x 59.75488pt.
+<use design/figs/st_2d_labels.png>
+Package pdftex.def Info: design/figs/st_2d_labels.png used on input line 18.
+(pdftex.def)             Requested size: 222.0pt x 105.35788pt.
 
-<design/figs/st_paddle_iso.png, id=114, 1265.47781pt x 505.13719pt>
+<design/figs/st_paddle_iso.png, id=114, 1033.61156pt x 443.40656pt>
 File: design/figs/st_paddle_iso.png Graphic file (type png)
 
 <use design/figs/st_paddle_iso.png>
 Package pdftex.def Info: design/figs/st_paddle_iso.png used on input line 29.
-(pdftex.def)             Requested size: 222.0pt x 88.60843pt.
- [2 <./design/figs/st_target_iso.png> <./design/figs/st_target_cs.png> <./desig
-n/figs/st_paddle_iso.png>]
-<design/figs/st_iso.png, id=128, 952.30782pt x 477.28313pt>
+(pdftex.def)             Requested size: 222.0pt x 95.23582pt.
+ [2 <./design/figs/st_target_iso.png (PNG copy)> <./design/figs/st_2d_labels.pn
+g> <./design/figs/st_paddle_iso.png (PNG copy)>] <design/figs/st_iso.png, id=12
+8, 952.30782pt x 477.28313pt>
 File: design/figs/st_iso.png Graphic file (type png)
 
 <use design/figs/st_iso.png>
@@ -879,7 +879,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
 Here is how much of TeX's memory you used:
  6794 strings out of 494820
  102812 string characters out of 3178050
- 201852 words of memory out of 3000000
+ 201760 words of memory out of 3000000
  9716 multiletter control sequences out of 15000+200000
  9177 words of font info for 32 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
@@ -903,7 +903,7 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (18 pages, 10541046 bytes).
+Output written on st_nim_article.pdf (18 pages, 10228065 bytes).
 PDF statistics:
  510 PDF objects out of 1000 (max. 8388607)
  404 compressed objects within 5 object streams
