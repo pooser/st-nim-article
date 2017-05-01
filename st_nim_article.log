@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  27 APR 2017 17:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  1 MAY 2017 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,23 +745,87 @@ Package pdftex.def Info: fabrication/figs/st_lt.jpg used on input line 163.
 \openout2 = `calibration/calibration.aux'.
 
  (./calibration/calibration.tex
-
-LaTeX Warning: Reference `fig:time_walk_effect' on page 17 undefined on input l
-ine 7.
-
-<calibration/figs/time_walk_effect.png, id=378, 578.16pt x 433.62pt>
+<calibration/figs/time_walk_effect.png, id=379, 578.16pt x 433.62pt>
 File: calibration/figs/time_walk_effect.png Graphic file (type png)
 
 <use calibration/figs/time_walk_effect.png>
 Package pdftex.def Info: calibration/figs/time_walk_effect.png used on input li
 ne 10.
 (pdftex.def)             Requested size: 222.0pt x 166.4976pt.
+ [17 <./fabrication/figs/st_iso_eel.png> <./fabrication/figs/st_lt.jpg>]
+<calibration/figs/tw_dist_uncorr_ch15.png, id=391, 679.03688pt x 510.40688pt>
+File: calibration/figs/tw_dist_uncorr_ch15.png Graphic file (type png)
+
+<use calibration/figs/tw_dist_uncorr_ch15.png>
+Package pdftex.def Info: calibration/figs/tw_dist_uncorr_ch15.png used on input
+ line 23.
+(pdftex.def)             Requested size: 222.0pt x 166.86935pt.
+ [18 <./calibration/figs/time_walk_effect.png> <./calibration/figs/tw_dist_unco
+rr_ch15.png>]
+
+LaTeX Warning: Reference `fig:pulsepeakch15' on page 19 undefined on input line
+ 37.
+
+<calibration/figs/pulse_peak_ch15.png, id=411, 631.60968pt x 500.62032pt>
+File: calibration/figs/pulse_peak_ch15.png Graphic file (type png)
+
+<use calibration/figs/pulse_peak_ch15.png>
+Package pdftex.def Info: calibration/figs/pulse_peak_ch15.png used on input lin
+e 40.
+(pdftex.def)             Requested size: 222.0pt x 175.9607pt.
+
+
+LaTeX Warning: Reference `eq:tw_corr' on page 19 undefined on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]\OT1/cmr/m/n/10 With all the nec-es-sary pa-ram-e-ters, \OT1/cmr/m/it/10 i.e.
+
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 46--47
+\OML/cmm/m/it/10 a[];  c\OT1/cmr/m/n/10 0[]\OML/cmm/m/it/10 ;  c\OT1/cmr/m/n/10
+ 1[]\OML/cmm/m/it/10 ;  c\OT1/cmr/m/n/10 2[]$, de-ter-mined the time-walk
+ []
+
+
+Overfull \hbox (1.10194pt too wide) detected at line 49
+$ [][]\OML/cmm/m/it/10 T[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 t[] \OMS/cmsy/m/n
+/10 ^^@ \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a=a[]\OT1/cmr/m/n
+/10 ) + \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]=a[]\OT1/cmr/m
+/n/10 )[]$ []
+ []
+
+
+LaTeX Warning: Reference `fig:twdistcorrch15' on page 19 undefined on input lin
+e 50.
+
+<calibration/figs/tw_dist_corr_ch15.png, id=413, 606.76688pt x 452.4403pt>
+File: calibration/figs/tw_dist_corr_ch15.png Graphic file (type png)
+
+<use calibration/figs/tw_dist_corr_ch15.png>
+Package pdftex.def Info: calibration/figs/tw_dist_corr_ch15.png used on input l
+ine 53.
+(pdftex.def)             Requested size: 222.0pt x 165.5363pt.
+
+
+LaTeX Warning: Reference `fig:sttimeoverlaych15' on page 19 undefined on input 
+line 57.
+
+
+<calibration/figs/st_time_overlay_ch15.png, id=414, 617.30624pt x 502.12593pt>
+File: calibration/figs/st_time_overlay_ch15.png Graphic file (type png)
+
+<use calibration/figs/st_time_overlay_ch15.png>
+Package pdftex.def Info: calibration/figs/st_time_overlay_ch15.png used on inpu
+t line 60.
+(pdftex.def)             Requested size: 222.0pt x 180.57365pt.
 )
 \openout2 = `acknowledgment/acknowledgment.aux'.
 
 
-(./acknowledgment/acknowledgment.tex [17 <./fabrication/figs/st_iso_eel.png> <.
-/fabrication/figs/st_lt.jpg>]
+(./acknowledgment/acknowledgment.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -770,22 +834,32 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ­ in font cmr10!
-) [18
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Example 
-of the time-walk effect. Three coincident analog signals A, B, \& C of varying 
-amplitudes crossing a fixed threshold in a LED. The discriminator logic output 
-signals vary in time relative to the amplitude of the incoming analog signal. T
-he signals shown above are simulated analog signals being fed into the LED's th
-us, they have negative polarity.}}{18}{figure.38}}
-\newlabel{fig:time_walk_effect}{{38}{18}{Example of the time-walk effect. Three
- coincident analog signals A, B, \& C of varying amplitudes crossing a fixed th
-reshold in a LED. The discriminator logic output signals vary in time relative 
-to the amplitude of the incoming analog signal. The signals shown above are sim
-ulated analog signals being fed into the LED's thus, they have negative polarit
-y}{figure.38}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Acknowledgments}{18}{se
+) [19
+\@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Typical 
+pulse peak minimum ionizing distribution. Shown is the pulse peak minimum ioniz
+ing distribution for sector 3 during the Spring 2017 run. The red, vertical, da
+shed line in the histogram corresponds to the ``pseudo'' MPV ($a^{0}_{15}$) whi
+ch was determined to be 500.}}{19}{figure.40}}
+\newlabel{fig:pulsepeakch15}{{40}{19}{Typical pulse peak minimum ionizing distr
+ibution. Shown is the pulse peak minimum ionizing distribution for sector 3 dur
+ing the Spring 2017 run. The red, vertical, dashed line in the histogram corres
+ponds to the ``pseudo'' MPV ($a^{0}_{15}$) which was determined to be 500}{figu
+re.40}{}}
+\newlabel{eq:tw_corr}{{3}{19}{Time-Walk Correction}{equation.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Time-wal
+k corrected time difference spectrum. Shown is the time-walk corrected time dif
+ference spectrum for sector 3 during the Spring 2017 run. The time-walk correct
+ed time difference spectrum has $\sigma _{\delta t_{15}} \approx 270 ps$}}{19}{
+figure.41}}
+\newlabel{fig:twdistcorrch15}{{41}{19}{Time-walk corrected time difference spec
+trum. Shown is the time-walk corrected time difference spectrum for sector 3 du
+ring the Spring 2017 run. The time-walk corrected time difference spectrum has 
+$\sigma _{\delta t_{15}} \approx 270 ps$}{figure.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Acknowledgments}{19}{se
 ction.7}}
- <./calibration/figs/time_walk_effect.png>] (./st_nim_article.bbl
+ <./calibration/figs/pulse_peak_ch15.png> <./calibration/figs/tw_dist_corr_ch15
+.png>] (./st_nim_article.bbl
 Underfull \hbox (badness 3138) in paragraph at lines 17--20
 []\OT1/cmr/m/n/8 General Pur-pose Plas-tic Scin-til-la-tor EJ-200, EJ-
  []
@@ -846,7 +920,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
 Underfull \vbox (badness 3049) has occurred while \output is active []
 
-
+ [20
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Comparis
+on of pre and post self-timing distributions.}}{20}{figure.42}}
+\newlabel{fig:sttimeoverlaych15}{{42}{20}{Comparison of pre and post self-timin
+g distributions}{figure.42}{}}
+ <./calibration/figs/st_time_overlay_ch15.png>]
 Underfull \hbox (badness 5490) in paragraph at lines 78--81
 \OT1/cmr/m/n/8 Cen-ter, Nu-clear Struc-ture and De-cay Database
  []
@@ -890,9 +969,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--95
 bru-ary
  []
 
+
+Underfull \hbox (badness 8189) in paragraph at lines 97--101
+\OT1/cmr/m/n/8 tech-ni-cal note GlueX-doc-2618-v10, avail-able at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
+[]$\OT1/cmtt/m/n/8 http : / / argus . phys . uregina . ca / gluex / DocDB / 002
+6 /
+ []
+
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [19]
+ [21
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./st_nim_article.aux (./authors/authors.aux) (./abstract/abstract.aux)
 (./keywords/keywords.aux) (./introduction/introduction.aux)
@@ -910,36 +1002,39 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 6831 strings out of 494820
- 103682 string characters out of 3178050
- 204140 words of memory out of 3000000
- 9730 multiletter control sequences out of 15000+200000
+ 6871 strings out of 494820
+ 104760 string characters out of 3178050
+ 202069 words of memory out of 3000000
+ 9756 multiletter control sequences out of 15000+200000
  9177 words of font info for 32 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 34i,7n,32p,1075b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,32p,1075b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (19 pages, 10297995 bytes).
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pf
+b>
+Output written on st_nim_article.pdf (21 pages, 10420480 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 359 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

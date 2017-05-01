@@ -15,45 +15,45 @@ A level-1 auxiliary file: acknowledgment/acknowledgment.aux
 Database file #1: bibliography/bibliography.bib
 Warning--entry type for "dong_fadc" isn't style-file defined
 --line 187 of file bibliography/bibliography.bib
-You've used 21 entries,
+You've used 22 entries,
             2937 wiz_defined-function locations,
-            748 strings with 8161 characters,
-and the built_in function-call counts, 3503 in all, are:
-= -- 304
-> -- 42
+            754 strings with 8363 characters,
+and the built_in function-call counts, 3693 in all, are:
+= -- 324
+> -- 46
 < -- 2
-+ -- 28
-- -- 7
-* -- 81
-:= -- 374
-add.period$ -- 21
-call.type$ -- 21
-change.case$ -- 24
++ -- 30
+- -- 8
+* -- 88
+:= -- 399
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 161
-empty$ -- 525
-format.name$ -- 7
-if$ -- 1028
+cite$ -- 22
+duplicate$ -- 169
+empty$ -- 549
+format.name$ -- 8
+if$ -- 1082
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 2
-newline$ -- 73
-num.names$ -- 7
-pop$ -- 187
+newline$ -- 76
+num.names$ -- 8
+pop$ -- 193
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 304
+skip$ -- 320
 stack$ -- 0
-substring$ -- 70
-swap$ -- 17
+substring$ -- 72
+swap$ -- 18
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 10
-width$ -- 23
-write$ -- 140
+while$ -- 11
+width$ -- 24
+write$ -- 148
 (There was 1 warning)
