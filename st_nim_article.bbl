@@ -93,4 +93,10 @@ H.~Dong, Description and instructions for the firmware of processing fpga of
   \url{https://coda.jlab.org/drupal/system/files/pdfs/HardwareManual/fADC250/FADC250_Processing_FPGA_Firmware_ver_0x0C0D_Description_Instructions.pdf}
   (February 2017).
 
+\bibitem{esmith_bcal}
+E.~Smith, Low-level calibration constants for BCAL, technical note
+  GlueX-doc-2618-v10, available at
+  \url{http://argus.phys.uregina.ca/gluex/DocDB/0026/002618/010/bcal_constants.pdf}
+  (December 2014).
+
 \end{thebibliography}
