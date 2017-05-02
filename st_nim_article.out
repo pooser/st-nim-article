@@ -5,7 +5,7 @@
 \BOOKMARK [2][-]{subsection.2.3}{Support Structure}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{SiPM Readout Detectors}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.5}{Readout Electronics}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{GEANT4 Simulations}{}% 8
+\BOOKMARK [1][-]{section.3}{Simulation}{}% 8
 \BOOKMARK [2][-]{subsection.3.1}{Simulating a Simplified Model of the ST}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.2}{Simulating Machined Scintillator Geometry}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Misalignment Studies}{}% 11
@@ -18,4 +18,6 @@
 \BOOKMARK [2][-]{subsection.5.3}{Assembly}{section.5}% 18
 \BOOKMARK [1][-]{section.6}{Calibration}{}% 19
 \BOOKMARK [2][-]{subsection.6.1}{Time-Walk Correction}{section.6}% 20
-\BOOKMARK [1][-]{section.7}{Acknowledgments}{}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Propagation Time Corrections}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Attenuation Corrections}{section.6}% 22
+\BOOKMARK [1][-]{section.7}{Acknowledgments}{}% 23

@@ -60,10 +60,10 @@ P.~Khetarpal, Start Counter Geant4 Simulations, start Counter Geant4
 
 \bibitem{puneet_sim_talk}
 P.~Khetarpal,
-  \href{http://argus.phys.uregina.ca/gluex/DocDB/0019/001921/002/khetarpal_feb2012.pdf}{Start
+  \href{https://halldweb.jlab.org/DocDB/0019/001921/002/khetarpal_feb2012.pdf}{Start
   counter: Optics simulations}, talk Given at the February 16, 2012 GlueX
   Collaboration meeting (2012).
-\newline\urlprefix\url{http://argus.phys.uregina.ca/gluex/DocDB/0019/001921/002/khetarpal_feb2012.pdf}
+\newline\urlprefix\url{https://halldweb.jlab.org/DocDB/0019/001921/002/khetarpal_feb2012.pdf}
 
 \bibitem{buehler}
 \url{https://shop.buehler.com/consumables/grinding-polishing/polishing-suspensions/alumina-suspensions}.
@@ -88,15 +88,36 @@ $^{90}Y$ Decay Radiation Data, national Nuclear Data Center, Nuclear Structure
 \url{http://www.dupont.com/products-and-services/membranes-films/pvf-films.html}.
 
 \bibitem{dong_fadc}
-H.~Dong, Description and instructions for the firmware of processing fpga of
-  the adc250 boards version 0x0c0d, fADC250 Manual Available at
+H.~Dong, Description and Instructions for the Firmware of Processing FPGA of
+  the ADC250 Boards Version 0x0C0D, fADC250 Manual Available at
   \url{https://coda.jlab.org/drupal/system/files/pdfs/HardwareManual/fADC250/FADC250_Processing_FPGA_Firmware_ver_0x0C0D_Description_Instructions.pdf}
   (February 2017).
 
 \bibitem{esmith_bcal}
 E.~Smith, Low-level calibration constants for BCAL, technical note
   GlueX-doc-2618-v10, available at
-  \url{http://argus.phys.uregina.ca/gluex/DocDB/0026/002618/010/bcal_constants.pdf}
+  \url{https://halldweb.jlab.org/DocDB/0026/002618/011/bcal_constants.pdf}
   (December 2014).
+
+\bibitem{root_minuit}
+\url{https://root.cern.ch/doc/master/classTMinuit.html}.
+
+\bibitem{pdg_2012}
+J.~B. et~al. (Particle Data~Group), Review of particle physics, Phys. Rev. D
+  86~(010001) (2012) 342--343.
+
+\bibitem{zihlmann_tof}
+B.~Zihlmann, GlueX Time Of Flight Calibration, technical note GlueX-doc-2767-v4
+  available at
+  \url{https://halldweb.jlab.org/DocDB/0027/002767/005/tofcalib.pdf} (July
+  2015).
+
+\bibitem{mattione_rf_wiki}
+P.~Mattione, RF Calibration, rF Calibration Wiki available at
+  \url{https://halldweb.jlab.org/wiki/index.php/RF_Calibration}.
+
+\bibitem{vavilov_1957}
+P.~Vavilov, Ionization losses of high-energy particles, Journal of Experimental
+  and Theoretical Physics 5~(4) (1957) 749--751.
 
 \end{thebibliography}
