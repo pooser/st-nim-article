@@ -24,15 +24,15 @@ Figure \ref{fig:twdistuncorrch15} shows a typical time-walk spectrum, \textit{i.
 		\caption{Typical Start Counter time-walk spectrum.  Shown is the time-walk spectrum for sector 15 of the Start Counter during the Spring 2017 run. On the y-axis is $\delta t_{15}$ and on the x-axis is the corresponding pedestal subtracted pulse peak spectrum. From this histogram it is clear that there is a correlation between the amplitude of the analog signal and the time in which the signal crosses the discriminator threshold.}
 		\label{fig:twdistuncorrch15}
 	\end{figure}
-The FADC250's return both the amplitude and integral of events which are above threshold \cite{dong_fadc}.  Since the amplitude better characterizes the ADC pulse profile as compared to the pulse integral, it was utilized for the time-walk corrections.
+The FADC250's return both the amplitude and integral of events which are above threshold \cite{dong_fadc}.  Since the amplitude better characterizes the ADC pulse profile as compared to the pulse integral, naturally it was selected for the time-walk corrections.
 
-The non time-walk corrected spectrum illustrates the poor time resolution due to the large spread in time differences occurring among signals close to threshold and the more probable amplitudes being registered in the FADC. From Fig.~\ref{fig:twdistuncorrch15} it is immediately obvious that there exists a correlation between the time and the pulse peak for hits in the ST.  This correlation is nonlinear and requires a polynomial functional form to describe the correlation. Equation~\ref{eq:tw_corr_func_form} from reference \cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
+From Fig.~\ref{fig:twdistuncorrch15} it is immediately obvious that there exists a correlation between the reference subtracted TDC time and the pedestal subtracted pulse amplitude for hits in the ST.  This correlation is nonlinear and requires a polynomial functional form to describe the correlation. Equation~\ref{eq:tw_corr_func_form} from reference \cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
 	\begin{equation} \label{eq:tw_corr_func_form}
 		f^{w}_{i}\left(a/a^{thresh}_{i}\right) = c0_{i} + \frac{c1_{i}}{(a/a^{thresh}_{i})^{c2_{i}}}
 	\end{equation}
 In Eq.~\ref{eq:tw_corr_func_form} $f^{w}_{i}$ is the functional form of time-walk fit for the $i^{th}$ sector, while $a$ and $a^{thresh}_{i}$ are the pulse peak and discriminator threshold converted to ADC units respectively.  Furthermore, $c0_{i}, c1_{i}, c2_{i}$ are the time-walk correction fit parameters.
 
-The data in Fig.~\ref{fig:twdistuncorrch15} were fit using Eq.~\ref{eq:tw_corr_func_form} and ROOT's MINUIT $\chi^{2}$ minimization fitting library for pulse peak values ranging from [50, 2100].  An identical fit was carried out for each of the ST sectors.
+The data in Fig.~\ref{fig:twdistuncorrch15} were fit using Eq.~\ref{eq:tw_corr_func_form} and ROOT's MINUIT $\chi^{2}$ minimization fitting library \cite{root_minuit} for pulse peak values ranging from [50, 2100].  An identical fit was carried out for each of the ST sectors.
 
 The most probable value (MPV) of the minimum ionizing peak was chosen to be the location in which the time-walk correction was zero.  This location effectively serves as a reference point for the correction.  As seen in Fig. \ref{fig:pulsepeakch15} a ``pseudo'' MPV was utilized.
 	\begin{figure}[!htb]
@@ -41,23 +41,141 @@ The most probable value (MPV) of the minimum ionizing peak was chosen to be the 
 		\caption{Typical pulse peak minimum ionizing distribution.  Shown is the pulse peak minimum ionizing distribution for sector 3 during the Spring 2017 run. The red, vertical, dashed line in the histogram corresponds to the ``pseudo'' MPV ($a^{0}_{15}$) which was determined to be 500.}
 		\label{fig:pulsepeakch15}
 	\end{figure}
-The ``pseudo'' MPV $(a^{0}_{i})$ was determined on a sector by sector basis by simply acquiring the pulse peak channel which had the most number of entries after the pulse peak channel 200.  The large spike in the pulse peak spectrum at very low pulse peak values are due to electromagnetic background events clipping threshold and do not correspond to a true minimum ionizing particle traversing the scintillator medium.
+The ``pseudo'' MPV $(a^{0}_{i})$ was determined on a sector by sector basis by simply acquiring the pulse peak channel which had the most number of entries after the pulse peak channel 200.  The large spike in the pulse peak spectrum at very low pulse peak values are due to electromagnetic background events clipping threshold and do not correspond to a true minimum ionizing particles traversing the scintillator medium.
 
-With all the necessary parameters, \textit{i.e.} $a^{0}_{i},\ c0_{i},\ c1_{i},\ c2_{i}$, determined the time-walk correction factor can be applied to the original TDC time.  The functional form of the time-walk corrected time is given by Eq. \ref{eq:tw_corr}.
+Once the necessary time-walk correction parameters are determined, the correction is applied to the TDC time and is illustrated by Eq. \ref{eq:tw_corr}.
 	\begin{equation} \label{eq:tw_corr}
 		T^{w}_{i} = t^{TDC}_{i} - f^{w}_{i}(a/a^{thresh}_{i}) + f^{w}_{i}(a^{0}_{i}/a^{thresh}_{i})
 	\end{equation}
-Once the time walk corrections have been applied, the corrected timing distributions appear much more uniform in nature and exhibit a factor 1.75 improvement in resolution \cite{pooser16}.  Figure~\ref{fig:twdistcorrch15} illustrates the vast improvement in the time difference spectrum ($\delta t_{15}$) due to the applied time-walk corrections.
+With the time walk corrections having been applied, the corrected timing distributions appear much more uniform in nature and exhibit a factor 1.75 improvement in resolution \cite{pooser16}.  Figure~\ref{fig:twdistcorrch15} illustrates the vast improvement in the time difference spectrum ($\delta t_{15}$) due to the applied time-walk corrections.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/tw_dist_corr_ch15}
 		\caption{Time-walk corrected time difference spectrum.  Shown is the time-walk corrected time difference spectrum for sector 3 during the Spring 2017 run. The time-walk corrected time difference spectrum has $\sigma_{\delta t_{15}} \approx 270 ps$}
 		\label{fig:twdistcorrch15}
 	\end{figure}
-In Fig.~\ref{fig:sttimeoverlaych15} illustrates the $\delta t_{15}$ distribution and the relative effects of the aforementioned time-walk correction.
+Figure~\ref{fig:sttimeoverlaych15} illustrates the $\delta t_{15}$ distribution and the relative effects of the aforementioned time-walk correction.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/st_time_overlay_ch15}
 		\caption{Comparison of pre and post self-timing distributions.}
 		\label{fig:sttimeoverlaych15}
 	\end{figure}
+
+\subsection{Propagation Time Corrections} \label{sec:calib_ptc}
+
+As a charged particle traverses through the ST scintillator material the molecules become excited and a small fraction $(\approx 3\%)$ \cite{pdg_2012} of the excitation energy is released in the form of ``optical'' photons.  The photons produced will be emitted uniformly in all directions and some will escape the medium, some will be reflected back into the medium by virtue of the reflective Al foil wrapping, and some will be lost.  However, the photons which are in fact not lost, will totally internally reflect until they reach the SiPM detector placed at the upstream end.  The moment the photons are produced they will begin to propagate through the scintillator medium until they are eventually detected.  The time from production to the time of detection in the ST scintillator paddles must be accounted for and is discussed below.
+
+The EJ-200 scintillator material has a refractive index equal to 1.58 \cite{ej200_specs} meaning that light in the medium will travel with a velocity $\approx \mathrm{19\ cm/ns}$.  However, what is measured in the lab is known as the effective velocity which is slower due to the fact that the majority of photons are not traveling in straight lines parallel to the medium boundaries.  Instead they are constantly reflecting off the boundaries resulting in an increase in their respective path lengths which contributes to an observed reduction in velocity.  This velocity is known as the effective velocity.  
+
+Correcting for the time in which light spends traversing through the scintillator material is an necessary correction since the ST paddles are 60~cm in length.  Thus, light produced in the tip of the nose will take on the order of 4~ns to reach the SiPM at the upstream end.  Performing the propagation time corrections utilizing the common effective velocity method is not the most robust procedure for the case of the ST.  Both bench and beam studies showed that the unique geometry in the bend and nose region cause the effective velocity of light in these two regions to be larger than that of the straight section and therefore the sections must be treated in an independent manner.
+
+In order to conduct the propagation time corrections for the ST a distinct set of events needed to be selected so that a well defined reference time was being utilized.  This reference time would then act as a measure of the event time for all other charged tracks intersecting the ST in the same event.  
+
+For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a tracking confidence level, or tracking figure of merit (FOM), greater than 0.0027 were considered.  Secondly all charged tracks were required to have the $z$ coordinate of its vertex to be contained with in the target geometry \textit{i.e.} $\mathrm{50.0\ cm < z_{vertex} < 80.0\ cm}$.  Moreover, the $r$ coordinate of the tracks vertex was required to be contained within the diameter of the photon beam \textit{i.e.} $r_{vertex} = \sqrt{x^{2}_{vertex} + y^{2}_{vertex}} < 5\ \mathrm{mm}$.  Only tracks passing these fiducial cuts were considered for analysis.
+
+Two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has a match to the time of flight (TOF) detector and not the ST provides the reference time for that event.  A separate track that has a match the ST and not the TOF was used to provide the ST measure of the vertex time.  This was done in order to avoid any potential bias in the calibration.  
+	
+The advantage of using the time associated with a track matched to the TOF is that the time resolution of the TOF is the best of any detector in Hall-D $(\approx 96\ \mathrm{ps})$ \cite{zihlmann_tof}. The calibrated (time-walk \& propagation) hit time returned by the TOF $(T^{TOF}_{hit})$ was then corrected for the flight time from the track vertex to the TOF $(T^{TOF}_{flight})$.  Equation~\ref{eq:tof_vertex_time} is the TOF measure of the track vertex time.
+	\begin{equation} \label{eq:tof_vertex_time}
+		T^{TOF}_{vertex} = T^{TOF}_{hit} - T^{TOF}_{flight}
+	\end{equation}
+
+In order to determine the time in which the beam bunch arrived at the interaction point ($T^{BB}_{vertex}$) the $T^{TOF}_{vertex}$ time must first be corrected for the RF measure of the vertex time ($T^{RF}_{vertex}$) .  The RF signal that is readout in Hall-D is provided by the CEBAF accelerator at a rate of 499 MHz (2.004 ns) while the beam bunches are produced at a rate of  249.5 MHz (4.008 ns).  The RF signal from the accelerator is multiplexed into TDC's however, the provided signal rate is too high to readout without causing overflow in the TDC buffers thus the RF signal is pre-scaled \cite{mattione_rf_wiki}.  A typical pre-scale factor is 128 and consequently the RF signal is readout every $\mathrm{128 \times 2.004\ ns = 256.512\ ns}$.  Thus, the time associated with the beam bucket that produced the event of interest must be calculated since it is not provided directly.
+
+For every event, the associated RF time is the pre-scaled time the RF signal arrived at the center of the target $(T^{RF}_{center})$. This time must be propagated out to the vertex location of the track since the photon responsible for the track spends a non-negligible finite amount of time traversing through the target before interacting with it. This propagation time $(T^{RF}_{prop})$ correction is given by Eq.~\ref{eq:rf_prop_time}
+	\begin{equation} \label{eq:rf_prop_time}
+		T^{RF}_{prop} = (z_{vertex} - z^{target}_{center}) \cdot \frac{1}{c} 
+	\end{equation} 
+Once the propagation time is summed with the centered RF time $(T^{RF}_{center})$ one obtains the measure of the RF time at the vertex of the track and is given by Eq. \ref{eq:rf_vertex_time}.
+	\begin{equation} \label{eq:rf_vertex_time}
+		T^{RF}_{vertex} = T^{RF}_{center} + T^{RF}_{prop}
+	\end{equation}
+
+Due to the inherent ambiguity associated with pre-scaling,  $T^{RF}_{vertex}$ is not the correct measurement of the time the beam bunch actually produced the track.  Therefore, one must ``step'' $T^{RF}_{vertex}$ to the time the track was produced as measured by $T^{TOF}_{vertex}$.  To do this one must first calculate the time difference $\delta T$ given by Eq. \ref{eq:rf_delta_t}.
+	\begin{equation} \label{eq:rf_delta_t}
+		\delta T = T^{TOF}_{vertex} - T^{RF}_{vertex}
+	\end{equation}
+Next, one must calculate the number of beam buckets $(N^{buckets}_{step})$ that have elapsed during the $\delta T$ time period and is given by Eq. \ref{eq:n_buckets_shift}, where $(N^{buckets}_{step})$ is rounded to the nearest integer.
+	\begin{equation} \label{eq:n_buckets_shift}
+		N^{buckets}_{step} = \frac{\delta T}{T^{BB}_{period}} = \frac{\delta T}{4.008\ ns}
+	\end{equation}
+Lastly one can now calculate the time the beam bunch arrived at the vertex that produced the track $(T^{BB}_{vertex})$ and is given by Eq. \ref{eq:bb_vertex_time}.
+	\begin{equation} \label{eq:bb_vertex_time}
+		T^{BB}_{vertex} = T^{RF}_{vertex} + T^{BB}_{period} \cdot N^{buckets}_{step}
+	\end{equation}
+For every event, the first track satisfying the aforementioned fiducial track selection and is matched to the TOF will then have the associated $T^{BB}_{vertex}$ time calculated.  This time serves as the reference time for all other tracks that have intersected the ST in that event.
+
+In order to properly calculate the propagation time ($T^{ST}_{prop}$) of photons produced by a charged track intersecting the ST, a few quantities must be known.  Particularly the time-walk corrected hit time ($T^{ST}_{hit}$), the flight time from the track vertex to the ST intersection point ($T^{ST}_{flight}$), and a well defined reference time corresponding to the event ($T^{BB}_{vertex}$).  With the reference time determined, all other charged tracks passing the previously discussed fiducial track selection and which have a match to the ST (and not the TOF) are analyzed.  Equation~\ref{eq:st_prop_time} illustrates the ST measure of the vertex time.
+	\begin{equation} \label{eq:st_prop_time}
+		T^{ST}_{prop} = T^{ST}_{hit} - T^{ST}_{flight} - T^{BB}_{vertex}
+	\end{equation} 
+
+This time difference is a direct measure of the amount of time the detected light produced by the intersecting charged track spent traversing the scintillator medium.  In order to perform the propagation time corrections the $z$-coordinate of the tracks intersection point with the ST $(z^{ST}_{hit})$ was also recorded for every charged track intersecting the ST.  Once both $T^{ST}_{prop}$ and $z^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  Figure~\ref{fig:proptimeuncorr} illustrates correlation between these two quantities.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr}
+		\caption{Typical Start Counter propagation time correlation.  Shown is the ST propagation time correlation for sector 15 of the ST during the Spring 2015 run 2931. $T^{ST}_{prop}$ is plotted on the y-axis and the $z^{ST}_{hit}$ is plotted along the x-axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the charged track intersection point with the ST.  z is in hall coordinates.}
+		\label{fig:proptimeuncorr}
+	\end{figure}
+
+The mean propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  These three regions were then fit utilizing the $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $i$ indicates which region the fit is being performed.
+	\begin{equation} \label{eq:pt_func_form}
+		f_{i}(z) = A_{i} + B_{i} \cdot z
+	\end{equation}
+The distributions and associated fits for the three regions are illustrated in Fig.~\ref{fig:proptimeuncorrfits}.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr_fits}
+		\caption{Typical Start Counter propagation time projection correlation.  Left: Typical propagation time projection correlation for sector 15 of the ST during the Spring 2015 run 2931.  The red line serves as a reference for the propagation time assuming it was a constant 15 cm/ns.  The magenta line is the fit corresponding to the straight section.  The green and dark blue solid lines correspond to the fits in the bend and nose section respectively.  Right: zoomed in view of data points.}
+		\label{fig:proptimeuncorrfits}
+	\end{figure}
+	
+With the fit parameters determined an explicit time difference correction for each of the ST sectors could then be applied to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time} which must be a function of where the charged track intersects with the ST.
+	\begin{equation}\label{eq:st_vertex_time}
+	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - T^{ST}_{prop}(z)
+	\end{equation} 
+After the propagation time corrections are applied the ST corrected time now measures the vertex time for the track in the event and is illustrated in Fig.~\ref{fig:proptimecorr}.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_corr}
+		\caption{Corrected ST time}
+		\label{fig:proptimecorr}
+	\end{figure}
+
+\subsection{Attenuation Corrections} \label{sec:calib_ac}
+
+When photons traverse through a scintillator medium, or any medium containing matter, they can be lost through scattering, absorption, or escape at the boundaries.  Attenuation corresponds to the reduction in observed light relative to the amount of initial scintillation light produced in the medium.
+
+Photons produced in a scintillator medium, as a result of charged particles traversing through the material,  are subject to the property of total internal reflection.  If the resulting photons incident on the scintillator-air boundary have an angle of incidence which is smaller than the critical angle, then the photons will leave the scintillator medium and be lost for detection and thus contribute to the overall attenuation.  However, if the incident  photon has an angle of incidence which is equal to or greater than the critical angle, $39.3^{\circ}$ for the ST scintillator-air interface, then those photons will totally internally reflect and may possibly be detected.  The photons that do in fact totally internally reflect however, are still subject to additional phenomena which contribute to the overall attenuation of photons in the scintillator medium.  
+
+With the above factors considered, one can define a parameter known as the ``attenuation coefficient'' which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary  photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is highly desirable to have a scintillator material with a long attenuation length.  As a reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4 m.
+
+The energy deposited $(dE_{hit})$ by a charged particle in a scintillator medium is proportional the number of photons created, which is in turn proportional to the pulse integral of the signal read out by the FADC250.  However, since the photons created \textit{via.} ionization are subject to attenuation as they traverse through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator.  
+
+In order to obtain the attenuation coefficients of interest tracks matching to the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore the tracks energy deposition per unit length $(dE_{hit} / dx)$ and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus momentum $(dE_{hit} / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_uncorr}.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_uncorr}
+		\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the uncorrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is quite difficult to achieve for tracks with $p > 0.6\ GeV/c$.}
+		\label{fig:dEdx_vs_p_uncorr}
+	\end{figure}
+
+The pedestal corrected FADC250 pulse integral data were then binned in 1~cm $z$-intersection bins along the full length of the paddle. These data are represented in Fig.~\ref{fig:pisec}.
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec}
+		\caption{Pedestal subtracted FADC pulse integral spectrum corresponding to the three ST sections.}
+		\label{fig:pisec}
+	\end{figure}
+In order to properly quantify the pulse integral data, the most probable value (MPV) of the distribution was extracted utilizing the energy straggling distribution known as the Vavilov probability distribution function (PDF) \cite{vavilov_1957}.  The Vavilov PDF is a more accurate energy straggling distribution than a Landau-Gaussian convolution since it is a generalization of the Landau PDF.  The Vavilov PDF takes into account the maximum allowable energy transfer of a particle traversing through a medium.
+
+Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, a plot of the energy deposition per unit length versus momentum $(dE_{corr} / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_corr}.
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_corr}
+		\caption[Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter]{Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p > 1.1\ GeV/c$.}
+		\label{fig:dEdx_vs_p_corr}
+	\end{figure}
+
+Granted the Start Counter was not designed with particle identification (PID) in mind, it is pleasant to know that the ST can in fact be used, at some level, for PID studies.
