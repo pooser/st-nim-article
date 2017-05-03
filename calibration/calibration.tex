@@ -26,7 +26,7 @@ Figure \ref{fig:twdistuncorrch15} shows a typical time-walk spectrum, \textit{i.
 	\end{figure}
 The FADC250's return both the amplitude and integral of events which are above threshold \cite{dong_fadc}.  Since the amplitude better characterizes the ADC pulse profile as compared to the pulse integral, naturally it was selected for the time-walk corrections.
 
-From Fig.~\ref{fig:twdistuncorrch15} it is immediately obvious that there exists a correlation between the reference subtracted TDC time and the pedestal subtracted pulse amplitude for hits in the ST.  This correlation is nonlinear and requires a polynomial functional form to describe the correlation. Equation~\ref{eq:tw_corr_func_form} from reference \cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
+From Fig.~\ref{fig:twdistuncorrch15} it is immediately obvious that there exists a correlation between the reference subtracted TDC time and the pedestal subtracted pulse amplitude for hits in the ST.  This correlation is nonlinear and requires a polynomial functional form to describe the correlation. Equation~\ref{eq:tw_corr_func_form} from Ref.~\cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
 	\begin{equation} \label{eq:tw_corr_func_form}
 		f^{w}_{i}\left(a/a^{thresh}_{i}\right) = c0_{i} + \frac{c1_{i}}{(a/a^{thresh}_{i})^{c2_{i}}}
 	\end{equation}
@@ -72,7 +72,7 @@ Correcting for the time in which light spends traversing through the scintillato
 
 In order to conduct the propagation time corrections for the ST a distinct set of events needed to be selected so that a well defined reference time was being utilized.  This reference time would then act as a measure of the event time for all other charged tracks intersecting the ST in the same event.  
 
-For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a tracking confidence level, or tracking figure of merit (FOM), greater than 0.0027 were considered.  Secondly all charged tracks were required to have the $z$ coordinate of its vertex to be contained with in the target geometry \textit{i.e.} $\mathrm{50.0\ cm < z_{vertex} < 80.0\ cm}$.  Moreover, the $r$ coordinate of the tracks vertex was required to be contained within the diameter of the photon beam \textit{i.e.} $r_{vertex} = \sqrt{x^{2}_{vertex} + y^{2}_{vertex}} < 5\ \mathrm{mm}$.  Only tracks passing these fiducial cuts were considered for analysis.
+For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a tracking confidence level, or tracking figure of merit (FOM), greater than 0.0027 were considered.  Secondly all charged tracks were required to have the $z$ coordinate of its vertex to be contained with in the target geometry \textit{i.e.} $\mathrm{50.0\ cm < z_{vertex} < 80.0\ cm}$.  Moreover, the $r$ coordinate of the tracks vertex was required to be contained within the target radius \textit{i.e.} $r_{vertex} = \sqrt{x^{2}_{vertex} + y^{2}_{vertex}} < 1\ \mathrm{cm}$.  Only tracks passing these fiducial cuts were considered for analysis.
 
 Two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has a match to the time of flight (TOF) detector and not the ST provides the reference time for that event.  A separate track that has a match the ST and not the TOF was used to provide the ST measure of the vertex time.  This was done in order to avoid any potential bias in the calibration.  
 	
@@ -135,13 +135,14 @@ With the fit parameters determined an explicit time difference correction for ea
 	\begin{equation}\label{eq:st_vertex_time}
 	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - T^{ST}_{prop}(z)
 	\end{equation} 
-After the propagation time corrections are applied the ST corrected time now measures the vertex time for the track in the event and is illustrated in Fig.~\ref{fig:proptimecorr}.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_corr}
-		\caption{Corrected ST time}
-		\label{fig:proptimecorr}
-	\end{figure}
+After the propagation time corrections are applied the ST corrected time now measures the vertex time for the track in the event and is discussed further in Sec.~\ref{sec:perform}
+%is illustrated in Fig.~\ref{fig:proptimecorr}.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_corr}
+%		\caption{Corrected ST time}
+%		\label{fig:proptimecorr}
+%	\end{figure}
 
 \subsection{Attenuation Corrections} \label{sec:calib_ac}
 
@@ -149,11 +150,11 @@ When photons traverse through a scintillator medium, or any medium containing ma
 
 Photons produced in a scintillator medium, as a result of charged particles traversing through the material,  are subject to the property of total internal reflection.  If the resulting photons incident on the scintillator-air boundary have an angle of incidence which is smaller than the critical angle, then the photons will leave the scintillator medium and be lost for detection and thus contribute to the overall attenuation.  However, if the incident  photon has an angle of incidence which is equal to or greater than the critical angle, $39.3^{\circ}$ for the ST scintillator-air interface, then those photons will totally internally reflect and may possibly be detected.  The photons that do in fact totally internally reflect however, are still subject to additional phenomena which contribute to the overall attenuation of photons in the scintillator medium.  
 
-With the above factors considered, one can define a parameter known as the ``attenuation coefficient'' which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary  photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is highly desirable to have a scintillator material with a long attenuation length.  As a reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4 m.
+With the above factors considered, one can define a parameter known as the ``attenuation coefficient'' which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary  photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is highly desirable to have a scintillator material with a long attenuation length.  As a reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4 m \cite{ej200_specs}.
 
-The energy deposited $(dE_{hit})$ by a charged particle in a scintillator medium is proportional the number of photons created, which is in turn proportional to the pulse integral of the signal read out by the FADC250.  However, since the photons created \textit{via.} ionization are subject to attenuation as they traverse through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator.  
+The energy deposited $(dE)$ by a charged particle in a scintillator medium is proportional the number of photons created, which is in turn proportional to the pulse integral of the signal read out by the FADC250.  However, since the photons created \textit{via.} ionization are subject to attenuation as they traverse through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator.  
 
-In order to obtain the attenuation coefficients of interest tracks matching to the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore the tracks energy deposition per unit length $(dE_{hit} / dx)$ and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus momentum $(dE_{hit} / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_uncorr}.
+In order to obtain the attenuation coefficients of interest tracks matching to the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore the tracks energy deposition per unit length $(dE / dx)$, pedestal subtracted pulse integral,  and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus momentum $(dE / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_uncorr}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_uncorr}
@@ -161,21 +162,37 @@ In order to obtain the attenuation coefficients of interest tracks matching to t
 		\label{fig:dEdx_vs_p_uncorr}
 	\end{figure}
 
-The pedestal corrected FADC250 pulse integral data were then binned in 1~cm $z$-intersection bins along the full length of the paddle. These data are represented in Fig.~\ref{fig:pisec}.
+The pedestal corrected FADC250 pulse integral data were then binned in 1~cm $z$-intersection bins along the full length of the paddle. These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
 	\begin{figure}
 		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec}
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose}
 		\caption{Pedestal subtracted FADC pulse integral spectrum corresponding to the three ST sections.}
-		\label{fig:pisec}
+		\label{fig:pisecnose}
 	\end{figure}
 In order to properly quantify the pulse integral data, the most probable value (MPV) of the distribution was extracted utilizing the energy straggling distribution known as the Vavilov probability distribution function (PDF) \cite{vavilov_1957}.  The Vavilov PDF is a more accurate energy straggling distribution than a Landau-Gaussian convolution since it is a generalization of the Landau PDF.  The Vavilov PDF takes into account the maximum allowable energy transfer of a particle traversing through a medium.
 
-Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, a plot of the energy deposition per unit length versus momentum $(dE_{corr} / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_corr}.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_corr}
-		\caption[Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter]{Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p > 1.1\ GeV/c$.}
-		\label{fig:dEdx_vs_p_corr}
-	\end{figure}
+Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}
 
-Granted the Start Counter was not designed with particle identification (PID) in mind, it is pleasant to know that the ST can in fact be used, at some level, for PID studies.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose_fits}
+	\caption{Vavilov fits to extract the MPV of pedestal subtracted pulse integral FADC250 data in the nose section.}
+	\label{fig:pisecnosefits}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/attn_fits}
+	\caption{Piecewise fits to the MPV pulse integral data. The correction function is made piecewise continuous in the software.}
+	\label{fig:attnfits}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_corr}
+	\caption{Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2017 run. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p > 1.1\ GeV/c$.}
+	\label{fig:dEdx_vs_p_corr}
+\end{figure}
+
+%Granted the Start Counter was not designed with particle identification (PID) in mind, it is pleasant to know that the ST can in fact be used, at some level, for PID studies.
