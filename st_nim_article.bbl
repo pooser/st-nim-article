@@ -120,4 +120,15 @@ P.~Mattione, RF Calibration, rF Calibration Wiki available at
 P.~Vavilov, Ionization losses of high-energy particles, Journal of Experimental
   and Theoretical Physics 5~(4) (1957) 749--751.
 
+\bibitem{seltzer_1964}
+S.~Seltzer, M.~Berger, Studies in Penetration of Charged Particles in Matter,
+  National Academy of Sciences - National Research Council, 1964, Ch.
+  Energy-Loss Straggling of Protons and Mesons:Tabulation of the Vavilov
+  Distribution, pp. 187--203.
+
+\bibitem{schorr_1973}
+B.~Schorr, Programs for the landau and the vavilov distributions and the
+  corresponding random numbers, Computer Physics Communications 7 (1974)
+  215--224.
+
 \end{thebibliography}
