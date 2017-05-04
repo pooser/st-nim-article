@@ -152,47 +152,81 @@ Photons produced in a scintillator medium, as a result of charged particles trav
 
 With the above factors considered, one can define a parameter known as the ``attenuation coefficient'' which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary  photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is highly desirable to have a scintillator material with a long attenuation length.  As a reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4 m \cite{ej200_specs}.
 
-The energy deposited $(dE)$ by a charged particle in a scintillator medium is proportional the number of photons created, which is in turn proportional to the pulse integral of the signal read out by the FADC250.  However, since the photons created \textit{via.} ionization are subject to attenuation as they traverse through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator.  
+The energy deposited $(dE_{meas})$ by a charged particle in a scintillator medium is proportional the number of photons created, which is in turn proportional to the pulse integral of the signal read out by the FADC250.  However, since the photons created \textit{via.} ionization are subject to attenuation as they traverse through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator.  
 
-In order to obtain the attenuation coefficients of interest tracks matching to the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore the tracks energy deposition per unit length $(dE / dx)$, pedestal subtracted pulse integral,  and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus momentum $(dE / dx\ vs.\ p)$ in the ST is shown in Fig. \ref{fig:dEdx_vs_p_uncorr}.
+In order to obtain the attenuation coefficients of interest tracks matching to the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore the tracks energy deposition per unit length $(dE_{meas} / dx)$, pedestal subtracted pulse integral,  and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus momentum $(dE_{meas} / dx\ vs.\ p)$ in the ST is shown in Fig.~\ref{fig:dE_{meas}dx_vs_p_uncorr}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_uncorr}
-		\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the uncorrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is quite difficult to achieve for tracks with $p > 0.6\ GeV/c$.}
+		\caption{Typical uncorrected $dE_{meas}/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the uncorrected $dE_{meas}/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.}
 		\label{fig:dEdx_vs_p_uncorr}
 	\end{figure}
+It is clear from Fig.~\ref{fig:dEdx_vs_p_uncorr} that no reliable PID can occur for tracks with $p > 0.6\ GeV/c$.
 
-The pedestal corrected FADC250 pulse integral data were then binned in 1~cm $z$-intersection bins along the full length of the paddle. These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
+The pedestal corrected pulse integral data were then binned in 1~cm $z$-intersection bins along the full length of the paddle. These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
 	\begin{figure}
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose}
 		\caption{Pedestal subtracted FADC pulse integral spectrum corresponding to the three ST sections.}
 		\label{fig:pisecnose}
 	\end{figure}
-In order to properly quantify the pulse integral data, the most probable value (MPV) of the distribution was extracted utilizing the energy straggling distribution known as the Vavilov probability distribution function (PDF) \cite{vavilov_1957}.  The Vavilov PDF is a more accurate energy straggling distribution than a Landau-Gaussian convolution since it is a generalization of the Landau PDF.  The Vavilov PDF takes into account the maximum allowable energy transfer of a particle traversing through a medium.
+In order to properly quantify the pulse integral data, the most probable value (MPV) of the data was extracted utilizing the energy straggling distribution known as the Vavilov distribution \cite{vavilov_1957}.  
 
-Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}
+The Vavilov distribution, a generalization of the Landau distribution, is often utilized to describe the corresponding energy loss of charged particles traversing a thin layer of matter \cite{seltzer_1964}.  Unlike the more restrictive Landau distribution, the Vavilov distribution accounts for the maximum allowable energy transfer in a collision between a particle and an atomic electron \cite{schorr_1973}.  Therefore, the pulse integral data for each 1~cm bin along the the length of the ST paddles were fit utilizing the Vavilov distribution and the associated MPV was extracted.  The fits to the data are illustrated in Fig.~\ref{fig:pisecnosefits}.
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose_fits}
+		\caption{Vavilov fits to extract the MPV of pedestal subtracted pulse integral FADC250 data in the nose section.}
+		\label{fig:pisecnosefits}
+	\end{figure}
 
+As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST causes for the the two distinct regions, \textit{i.e} straight and bend/nose, to have differing properties in terms of light output and thus, time resolution.  Therefore, when performing attenuation corrections the two regions must be treated independently in order to properly characterize photon attenuation.  
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose_fits}
-	\caption{Vavilov fits to extract the MPV of pedestal subtracted pulse integral FADC250 data in the nose section.}
-	\label{fig:pisecnosefits}
-\end{figure}
+It was empirically determined that the ideal fit function for the straight section would follow Eq. \ref{eq:ss_attn_ff_fit}.
+	\begin{equation} \label{eq:ss_attn_ff_fit}
+		f_{S}(z) = A_{S}e^{B_{S} \cdot z}
+	\end{equation}
+Similarly, the functional form of the bend/nose section follows Eq. \ref{eq:bn_attn_ff_fit}.
+	\begin{equation} \label{eq:bn_attn_ff_fit}
+		f_{BN}(z) = A_{BN}e^{B_{BN} \cdot z} + C_{BN}
+	\end{equation}
+Exponential decay functions are typically used to describe the attenuations of photons in scintillator material.  However, for the unique case of the bend/nose section, an exponential growth function was utilized.  In order to investigate the possibility of utilizing a single functional form to describe the entire length of a scintillator paddle, a polynomial of $\mathcal{O}(5)$ was also studied however was deemed unsuitable at the boundary regions \cite{pooser16}.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/attn_fits}
-	\caption{Piecewise fits to the MPV pulse integral data. The correction function is made piecewise continuous in the software.}
-	\label{fig:attnfits}
-\end{figure}
-
+Figure~\ref{fig:attfits} illustrates the pulse integral mean vs. $z$-intersection along the paddle for sectors 5 and 23.  
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_corr}
-	\caption{Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2017 run. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p > 1.1\ GeV/c$.}
-	\label{fig:dEdx_vs_p_corr}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/attn_fits}
+	\caption{Two particular cases in which the polynomial of $\mathcal{O}(5)$ fits the ADC mean data relatively well.  The red line corresponds to the polynomial of $\mathcal{O}(5)$ fit.  The magenta line is the exponential fit to straight section [0 cm, 40 cm] while the green line is the exponential fit to the bend/nose section [40 cm, 60 cm].  Sector 5 is on the left while sector 23 is on the right.  The red horizontal dashed line corresponds to the value of the exponential fit in the straight section evaluated at z = 0 cm.}
+	\label{fig:attfits}
 \end{figure}
+In the bend/nose region it is clear that the exponential growth function fit the data well.  For the straight section the exponential decay function also fits the data in a robust manner.  
 
-%Granted the Start Counter was not designed with particle identification (PID) in mind, it is pleasant to know that the ST can in fact be used, at some level, for PID studies.
+Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction to the deposited energy measurement $(dE_{meas})$ to preserve the information regardless of where the track intersects the paddles.  The corrected energy deposition $(dE_{corr})$ is given by Eq.~\ref{eq:gen_attn_corr} where the index $i$ indicates which section the charged track intersected with.
+	\begin{equation} \label{eq:gen_attn_corr}
+		dE_{corr} = dE_{meas} \cdot R_{i}
+	\end{equation}
+For the straight section we have Eq.~\ref{eq:ss_attn_corr}.
+	\begin{equation} \label{eq:ss_attn_corr}
+		R_{S} = \frac{f_{S}(0.0)}{f_{S}(z)} = e^{-B_{S} \cdot z}
+	\end{equation}
+For the bend/nose section we have Eq.~\ref{eq:bn_attn_corr}.
+	\begin{equation} \label{eq:bn_attn_corr}
+		R_{BN} = \frac{f_{S}(0.0)}{f_{BN}(z)} = \frac{A_{S}}{A_{BN}e^{B_{BN} \cdot z} + C_{BN}}
+	\end{equation}
+Thus, for every hit along the length of the ST paddles we find Eq.~\ref{eq:ss_attn_corr_const} \& Eq.~\ref{eq:bn_attn_corr_const}.
+	\begin{equation} \label{eq:ss_attn_corr_const}
+		f_{S}(z) \cdot R_{S} = A_{S}
+	\end{equation}
+	\begin{equation} \label{eq:bn_attn_corr_const}
+		f_{BN}(z) \cdot R_{BN} = A_{S}
+	\end{equation}
+
+Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}.
+
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_corr}
+%	\caption{Typical corrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2017 run. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p > 1.1\ GeV/c$.}
+%	\label{fig:dEdx_vs_p_corr}
+%\end{figure}
+
