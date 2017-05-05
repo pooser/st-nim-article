@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  4 MAY 2017 16:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  5 MAY 2017 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,11 +809,7 @@ corr_fits.png>]
 
 LaTeX Warning: Reference `sec:perform' on page 18 undefined on input line 138.
 
-
-LaTeX Warning: Reference `fig:dE_{meas}dx_vs_p_uncorr' on page 18 undefined on 
-input line 157.
-
-<calibration/figs/dEdx_vs_p_uncorr.png, id=463, 1257.69875pt x 659.46375pt>
+<calibration/figs/dEdx_vs_p_uncorr.png, id=465, 1257.69875pt x 659.46375pt>
 File: calibration/figs/dEdx_vs_p_uncorr.png Graphic file (type png)
 
 <use calibration/figs/dEdx_vs_p_uncorr.png>
@@ -821,7 +817,7 @@ Package pdftex.def Info: calibration/figs/dEdx_vs_p_uncorr.png used on input li
 ne 160.
 (pdftex.def)             Requested size: 222.0pt x 116.40407pt.
 
-<calibration/figs/pi_sec_nose.png, id=466, 734.745pt x 505.13719pt>
+<calibration/figs/pi_sec_nose.png, id=468, 734.745pt x 505.13719pt>
 File: calibration/figs/pi_sec_nose.png Graphic file (type png)
 
 <use calibration/figs/pi_sec_nose.png>
@@ -829,7 +825,7 @@ Package pdftex.def Info: calibration/figs/pi_sec_nose.png used on input line 16
 9.
 (pdftex.def)             Requested size: 222.0pt x 152.62141pt.
 
-<calibration/figs/pi_sec_nose_fits.png, id=471, 921.4425pt x 554.07pt>
+<calibration/figs/pi_sec_nose_fits.png, id=473, 921.4425pt x 554.07pt>
 File: calibration/figs/pi_sec_nose_fits.png Graphic file (type png)
 
 <use calibration/figs/pi_sec_nose_fits.png>
@@ -837,38 +833,38 @@ Package pdftex.def Info: calibration/figs/pi_sec_nose_fits.png used on input li
 ne 178.
 (pdftex.def)             Requested size: 222.0pt x 133.48677pt.
  [18 <./calibration/figs/dEdx_vs_p_uncorr.png>] <calibration/figs/attn_fits.png
-, id=487, 752.0597pt x 344.78813pt>
+, id=490, 752.0597pt x 344.78813pt>
 File: calibration/figs/attn_fits.png Graphic file (type png)
 
 <use calibration/figs/attn_fits.png>
-Package pdftex.def Info: calibration/figs/attn_fits.png used on input line 198.
+Package pdftex.def Info: calibration/figs/attn_fits.png used on input line 199.
 
 (pdftex.def)             Requested size: 222.0pt x 101.77473pt.
 
 
 LaTeX Warning: Reference `eq:gen_attn_corr' on page 19 undefined on input line 
-204.
+205.
 
 [19 <./calibration/figs/pi_sec_nose.png> <./calibration/figs/pi_sec_nose_fits.p
 ng> <./calibration/figs/attn_fits.png>]
 
 LaTeX Warning: Reference `eq:ss_attn_corr' on page 20 undefined on input line 2
-08.
+09.
 
 
 LaTeX Warning: Reference `eq:bn_attn_corr' on page 20 undefined on input line 2
-12.
+13.
 
 
 LaTeX Warning: Reference `eq:ss_attn_corr_const' on page 20 undefined on input 
-line 216.
+line 217.
 
 
 LaTeX Warning: Reference `eq:bn_attn_corr_const' on page 20 undefined on input 
-line 216.
+line 217.
 
 
-LaTeX Warning: Reference `sec:perform' on page 20 undefined on input line 224.
+LaTeX Warning: Reference `sec:perform' on page 20 undefined on input line 225.
 
 )
 \openout2 = `acknowledgment/acknowledgment.aux'.
@@ -1058,10 +1054,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 6981 strings out of 494820
- 107183 string characters out of 3178050
- 215625 words of memory out of 3000000
- 9829 multiletter control sequences out of 15000+200000
+ 6980 strings out of 494820
+ 107154 string characters out of 3178050
+ 215620 words of memory out of 3000000
+ 9828 multiletter control sequences out of 15000+200000
  9177 words of font info for 32 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  34i,8n,32p,1075b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1087,10 +1083,10 @@ amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pf
 b>
-Output written on st_nim_article.pdf (21 pages, 10894124 bytes).
+Output written on st_nim_article.pdf (21 pages, 10894630 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
+ 685 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
  145 named destinations out of 1000 (max. 500000)
  425 words of extra memory for PDF output out of 10000 (max. 10000000)
 
