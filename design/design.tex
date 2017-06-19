@@ -10,7 +10,7 @@ The Start Counter (ST) detector, seen in Fig.~\ref{fig:sttargetiso}, surrounds a
 		\caption{The \gx{} Start Counter mounted to the $\mathrm{LH_2}$ target.}
 		\label{fig:sttargetiso}
 	\end{figure}
-The primary purpose of the ST detector is, in coincidence with the tagger, to properly identify the photon beam bucket associated with detected particles produced \textit{via} linearly polarized photons incident on the target. It is designed to operate at tagged photon intensities of up to $10^{8}\,\mathrm{\gamma/s}$ in the coherent peak.  Moreover, the ST has a high degree of segmentation for background rejection, is utilized in particle identification, and is a primary component of the level 1 trigger of the \gx{} experiment during high luminosity running\cite{pooser16}.
+The primary purpose of the ST detector is, in coincidence with the tagger, to properly identify the photon beam bucket associated with detected particles produced by linearly polarized photons incident on the target. It is designed to operate at tagged photon intensities of up to $10^{8}\,\mathrm{\gamma/s}$ in the coherent peak.  Moreover, the ST has a high degree of segmentation for background rejection, is utilized in particle identification, and is a primary component of the level 1 trigger of the \gx{} experiment during high luminosity running\cite{pooser16}.
 
 The ST detector consists of an array of 30 scintillators with pointed ends that bend towards the beam at the downstream end. 
 	\begin{figure}[!htb]
@@ -23,7 +23,7 @@ EJ-200 scintillator material from Eljen Technology\cite{eljen}, which has a deca
 
 \subsection{Scintillator Paddles} \label{sec:design_paddles}
 
-Each individual paddle of the Start Counter was machined from a long, thin, polyvinyltoluene plastic EJ-200 scintillator bar that was diamond milled to be 600~mm in length, 3~mm thick, and $\mathrm{20 \pm 2\ mm}$ wide, by Eljen Technology.  Each scintillator was bent around a highly polished aluminum drum by applying localized infrared heating to the bend region.  The bent scintillator bars were then sent to McNeal Enterprises Inc.\cite{mcneal}, a plastic fabrication company, where they were machined to the desired geometry illustrated in Fig.~\ref{fig:stpaddleiso}.
+Each individual paddle of the Start Counter was machined from a long, thin,  EJ-200 scintillator bar that was diamond milled to be 600~mm in length, 3~mm thick, and $\mathrm{20 \pm 2\ mm}$ wide, by Eljen Technology.  Each scintillator was bent around a highly polished aluminum drum by applying localized infrared heating to the bend region.  The bent scintillator bars were then sent to McNeal Enterprises Inc.\cite{mcneal}, a plastic fabrication company, where they were machined to the desired geometry illustrated in Fig.~\ref{fig:stpaddleiso}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_paddle_iso}
@@ -31,9 +31,9 @@ Each individual paddle of the Start Counter was machined from a long, thin, poly
 		\label{fig:stpaddleiso}
 	\end{figure}
 
-The paddles consist of three sections and are described from the upstream to the downstream end of the target.  The straight section is 39.5~cm in length while being oriented parallel to both the target cell and beamline..  The bend region is a $18.5^{\circ}$ arc of radius 120~cm and is downstream of the straight section. The tapered nose region is downstream of the target chamber and bends towards the beam line such that the tip of the nose is at a height of 2~cm above the beam line.  
+The paddles consist of three sections and are described from the upstream to the downstream end of the target.  The straight section is 39.5~cm in length while being oriented parallel to both the target cell and beamline.  The bend region is a $18.5^{\circ}$ arc of radius 120~cm and is downstream of the straight section. The tapered nose region is downstream of the target chamber and bends towards the beam line such that the tip of the nose is at a radial distance of 2~cm from the beam line.  
 
-After the straight scintillator bar was bent to the desired geometry, the two flat surfaces that are oriented orthogonal to the wide, top and bottom, surfaces were cut at a $6^{\circ}$ angle.  During this process, the width of the top and bottom surfaces were machined to be 16.92~mm and 16.29~mm wide respectively.  Thus, each of the paddles may be rotated $12^{\circ}$ with respect to the paddle that preceded it so that they form a cylindrical shape with a conical end.  This geometrical design for the ST increases solid angle coverage while minimizing multiple scattering.  
+After the straight scintillator bar was bent to the desired geometry, the two flat surfaces that are oriented orthogonal to the wide, top and bottom, surfaces were cut at a $6^{\circ}$ angle.  During this process, the width of the top and bottom surfaces of the straight section were machined to be 16.92~mm and 16.29~mm wide respectively. Thus, each of the paddles may be rotated $12^{\circ}$ with respect to the paddle that preceded it so that they form a cylindrical shape with a conical end.  This geometrical design for the ST increases solid angle coverage while minimizing multiple scattering.  
 
 \subsection{Support Structure} \label{sec:design_support}
 
@@ -58,9 +58,10 @@ In order to ensure that the detector was light-tight, a plastic collar was place
 
 \subsection{SiPM Readout Detectors} \label{sec:design_sipms}
 
-The selected readout for each scintillator bar was the magnetic field insensitive Hamamatsu S10931-050P surface mounted multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.
+Eeach scintillator bar was read out using magnetic field insensitive Hamamatsu S10931-050P multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.
 
-The SiPM readout detectors are housed in a ceramic case which is surface mounted to a custom fabricated printed circuit board (PCB).  The PCB is held in a fixed position while being attached to the lip of the upstream chassis \emph{via} two screws as illustrated in Fig.~\ref{fig:st1_mounted}.  The individual ST scintillators are coupled \emph{via} an air gap ($< 250 \mu m$) to groups of four SiPMs set in a circular arrangement as can be seen in Fig.~\ref{fig:st1_mounted}.
+The SiPM detectors are housed in a ceramic case which is surface mounted to a custom fabricated printed circuit board (PCB).  The PCB is held in a fixed position while being attached to the lip of the upstream chassis \emph{via} two screws as illustrated in Fig.~\ref{fig:st1_mounted}.  The individual ST scintillators are coupled \emph{via} an air gap ($< 250 \mu m$) to groups of four SiPMs set in a circular arrangement as can be seen in Fig.~\ref{fig:st1_mounted}.
+% WB need to indicate the groups on this plot
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st1_mounted}
@@ -70,7 +71,9 @@ The SiPM readout detectors are housed in a ceramic case which is surface mounted
 
 \subsection{Readout Electronics} \label{sec:design_electronics}
 
-The SiPMs reading out one individual paddle, are current summed prior to pre-amplification.  The output of each preamp is then split; buffered for the analog to digital converter (ADC) output, and amplified for the time to digital converter (TDC) output by a factor five relative to the ADC.  The ADC outputs are readout \emph{via} JLab VME64x 250 MHz Flash ADC modules while the TDC outputs are input into JLab leading edge discriminators, followed by a high resolution 32 channel JLab VME64x F1TDC V2 module.  Furthermore, each group of four SiPMs utilizes a thermocouple for temperature monitoring. There are 120 SiPMs in total, for a total of 30 pre-amplifier channels as seen Fig.~\ref{fig:Start Counter Electronics}.
+The SiPMs reading out one individual paddle, are current summed prior to pre-amplification.  The output of each preamp is then split; buffered for the analog to digital converter (ADC) output, and amplified for the time to digital converter (TDC) output by a factor five relative to the ADC.  The ADC outputs are readout by JLab VME64x 250 MHz Flash ADC modules while the TDC outputs are input into JLab leading edge discriminators, followed by a high resolution 32 channel JLab VME64x F1TDC V2 module.  Furthermore, each group of four SiPMs utilizes a thermocouple for temperature monitoring. There are 120 SiPMs in total, for a total of 30 pre-amplifier channels as seen Fig.~\ref{fig:Start Counter Electronics}.
+
+%WB this diagram needs more explanations of what the various parts do. Is every thing relevant ? Maybe indicate ST1 ST2 and ST3
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/ST_Electronics_v2}
@@ -78,18 +81,20 @@ The SiPMs reading out one individual paddle, are current summed prior to pre-amp
 		\label{fig:Start Counter Electronics}
 	\end{figure}
 
-There are three components that comprise the ST detector readout system.  The first component is the ST1 which holds 3 groups of 4 SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to mimic the geometry of the 30 paddle design one group of SiPM's is rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  One ST1 unit will collect light from three paddles individually.  The ST1 implements the current sum and bias distribution per group of 4 SiPMs.  It also has a thermocouple for temperature monitoring.  
+There are three components that comprise the ST detector readout system.  The first component (ST1) will collect light from three paddles individually and consists of 3 groups of 4 SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to fit the geometry of the 30 paddle design one group of SiPM's is rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  The ST1 implements the current sum and bias distribution for each group of 4 SiPMs.  It also has a thermocouple for temperature monitoring.  
 
-The second component is the ST2, seen in Fig.~\ref{fig:stfullreadout}, is a PCB that houses the signal processing electronics of the readout system.  
+The second component (ST2) , seen in Fig.~\ref{fig:stfullreadout}, houses the signal processing electronics of the readout system.  
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_full_readout}
 		\caption{Fully assembled ST readout system.}
 		\label{fig:stfullreadout}
 	\end{figure}
-It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors.  The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.  
+It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor-five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors. 
 
-The third component of the readout system, the ST3 seen in Fig.~\ref{fig:st3}, provides interface to the power and bias supplies.
+% The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.  
+% WB I am not sure a picture is needed here
+The third component of the readout system (ST3) seen in Fig.~\ref{fig:st3}, provides the interface to the power and bias supplies.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st3}

@@ -1,15 +1,16 @@
 \section{Performance} \label{sec:perform}
 
-The ST was installed in Hall-D just prior to the Fall 2014 \gx{} commissioning run.  It was not until the Spring 2015 commissioning run that enough statistics were obtained with an $\mathrm{LH_{2}}$ target to perform reliable calibrations.  With the aforementioned data set, the procedures to calibrate the detector and measure it's performance were developed and deployed.
+The Start Counter was installed in Hall-D just prior to the Fall 2014 \gx{} commissioning run.  It was not until the Spring 2015 commissioning run that enough statistics were obtained with an $\mathrm{LH_{2}}$ target to perform reliable calibrations.  With the aforementioned data set, the procedures to calibrate the detector and measure it's performance were developed and deployed.
 
 As was discussed in previous sections, the geometry of the ST nose section results in an increase of the light output as the scintillation source moves towards the downstream end.  While investigating FADC250 data under nominal beam conditions, this phenomenon was immediately observed through the pulse amplitude and pulse integral data. Figure~\ref{fig:pippvszint} illustrates that similar to the bench measurements the light output increases exponentially, as the scintillation source moves towards the downstream end.
+% WB one spectrum would probly be enought Amplitude or Pulse integral (here both look the same)
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{performance/figs/pi_pp_vs_zint}
 		\caption{FADC spectra from the Spring 2017 run. Left: pulse integral versus the z-intersection of charged tracks matched to the ST. Right: pulse amplitude versus the z-intersection of charged tracks matched to the ST. The straight section corresponds to $40\ \mathrm{cm} < z < 80\ \mathrm{cm}$, the bend section $80\ \mathrm{cm} < z < 84\ \mathrm{cm}$, and the nose section $84\ \mathrm{cm} < z < 98\ \mathrm{cm}$.}
 		\label{fig:pippvszint}
 	\end{figure}
-This feature of the ST geometry is extremely advantageous since the majority of the charged tracks produced under the nominal \gx{} beam conditions intersect the ST in the nose region and therefore have the largest light amount of light collected by the SiPM's as the upstream end.
+This feature of the ST geometry is quite advantageous since the majority of the charged tracks produced under the nominal \gx{} beam conditions intersect the ST in the nose region and therefore have the largest light amount of light collected by the SiPM's as the upstream end.
 
 Once the proper attenuation corrections were applied to the data, the PID capabilities of the ST were greatly enhanced.  Figure ~\ref{fig:dEdx_vs_p_corr} illustrates the PID capability of charged tracks intersecting the ST.  As compared to Fig.~\ref{fig:dEdx_vs_p_uncorr}, the reliable separation of protons and other hadrons occurs for charged tracks with $p < 1.1\ GeV/c$ which is a factor two improvement from the uncalibrated data.
 	\begin{figure}[!htb]
