@@ -1,14 +1,16 @@
 \section{Misalignment Studies} \label{sec:misalign}
 
-In order to protect both the active area of the SiPMs and the scintillator surface at the upstream end, the coupling distance between the two was required to be larger than zero.  Similarly, during assembly the scintillator paddles were also shimmed radially such that the top edge of the scintillator was level with the top edge of the active area of the SiPM thereby maximizing light collection.  In this section we discuss the relative coupling, as well as the subsequent effects regarding light collection and time resolution, between a machined scintillator paddle and a SiPM readout detector.
+In order to protect both the active area of the SiPMs and the scintillator surface at the upstream end, a small air gap was necessary between these two surfaces.  Similarly, during assembly the scintillator paddles were also shimmed radially such that the top edge of the scintillator was level with the top edge of the active area of the SiPM thereby maximizing light collection.  In this section we discuss the relative alignment of a machined scintillator paddle and a SiPM readout detector array and its effects on light collection and time resolution,
 
 \subsection{Experimental Set-up} \label{sec:misalign_setup}
+% WB this needs to be shortened and summarized. You can make references to your thesis for all the details.
 
 A custom fabricated test stand, further discussed in Sec.~\ref{sec:fab_test}, and a polished scintillator machined to the nominal ST geometry, were utilized for these studies.  The readout SiPM sat atop a Newport MT-XYZ (MT) compact dovetail XYZ linear translation stage\cite{newport_mt_xyz} with three fine adjustment screws consisting of 80 threads per inch.  Each knob for the three axes provides a translation of $318\ \mathrm{\mu m}$ per rotation.  For each location of the SiPM, the source and trigger PMT were located $\mathrm{24.5~cm}$ downstream from the readout end.
 
 To study the effects of the various horizontal (translations along the $z-axis$) coupling distances, the relative position of the active area of the SiPM and the top edge of the scintillator paddle, or vertical (translations along the $y-ais$) alignment, was required to be known prior too.
 
 Utilizing an Edmund Optics complementary metal oxide semiconductor (CMOS) camera, and a reference ruler (seen in Fig. \ref{fig:sipm_va_optics}) the vertical alignment of the top edges of the SiPM and scintillator were measured with $\mathrm{0.025~mm}$ accuracy.
+%WB make this schematical, the photos are no clear.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=0.8\columnwidth]{misalignment/figs/sipm_va_optics}
@@ -19,6 +21,8 @@ A micrometer was utilized in order to cross check the optical measurements and t
 
 \subsection{Vertical Alignment of SiPM \& Scintillator}
 \label{sec:misalign_vert}
+
+% make the text shorter,basically just describe the result an compare to simulations. The scales in Fig. 19 and 18 should be similar in order to compare simulation to measurement.
 
 To measure the time resolution at various vertical alignment configurations the scintillator remained fixed while the SiPM scanned across the upstream end of the scintillator. The SiPM was lowered to the minimum location governed by the range of the MT translation stage.  This distance was measured to be $y = \mathrm{-4~mm}$.  
 
@@ -42,7 +46,8 @@ The GEANT4 simulations indicate that the acceptable range of vertical misalignme
 
 \subsection{Coupling Distance of SiPM \& Scintillator}
 
-With the vertical alignment between the scintillator and SiPM optimized, the effects of varying the coupling distance were also studied.  Using an identical set-up as was described in section \ref{sec:misalign_vert} the coupling distance, and resulting time resolutions, were measured at various locations with three distances shown in Fig. \ref{fig:sipm_coupling_optics}.  
+With the vertical alignment between the scintillator and SiPM optimized, the effects of varying the coupling distance were also studied.  Using an identical set-up as was described in section \ref{sec:misalign_vert} the coupling distance, and resulting time resolutions, were measured at various locations with three distances shown in Fig. \ref{fig:sipm_coupling_optics}.
+% WB skip thiso figure  
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{misalignment/figs/sipm_coupling_optics}
@@ -55,7 +60,7 @@ The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{misalignment/figs/sipm_coupling_coarse}
-		\caption{Coarse coupling distance studies.  It is useful to note that at a coupling distance of $\mathrm{251\ \mu m}$ the time resolution was identical to what was measured in Fig. \ref{fig:sipm_va_coarse} while conducting the vertical alignment studies.}
+		\caption{Coupling distance studies.  It is useful to note that at a coupling distance of $\mathrm{251\ \mu m}$ the time resolution was identical to what was measured in Fig. \ref{fig:sipm_va_coarse} while conducting the vertical alignment studies.}
 		\label{fig:sipm_coupling_coarse}
 	\end{figure}
 
@@ -67,4 +72,5 @@ It is clear from the data the optimal coupling range was $\mathrm{50\ \mu m < z 
 		\label{fig:spacing_sim}
 	\end{figure}
 
+%
 
