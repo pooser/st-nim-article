@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.1.3)  8 MAY 2017 15:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2017.7.5)  31 JUL 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **st_nim_article.tex
 (./st_nim_article.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ru
-ssian, ukrainian, bulgarian, loaded.
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
+rainian, russian, bulgarian, loaded.
 (./elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
@@ -435,454 +435,459 @@ File: design/figs/st_materials.png Graphic file (type png)
 Package pdftex.def Info: design/figs/st_materials.png used on input line 52.
 (pdftex.def)             Requested size: 222.0pt x 104.32516pt.
 
-<design/figs/st1_mounted.png, id=162, 790.955pt x 350.30875pt>
-File: design/figs/st1_mounted.png Graphic file (type png)
+<design/figs/st1_mounted_v2.png, id=162, 788.9475pt x 351.3125pt>
+File: design/figs/st1_mounted_v2.png Graphic file (type png)
 
-<use design/figs/st1_mounted.png>
-Package pdftex.def Info: design/figs/st1_mounted.png used on input line 66.
-(pdftex.def)             Requested size: 222.0pt x 98.32097pt.
+<use design/figs/st1_mounted_v2.png>
+Package pdftex.def Info: design/figs/st1_mounted_v2.png used on input line 68.
+(pdftex.def)             Requested size: 222.0pt x 98.85463pt.
 
-<design/figs/ST_Electronics_v2.png, id=165, 687.31781pt x 435.12563pt>
-File: design/figs/ST_Electronics_v2.png Graphic file (type png)
+<design/figs/ST_Electronics_v3.png, id=165, 917.4275pt x 582.175pt>
+File: design/figs/ST_Electronics_v3.png Graphic file (type png)
 
-<use design/figs/ST_Electronics_v2.png>
-Package pdftex.def Info: design/figs/ST_Electronics_v2.png used on input line 7
-6.
-(pdftex.def)             Requested size: 222.0pt x 140.53773pt.
- [3 <./design/figs/st_materials.png> <./design/figs/st1_mounted.png> <./design/
-figs/ST_Electronics_v2.png>]
-<design/figs/st_full_readout.png, id=179, 362.35374pt x 279.0425pt>
+<use design/figs/ST_Electronics_v3.png>
+Package pdftex.def Info: design/figs/ST_Electronics_v3.png used on input line 8
+1.
+(pdftex.def)             Requested size: 222.0pt x 140.87079pt.
+
+<design/figs/st_full_readout.png, id=168, 362.35374pt x 279.0425pt>
 File: design/figs/st_full_readout.png Graphic file (type png)
 
 <use design/figs/st_full_readout.png>
-Package pdftex.def Info: design/figs/st_full_readout.png used on input line 86.
+Package pdftex.def Info: design/figs/st_full_readout.png used on input line 91.
 
 (pdftex.def)             Requested size: 222.0pt x 170.96078pt.
-
+ [3 <./design/figs/st_materials.png> <./design/figs/st1_mounted_v2.png>]
 <design/figs/st3.png, id=181, 520.94624pt x 277.035pt>
 File: design/figs/st3.png Graphic file (type png)
 
 <use design/figs/st3.png>
-Package pdftex.def Info: design/figs/st3.png used on input line 95.
+Package pdftex.def Info: design/figs/st3.png used on input line 101.
 (pdftex.def)             Requested size: 222.0pt x 118.05746pt.
 )
 \openout2 = `simulation/simulation.aux'.
 
  (./simulation/simulation.tex
-<simulation/figs/beam_off.PNG, id=189, 548.80031pt x 170.88844pt>
-File: simulation/figs/beam_off.PNG Graphic file (type png)
-
-<use simulation/figs/beam_off.PNG>
-Package pdftex.def Info: simulation/figs/beam_off.PNG used on input line 12.
-(pdftex.def)             Requested size: 222.0pt x 69.12599pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 []\OT1/cmr/m/n/10 The EJ-200 scin-til-la-tor ma-te-rial ($\OML/cmm/m/it/10 ^^Z 
 \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 17--18
+Underfull \hbox (badness 1533) in paragraph at lines 22--23
 \OT1/cmr/m/n/10 re-mained some fi-nite prob-a-bil-ity that pho-tons
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 17--18
+Underfull \hbox (badness 1789) in paragraph at lines 22--23
 \OT1/cmr/m/n/10 to have an ac-tive area of $[]$ which
  []
 
-[4 <./design/figs/st_full_readout.png> <./design/figs/st3.png>]
-<simulation/figs/100_events.PNG, id=206, 507.39563pt x 158.84344pt>
+[4 <./design/figs/ST_Electronics_v3.png> <./design/figs/st_full_readout.png> <.
+/design/figs/st3.png>]
+<simulation/figs/100_events.PNG, id=205, 507.39563pt x 158.84344pt>
 File: simulation/figs/100_events.PNG Graphic file (type png)
 
 <use simulation/figs/100_events.PNG>
-Package pdftex.def Info: simulation/figs/100_events.PNG used on input line 22.
+Package pdftex.def Info: simulation/figs/100_events.PNG used on input line 27.
 (pdftex.def)             Requested size: 222.0pt x 69.49867pt.
 
-<simulation/figs/gun_locations.PNG, id=207, 600.74437pt x 186.6975pt>
-File: simulation/figs/gun_locations.PNG Graphic file (type png)
-
-<use simulation/figs/gun_locations.PNG>
-Package pdftex.def Info: simulation/figs/gun_locations.PNG used on input line 3
-0.
-(pdftex.def)             Requested size: 222.0pt x 68.99152pt.
-
-<simulation/figs/sim_results_v2.PNG, id=210, 625.58719pt x 216.05719pt>
+<simulation/figs/sim_results_v2.PNG, id=208, 625.58719pt x 216.05719pt>
 File: simulation/figs/sim_results_v2.PNG Graphic file (type png)
 
 <use simulation/figs/sim_results_v2.PNG>
 Package pdftex.def Info: simulation/figs/sim_results_v2.PNG used on input line 
-37.
+45.
 (pdftex.def)             Requested size: 222.0pt x 76.66951pt.
 
-<simulation/figs/pk_cadmesh.PNG, id=213, 531.48563pt x 203.25937pt>
-File: simulation/figs/pk_cadmesh.PNG Graphic file (type png)
+<simulation/figs/pk_cadmesh_v2.png, id=211, 894.34125pt x 366.36874pt>
+File: simulation/figs/pk_cadmesh_v2.png Graphic file (type png)
 
-<use simulation/figs/pk_cadmesh.PNG>
-Package pdftex.def Info: simulation/figs/pk_cadmesh.PNG used on input line 48.
-(pdftex.def)             Requested size: 222.0pt x 84.90312pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./simulation/figs/beam_off.PNG> <./simulation/figs/100_events.PNG> <./simu
-lation/figs/gun_locations.PNG> <./simulation/figs/sim_results_v2.PNG>]
-<simulation/figs/polished_vs_ground.PNG, id=231, 521.69907pt x 205.5178pt>
+<use simulation/figs/pk_cadmesh_v2.png>
+Package pdftex.def Info: simulation/figs/pk_cadmesh_v2.png used on input line 5
+8.
+(pdftex.def)             Requested size: 222.0pt x 90.94348pt.
+ [5 <./simulation/figs/100_events.PNG> <./simulation/figs/sim_results_v2.PNG> <
+./simulation/figs/pk_cadmesh_v2.png>]
+<simulation/figs/polished_vs_ground.PNG, id=228, 521.69907pt x 205.5178pt>
 File: simulation/figs/polished_vs_ground.PNG Graphic file (type png)
 
 <use simulation/figs/polished_vs_ground.PNG>
 Package pdftex.def Info: simulation/figs/polished_vs_ground.PNG used on input l
-ine 59.
+ine 69.
 (pdftex.def)             Requested size: 222.0pt x 87.45523pt.
 
-<simulation/figs/transm_eff_vs_sig_alpha.PNG, id=236, 563.10374pt x 264.23718pt
+<simulation/figs/transm_eff_vs_sig_alpha.PNG, id=233, 563.10374pt x 264.23718pt
 >
 File: simulation/figs/transm_eff_vs_sig_alpha.PNG Graphic file (type png)
  <use simulation/figs/transm_eff_vs_sig_alpha.PNG>
 Package pdftex.def Info: simulation/figs/transm_eff_vs_sig_alpha.PNG used on in
-put line 68.
+put line 78.
 (pdftex.def)             Requested size: 222.0pt x 104.17296pt.
 )
 \openout2 = `misalignment/misalignment.aux'.
 
 
-(./misalignment/misalignment.tex [6 <./simulation/figs/pk_cadmesh.PNG> <./simul
-ation/figs/polished_vs_ground.PNG> <./simulation/figs/transm_eff_vs_sig_alpha.P
-NG>] <misalignment/figs/sipm_va_optics.PNG, id=256, 266.49562pt x 260.47313pt>
+(./misalignment/misalignment.tex [6 <./simulation/figs/polished_vs_ground.PNG> 
+<./simulation/figs/transm_eff_vs_sig_alpha.PNG>]
+<misalignment/figs/sipm_va_optics.PNG, id=251, 266.49562pt x 260.47313pt>
 File: misalignment/figs/sipm_va_optics.PNG Graphic file (type png)
 
 <use misalignment/figs/sipm_va_optics.PNG>
 Package pdftex.def Info: misalignment/figs/sipm_va_optics.PNG used on input lin
-e 14.
+e 16.
 (pdftex.def)             Requested size: 177.60068pt x 173.59003pt.
 
-Underfull \hbox (badness 2111) in paragraph at lines 11--19
+Underfull \hbox (badness 2111) in paragraph at lines 12--21
 []\OT1/cmr/m/n/10 Utilizing an Ed-mund Op-tics com-ple-men-tary
  []
 
-<misalignment/figs/sipm_va_coarse.png, id=258, 605.6226pt x 384.4764pt>
+<misalignment/figs/sipm_va_coarse.png, id=253, 605.6226pt x 384.4764pt>
 File: misalignment/figs/sipm_va_coarse.png Graphic file (type png)
 
 <use misalignment/figs/sipm_va_coarse.png>
 Package pdftex.def Info: misalignment/figs/sipm_va_coarse.png used on input lin
-e 28.
+e 32.
 (pdftex.def)             Requested size: 222.0pt x 140.93404pt.
- [7 <./misalignment/figs/sipm_va_optics.PNG> <./misalignment/figs/sipm_va_coars
-e.png>]
-<misalignment/figs/vertical_sim.png, id=272, 877.02657pt x 587.94656pt>
+
+<misalignment/figs/vertical_sim.png, id=256, 877.02657pt x 587.94656pt>
 File: misalignment/figs/vertical_sim.png Graphic file (type png)
 
 <use misalignment/figs/vertical_sim.png>
 Package pdftex.def Info: misalignment/figs/vertical_sim.png used on input line 
-37.
+41.
 (pdftex.def)             Requested size: 222.0pt x 148.8254pt.
-
-<misalignment/figs/sipm_coupling_optics.PNG, id=278, 456.20438pt x 130.98938pt>
+ [7 <./misalignment/figs/sipm_va_optics.PNG> <./misalignment/figs/sipm_va_coars
+e.png> <./misalignment/figs/vertical_sim.png>]
+<misalignment/figs/sipm_coupling_optics.PNG, id=274, 456.20438pt x 130.98938pt>
 File: misalignment/figs/sipm_coupling_optics.PNG Graphic file (type png)
 <use misalignment/figs/sipm_coupling_optics.PNG>
 Package pdftex.def Info: misalignment/figs/sipm_coupling_optics.PNG used on inp
-ut line 48.
+ut line 53.
 (pdftex.def)             Requested size: 222.0pt x 63.74162pt.
 
-<misalignment/figs/sipm_coupling_coarse.png, id=280, 673.01437pt x 501.37312pt>
+<misalignment/figs/sipm_coupling_coarse.png, id=276, 673.01437pt x 501.37312pt>
 File: misalignment/figs/sipm_coupling_coarse.png Graphic file (type png)
 <use misalignment/figs/sipm_coupling_coarse.png>
 Package pdftex.def Info: misalignment/figs/sipm_coupling_coarse.png used on inp
-ut line 57.
+ut line 62.
 (pdftex.def)             Requested size: 222.0pt x 165.38478pt.
 
-<misalignment/figs/spacing_sim.png, id=285, 784.43062pt x 518.6878pt>
+<misalignment/figs/spacing_sim.png, id=281, 784.43062pt x 518.6878pt>
 File: misalignment/figs/spacing_sim.png Graphic file (type png)
 
 <use misalignment/figs/spacing_sim.png>
-Package pdftex.def Info: misalignment/figs/spacing_sim.png used on input line 6
-5.
+Package pdftex.def Info: misalignment/figs/spacing_sim.png used on input line 7
+0.
 (pdftex.def)             Requested size: 222.0pt x 146.79076pt.
 )
 \openout2 = `fabrication/fabrication.aux'.
 
  (./fabrication/fabrication.tex
-[8 <./misalignment/figs/vertical_sim.png> <./misalignment/figs/sipm_coupling_op
-tics.PNG> <./misalignment/figs/sipm_coupling_coarse.png>]
-<fabrication/figs/Initial_Paddle_Prop_UW.PNG, id=297, 1179.40625pt x 667.49374p
+<fabrication/figs/Initial_Paddle_Prop_UW.PNG, id=283, 1179.40625pt x 667.49374p
 t>
 File: fabrication/figs/Initial_Paddle_Prop_UW.PNG Graphic file (type png)
  <use fabrication/figs/Initial_Paddle_Prop_UW.PNG>
 Package pdftex.def Info: fabrication/figs/Initial_Paddle_Prop_UW.PNG used on in
-put line 14.
+put line 16.
 (pdftex.def)             Requested size: 222.0pt x 125.64365pt.
-
-Underfull \hbox (badness 1226) in paragraph at lines 20--21
+ [8 <./misalignment/figs/sipm_coupling_optics.PNG> <./misalignment/figs/sipm_co
+upling_coarse.png> <./misalignment/figs/spacing_sim.png>]
+Underfull \hbox (badness 1226) in paragraph at lines 22--23
 []\OT1/cmr/m/n/10 To pol-ish the ma-chined scin-til-la-tor sur-faces,
  []
 
-<fabrication/figs/polshing_effects.PNG, id=302, 614.295pt x 351.56343pt>
+<fabrication/figs/polshing_effects.PNG, id=296, 614.295pt x 351.56343pt>
 File: fabrication/figs/polshing_effects.PNG Graphic file (type png)
 
 <use fabrication/figs/polshing_effects.PNG>
 Package pdftex.def Info: fabrication/figs/polshing_effects.PNG used on input li
-ne 25.
+ne 27.
 (pdftex.def)             Requested size: 222.0pt x 127.05089pt.
 
-<fabrication/figs/Polished_Paddle_Prop_UW.PNG, id=305, 1179.40625pt x 658.46pt>
+<fabrication/figs/Polished_Paddle_Prop_UW.PNG, id=299, 1179.40625pt x 658.46pt>
 File: fabrication/figs/Polished_Paddle_Prop_UW.PNG Graphic file (type png)
 <use fabrication/figs/Polished_Paddle_Prop_UW.PNG>
 Package pdftex.def Info: fabrication/figs/Polished_Paddle_Prop_UW.PNG used on i
-nput line 34.
+nput line 36.
 (pdftex.def)             Requested size: 222.0pt x 123.9432pt.
- [9 <./misalignment/figs/spacing_sim.png> <./fabrication/figs/Initial_Paddle_Pr
-op_UW.PNG> <./fabrication/figs/polshing_effects.PNG>]
-<fabrication/figs/test_stand_model.PNG, id=320, 953.06062pt x 561.59813pt>
+
+<fabrication/figs/test_stand_model.PNG, id=303, 953.06062pt x 561.59813pt>
 File: fabrication/figs/test_stand_model.PNG Graphic file (type png)
 
 <use fabrication/figs/test_stand_model.PNG>
 Package pdftex.def Info: fabrication/figs/test_stand_model.PNG used on input li
-ne 45.
+ne 47.
 (pdftex.def)             Requested size: 222.0pt x 130.81015pt.
-
-<fabrication/figs/nim_electronics_diagram.PNG, id=324, 1021.8175pt x 759.83875p
+ [9 <./fabrication/figs/Initial_Paddle_Prop_UW.PNG> <./fabrication/figs/polshin
+g_effects.PNG> <./fabrication/figs/Polished_Paddle_Prop_UW.PNG>]
+<fabrication/figs/nim_electronics_diagram.PNG, id=321, 1021.8175pt x 759.83875p
 t>
 File: fabrication/figs/nim_electronics_diagram.PNG Graphic file (type png)
  <use fabrication/figs/nim_electronics_diagram.PNG>
 Package pdftex.def Info: fabrication/figs/nim_electronics_diagram.PNG used on i
-nput line 56.
+nput line 59.
 (pdftex.def)             Requested size: 222.0pt x 165.07808pt.
 
-<fabrication/figs/time_res_comp_final_30.PNG, id=326, 980.66376pt x 699.61375pt
+<fabrication/figs/time_res_comp_final_30.PNG, id=323, 980.66376pt x 699.61375pt
 >
 File: fabrication/figs/time_res_comp_final_30.PNG Graphic file (type png)
  <use fabrication/figs/time_res_comp_final_30.PNG>
 Package pdftex.def Info: fabrication/figs/time_res_comp_final_30.PNG used on in
-put line 68.
+put line 71.
 (pdftex.def)             Requested size: 222.0pt x 158.36707pt.
- [10 <./fabrication/figs/Polished_Paddle_Prop_UW.PNG> <./fabrication/figs/test_
-stand_model.PNG> <./fabrication/figs/nim_electronics_diagram.PNG (PNG copy)>]
-<fabrication//figs/final_30_tr_wrapped.PNG, id=340, 350.81062pt x 233.37187pt>
+
+<fabrication//figs/final_30_tr_wrapped.PNG, id=325, 350.81062pt x 233.37187pt>
 File: fabrication//figs/final_30_tr_wrapped.PNG Graphic file (type png)
 
 <use fabrication//figs/final_30_tr_wrapped.PNG>
 Package pdftex.def Info: fabrication//figs/final_30_tr_wrapped.PNG used on inpu
-t line 78.
+t line 81.
 (pdftex.def)             Requested size: 222.0pt x 147.68738pt.
 
-<fabrication/figs/aj_cad_drawing.png, id=342, 849.1725pt x 472.01344pt>
+<fabrication/figs/aj_cad_drawing.png, id=327, 849.1725pt x 472.01344pt>
 File: fabrication/figs/aj_cad_drawing.png Graphic file (type png)
 
 <use fabrication/figs/aj_cad_drawing.png>
 Package pdftex.def Info: fabrication/figs/aj_cad_drawing.png used on input line
- 88.
+ 92.
 (pdftex.def)             Requested size: 222.0pt x 123.39761pt.
 
-<fabrication/figs/st_assembly.jpg, id=343, 465.9006pt x 332.442pt>
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [10 <./fabrication/figs/test_stand_model.PNG> <./fabrication/figs/nim_electron
+ics_diagram.PNG (PNG copy)> <./fabrication/figs/time_res_comp_final_30.PNG>]
+<fabrication/figs/st_assembly.jpg, id=340, 465.9006pt x 332.442pt>
 File: fabrication/figs/st_assembly.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_assembly.jpg>
 Package pdftex.def Info: fabrication/figs/st_assembly.jpg used on input line 10
-1.
+7.
 (pdftex.def)             Requested size: 222.0pt x 158.4087pt.
- [11 <./fabrication/figs/time_res_comp_final_30.PNG> <./fabrication//figs/final
-_30_tr_wrapped.PNG> <./fabrication/figs/aj_cad_drawing.png>]
-<fabrication/figs/aligning_st1_to_hub.PNG, id=354, 509.65407pt x 335.75438pt>
+ [11 <./fabrication//figs/final_30_tr_wrapped.PNG> <./fabrication/figs/aj_cad_d
+rawing.png> <./fabrication/figs/st_assembly.jpg>]
+<fabrication/figs/aligning_st1_to_hub.PNG, id=349, 509.65407pt x 335.75438pt>
 File: fabrication/figs/aligning_st1_to_hub.PNG Graphic file (type png)
 
 <use fabrication/figs/aligning_st1_to_hub.PNG>
 Package pdftex.def Info: fabrication/figs/aligning_st1_to_hub.PNG used on input
- line 112.
+ line 121.
 (pdftex.def)             Requested size: 222.0pt x 146.25177pt.
 
-<fabrication/figs/st_va.jpg, id=356, 641.2758pt x 198.0198pt>
+<fabrication/figs/st_va.jpg, id=351, 641.2758pt x 198.0198pt>
 File: fabrication/figs/st_va.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_va.jpg>
-Package pdftex.def Info: fabrication/figs/st_va.jpg used on input line 119.
+Package pdftex.def Info: fabrication/figs/st_va.jpg used on input line 128.
 (pdftex.def)             Requested size: 222.0pt x 68.54956pt.
 
-<fabrication/figs/st_coupling.jpg, id=358, 620.5584pt x 285.2256pt>
+<fabrication/figs/st_coupling.jpg, id=353, 620.5584pt x 285.2256pt>
 File: fabrication/figs/st_coupling.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_coupling.jpg>
-Package pdftex.def Info: fabrication/figs/st_coupling.jpg used on input line 12
-8.
+Package pdftex.def Info: fabrication/figs/st_coupling.jpg used on input line 13
+9.
 (pdftex.def)             Requested size: 222.0pt x 102.037pt.
- [12 <./fabrication/figs/st_assembly.jpg> <./fabrication/figs/aligning_st1_to_h
-ub.PNG> <./fabrication/figs/st_va.jpg> <./fabrication/figs/st_coupling.jpg>]
-<fabrication/figs/st_lt_ic_bw.jpg, id=370, 536.2434pt x 355.5684pt>
+
+<fabrication/figs/st_lt_ic_bw.jpg, id=356, 536.2434pt x 355.5684pt>
 File: fabrication/figs/st_lt_ic_bw.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_lt_ic_bw.jpg>
-Package pdftex.def Info: fabrication/figs/st_lt_ic_bw.jpg used on input line 13
-7.
+Package pdftex.def Info: fabrication/figs/st_lt_ic_bw.jpg used on input line 14
+8.
 (pdftex.def)             Requested size: 222.0pt x 147.20004pt.
-
-<fabrication/figs/st_iso_eel.png, id=372, 331.2375pt x 332.74312pt>
+ [12 <./fabrication/figs/aligning_st1_to_hub.PNG> <./fabrication/figs/st_va.jpg
+> <./fabrication/figs/st_coupling.jpg> <./fabrication/figs/st_lt_ic_bw.jpg>]
+<fabrication/figs/st_iso_eel.png, id=368, 331.2375pt x 332.74312pt>
 File: fabrication/figs/st_iso_eel.png Graphic file (type png)
 
 <use fabrication/figs/st_iso_eel.png>
-Package pdftex.def Info: fabrication/figs/st_iso_eel.png used on input line 146
+Package pdftex.def Info: fabrication/figs/st_iso_eel.png used on input line 158
 .
 (pdftex.def)             Requested size: 177.60068pt x 178.4042pt.
 
-<fabrication/figs/st_lt.jpg, id=374, 626.8218pt x 264.0264pt>
+<fabrication/figs/st_lt.jpg, id=370, 626.8218pt x 264.0264pt>
 File: fabrication/figs/st_lt.jpg Graphic file (type jpg)
 
 <use fabrication/figs/st_lt.jpg>
-Package pdftex.def Info: fabrication/figs/st_lt.jpg used on input line 154.
+Package pdftex.def Info: fabrication/figs/st_lt.jpg used on input line 166.
 (pdftex.def)             Requested size: 222.0pt x 93.51045pt.
 )
 \openout2 = `calibration/calibration.aux'.
 
  (./calibration/calibration.tex
-<calibration/figs/time_walk_effect.png, id=377, 578.16pt x 433.62pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<calibration/figs/time_walk_effect.png, id=373, 578.16pt x 433.62pt>
 File: calibration/figs/time_walk_effect.png Graphic file (type png)
 
 <use calibration/figs/time_walk_effect.png>
 Package pdftex.def Info: calibration/figs/time_walk_effect.png used on input li
-ne 10.
+ne 11.
 (pdftex.def)             Requested size: 222.0pt x 166.4976pt.
- [13 <./fabrication/figs/st_lt_ic_bw.jpg> <./fabrication/figs/st_iso_eel.png> <
-./fabrication/figs/st_lt.jpg>]
-<calibration/figs/tw_dist_uncorr_ch15.png, id=391, 679.03688pt x 510.40688pt>
+ [13 <./fabrication/figs/st_iso_eel.png> <./fabrication/figs/st_lt.jpg> <./cali
+bration/figs/time_walk_effect.png>]
+<calibration/figs/tw_dist_uncorr_ch15.png, id=387, 679.03688pt x 510.40688pt>
 File: calibration/figs/tw_dist_uncorr_ch15.png Graphic file (type png)
 
 <use calibration/figs/tw_dist_uncorr_ch15.png>
 Package pdftex.def Info: calibration/figs/tw_dist_uncorr_ch15.png used on input
- line 23.
+ line 26.
 (pdftex.def)             Requested size: 222.0pt x 166.86935pt.
 
-<calibration/figs/pulse_peak_ch15.png, id=401, 631.60968pt x 500.62032pt>
+<calibration/figs/pulse_peak_ch15.png, id=397, 631.60968pt x 500.62032pt>
 File: calibration/figs/pulse_peak_ch15.png Graphic file (type png)
 
 <use calibration/figs/pulse_peak_ch15.png>
 Package pdftex.def Info: calibration/figs/pulse_peak_ch15.png used on input lin
-e 40.
+e 48.
 (pdftex.def)             Requested size: 222.0pt x 175.9607pt.
- [14 <./calibration/figs/time_walk_effect.png> <./calibration/figs/tw_dist_unco
-rr_ch15.png>]
-Overfull \hbox (1.10194pt too wide) detected at line 49
+
+Overfull \hbox (1.10194pt too wide) detected at line 57
 $ [][]\OML/cmm/m/it/10 T[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 t[] \OMS/cmsy/m/n
 /10 ^^@ \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a=a[]\OT1/cmr/m/n
 /10 ) + \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]=a[]\OT1/cmr/m
 /n/10 )[]$ []
  []
 
-<calibration/figs/tw_dist_corr_ch15.png, id=420, 606.76688pt x 452.4403pt>
+<calibration/figs/tw_dist_corr_ch15.png, id=401, 606.76688pt x 452.4403pt>
 File: calibration/figs/tw_dist_corr_ch15.png Graphic file (type png)
 
 <use calibration/figs/tw_dist_corr_ch15.png>
 Package pdftex.def Info: calibration/figs/tw_dist_corr_ch15.png used on input l
-ine 53.
+ine 61.
 (pdftex.def)             Requested size: 222.0pt x 165.5363pt.
 
-<calibration/figs/st_time_overlay_ch15.png, id=422, 617.30624pt x 502.12593pt>
+<calibration/figs/st_time_overlay_ch15.png, id=403, 617.30624pt x 502.12593pt>
 File: calibration/figs/st_time_overlay_ch15.png Graphic file (type png)
 
 <use calibration/figs/st_time_overlay_ch15.png>
 Package pdftex.def Info: calibration/figs/st_time_overlay_ch15.png used on inpu
-t line 60.
+t line 68.
 (pdftex.def)             Requested size: 222.0pt x 180.57365pt.
- [15 <./calibration/figs/pulse_peak_ch15.png> <./calibration/figs/tw_dist_corr_
-ch15.png> <./calibration/figs/st_time_overlay_ch15.png>] [16]
-<calibration/figs/prop_time_uncorr.png, id=454, 502.87875pt x 344.03531pt>
+ [14 <./calibration/figs/tw_dist_uncorr_ch15.png> <./calibration/figs/pulse_pea
+k_ch15.png>] [15 <./calibration/figs/tw_dist_corr_ch15.png> <./calibration/figs
+/st_time_overlay_ch15.png>]
+<calibration/figs/prop_time_uncorr.png, id=438, 502.87875pt x 344.03531pt>
 File: calibration/figs/prop_time_uncorr.png Graphic file (type png)
 
 <use calibration/figs/prop_time_uncorr.png>
 Package pdftex.def Info: calibration/figs/prop_time_uncorr.png used on input li
-ne 117.
+ne 130.
 (pdftex.def)             Requested size: 222.0pt x 151.87471pt.
-
-<calibration/figs/prop_time_uncorr_fits.png, id=457, 838.63312pt x 404.26031pt>
+ [16]
+<calibration/figs/prop_time_uncorr_fits.png, id=454, 838.63312pt x 404.26031pt>
 File: calibration/figs/prop_time_uncorr_fits.png Graphic file (type png)
 <use calibration/figs/prop_time_uncorr_fits.png>
 Package pdftex.def Info: calibration/figs/prop_time_uncorr_fits.png used on inp
-ut line 129.
+ut line 142.
 (pdftex.def)             Requested size: 222.0pt x 107.01126pt.
 
-<performance/figs/prop_time_corr.png, id=460, 828.84656pt x 427.5975pt>
+<performance/figs/prop_time_corr.png, id=457, 828.84656pt x 427.5975pt>
 File: performance/figs/prop_time_corr.png Graphic file (type png)
 
 <use performance/figs/prop_time_corr.png>
 Package pdftex.def Info: performance/figs/prop_time_corr.png used on input line
- 142.
+ 155.
 (pdftex.def)             Requested size: 222.0pt x 114.52637pt.
  [17 <./calibration/figs/prop_time_uncorr.png> <./calibration/figs/prop_time_un
-corr_fits.png>]
-<calibration/figs/dEdx_vs_p_uncorr.png, id=481, 1257.69875pt x 659.46375pt>
+corr_fits.png> <./performance/figs/prop_time_corr.png>]
+<calibration/figs/dEdx_vs_p_uncorr.png, id=475, 1257.69875pt x 659.46375pt>
 File: calibration/figs/dEdx_vs_p_uncorr.png Graphic file (type png)
 
 <use calibration/figs/dEdx_vs_p_uncorr.png>
 Package pdftex.def Info: calibration/figs/dEdx_vs_p_uncorr.png used on input li
-ne 163.
+ne 180.
 (pdftex.def)             Requested size: 222.0pt x 116.40407pt.
 
-<calibration/figs/pi_sec_nose.png, id=484, 734.745pt x 505.13719pt>
+<calibration/figs/pi_sec_nose.png, id=478, 734.745pt x 505.13719pt>
 File: calibration/figs/pi_sec_nose.png Graphic file (type png)
 
 <use calibration/figs/pi_sec_nose.png>
-Package pdftex.def Info: calibration/figs/pi_sec_nose.png used on input line 17
-2.
+Package pdftex.def Info: calibration/figs/pi_sec_nose.png used on input line 19
+0.
 (pdftex.def)             Requested size: 222.0pt x 152.62141pt.
- [18 <./performance/figs/prop_time_corr.png> <./calibration/figs/dEdx_vs_p_unco
-rr.png>]
-<calibration/figs/pi_sec_nose_fits.png, id=495, 921.4425pt x 554.07pt>
+
+<calibration/figs/pi_sec_nose_fits.png, id=483, 921.4425pt x 554.07pt>
 File: calibration/figs/pi_sec_nose_fits.png Graphic file (type png)
 
 <use calibration/figs/pi_sec_nose_fits.png>
 Package pdftex.def Info: calibration/figs/pi_sec_nose_fits.png used on input li
-ne 181.
+ne 199.
 (pdftex.def)             Requested size: 222.0pt x 133.48677pt.
-
-<calibration/figs/attn_fits.png, id=502, 752.0597pt x 344.78813pt>
+ [18 <./calibration/figs/dEdx_vs_p_uncorr.png> <./calibration/figs/pi_sec_nose.
+png> <./calibration/figs/pi_sec_nose_fits.png>] <calibration/figs/attn_fits.png
+, id=501, 752.0597pt x 344.78813pt>
 File: calibration/figs/attn_fits.png Graphic file (type png)
 
 <use calibration/figs/attn_fits.png>
-Package pdftex.def Info: calibration/figs/attn_fits.png used on input line 202.
+Package pdftex.def Info: calibration/figs/attn_fits.png used on input line 221.
 
 (pdftex.def)             Requested size: 222.0pt x 101.77473pt.
- [19 <./calibration/figs/pi_sec_nose.png> <./calibration/figs/pi_sec_nose_fits.
-png> <./calibration/figs/attn_fits.png>])
+)
 \openout2 = `performance/performance.aux'.
 
-
-(./performance/performance.tex
-<performance/figs/pi_pp_vs_zint.png, id=523, 868.24374pt x 390.45876pt>
+ (./performance/performance.tex
+<performance/figs/pi_pp_vs_zint.png, id=509, 868.24374pt x 390.45876pt>
 File: performance/figs/pi_pp_vs_zint.png Graphic file (type png)
 
 <use performance/figs/pi_pp_vs_zint.png>
 Package pdftex.def Info: performance/figs/pi_pp_vs_zint.png used on input line 
-8.
+9.
 (pdftex.def)             Requested size: 222.0pt x 99.83078pt.
-
-<performance/figs/dEdx_vs_p_corr.png, id=526, 1257.69875pt x 659.46375pt>
+ [19 <./calibration/figs/attn_fits.png>] <performance/figs/dEdx_vs_p_corr.png, 
+id=525, 1257.69875pt x 659.46375pt>
 File: performance/figs/dEdx_vs_p_corr.png Graphic file (type png)
 
 <use performance/figs/dEdx_vs_p_corr.png>
 Package pdftex.def Info: performance/figs/dEdx_vs_p_corr.png used on input line
- 17.
+ 18.
 (pdftex.def)             Requested size: 222.0pt x 116.40407pt.
 
-<performance/figs/beam_tof_corr_chan_15.PNG, id=531, 470.50781pt x 304.13625pt>
+<performance/figs/beam_tof_corr_chan_15.PNG, id=530, 470.50781pt x 304.13625pt>
 File: performance/figs/beam_tof_corr_chan_15.PNG Graphic file (type png)
 <use performance/figs/beam_tof_corr_chan_15.PNG>
 Package pdftex.def Info: performance/figs/beam_tof_corr_chan_15.PNG used on inp
-ut line 27.
+ut line 28.
 (pdftex.def)             Requested size: 155.39932pt x 100.44879pt.
- [20 <./performance/figs/pi_pp_vs_zint.png>]
-<performance/figs/time_res_all_inset.PNG, id=545, 683.55376pt x 375.65344pt>
+
+
+LaTeX Warning: Reference `fig:timeresallinset' on page 20 undefined on input li
+ne 33.
+
+<performance/figs/time_res_all_inset.PNG, id=531, 683.55376pt x 375.65344pt>
 File: performance/figs/time_res_all_inset.PNG Graphic file (type png)
 
 <use performance/figs/time_res_all_inset.PNG>
 Package pdftex.def Info: performance/figs/time_res_all_inset.PNG used on input 
-line 35.
+line 36.
 (pdftex.def)             Requested size: 222.0pt x 121.99994pt.
-)
+
+
+LaTeX Warning: Reference `fig:timeresallinset' on page 20 undefined on input li
+ne 41.
+
+
+LaTeX Warning: Reference `tab:time_res_section' on page 20 undefined on input l
+ine 41.
+
+
+LaTeX Warning: Reference `tab:time_res_section' on page 20 undefined on input l
+ine 52.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./performance/figs/pi_pp_vs_zint.png> <./performance/figs/dEdx_vs_p_corr.p
+ng> <./performance/figs/beam_tof_corr_chan_15.PNG>])
 \openout2 = `conclusion/conclusion.aux'.
 
- (./conclusion/conclusion.tex
-[21 <./performance/figs/dEdx_vs_p_corr.png> <./performance/figs/beam_tof_corr_c
-han_15.PNG> <./performance/figs/time_res_all_inset.PNG>])
+
+(./conclusion/conclusion.tex)
 \openout2 = `acknowledgment/acknowledgment.aux'.
 
-
-(./acknowledgment/acknowledgment.tex
+ (./acknowledgment/acknowledgment.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -891,7 +896,27 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ­ in font cmr10!
-) (./st_nim_article.bbl
+) [21
+\@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces ST time 
+resolutions as a function of sector number. The inset illustrates a 2\nobreaksp
+ace  {}$\sigma $ Gaussian fit the the ST time minus the RF time. The resulting 
+$\sigma $ of the fit provides a measure of the time resolution.}}{21}{figure.51
+}}
+\newlabel{fig:timeresallinset}{{51}{21}{ST time resolutions as a function of se
+ctor number. The inset illustrates a 2~$\sigma $ Gaussian fit the the ST time m
+inus the RF time. The resulting $\sigma $ of the fit provides a measure of the 
+time resolution}{figure.51}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Average ti
+me resolutions by section}}{21}{table.1}}
+\newlabel{tab:time_res_section}{{1}{21}{Average time resolutions by section}{ta
+ble.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{21}{section
+.8}}
+\newlabel{sec:conclusion}{{8}{21}{Conclusion}{section.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Acknowledgments}{21}{se
+ction.9}}
+ <./performance/figs/time_res_all_inset.PNG>] (./st_nim_article.bbl
 Underfull \hbox (badness 3138) in paragraph at lines 17--20
 []\OT1/cmr/m/n/8 General Pur-pose Plas-tic Scin-til-la-tor EJ-200, EJ-
  []
@@ -1013,10 +1038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--101
 []$\OT1/cmtt/m/n/8 https : / / halldweb . jlab . org / DocDB / 0026 / 002618 /
  []
 
-[22
-\@writefile{toc}{\contentsline {section}{\numberline {9}Acknowledgments}{22}{se
-ction.9}}
-]
+
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 [][]$\OT1/cmtt/m/n/8 https : / / root . cern . ch / doc / master / classTMinuit
  .
@@ -1039,9 +1061,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [23
-
-]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./st_nim_article.aux (./authors/authors.aux) (./abstract/abstract.aux)
 (./keywords/keywords.aux) (./introduction/introduction.aux)
@@ -1052,17 +1072,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `st_nim_article.out' has not changed.
-(rerunfilecheck)             Checksum: 4FE0A0C73B3CBDAB9B7979E5CCA27B23;1634.
+(rerunfilecheck)             Checksum: 8760DD79A4F8DB05A67D3A846FD2A416;1611.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 7051 strings out of 494820
- 108850 string characters out of 3178050
- 218091 words of memory out of 3000000
- 9863 multiletter control sequences out of 15000+200000
+ 7034 strings out of 494820
+ 108489 string characters out of 3178050
+ 216430 words of memory out of 3000000
+ 9851 multiletter control sequences out of 15000+200000
  10417 words of font info for 36 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 34i,12n,32p,1075b,541s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,12n,32p,1092b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texl
@@ -1085,10 +1109,10 @@ amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on st_nim_article.pdf (23 pages, 11492552 bytes).
+Output written on st_nim_article.pdf (22 pages, 11955859 bytes).
 PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
- 155 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 727 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 456 words of extra memory for PDF output out of 10000 (max. 10000000)
 

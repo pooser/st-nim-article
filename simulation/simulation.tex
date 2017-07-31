@@ -1,29 +1,27 @@
 \section{Simulation} \label{sec:sim}
 
-In this section,  Monte Carlo (MC) simulations of the performance and characteristics of machined scintillators  are discussed.  These  studies were performed using the GEANT4 tool-kit which simulates the passage of particles through matter \cite{geant4_website}.  Comparisons are made with data observed in experiments conducted on the bench in Sec.~\ref{sec:fab_test} and with beam data in Sec.~\ref{sec:perform}.  
+In this section, Monte Carlo (MC) simulations of the performance and characteristics of machined scintillators are discussed.  These studies were performed using the GEANT4 tool-kit which simulates the passage of particles through matter \cite{geant4_website}.  Comparisons are made with data observed in experiments conducted on the bench in Sec.~\ref{sec:fab_test} and with beam data in Sec.~\ref{sec:perform}.  
 
 % WB I would merge the full simulation and the simplified one as they do not need to be considered separately
 % show results for the unified model only
-%
-%
 
 \subsection{Simulating a Simplified Model of the ST} \label{sec:sim_simple}
 
 As discussed in Sec.~\ref{sec:design_paddles}, the ST scintillator paddles have a unique geometry in which the nose section tapers in width as the paddles approach the beam line at the downstream end.  This tapering effect results in a unique phenomenon in which the light output of the scintillator paddle begins to increase as the source moves further away from the readout detector.  At first, this phenomenon is completely contrary to what one might expect. In the traditional sense when the source moves further away from the end being readout, the photons have a larger effective path length and thus, have an increased probability in being lost for detection.  However, this is antithetical relative to what is observed on the bench and in Hall-D.
 
-A simple GEANT4 simulation was conducted to investigate the aforementioned phenomenon. Only the two trapezoidal regions of a machined scintillator paddle were considered.  Namely, the wide straight section and the tapered nose section which are illustrated in the GEANT4 event display  seen in Fig. \ref{fig:beam_off}.
-%WB this plot can be skipped
-	\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/beam_off}
-	\caption{Simulated straight \& nose section geometries.  Shown is the GEANT4 event display.  Left: wide straight section.  Right: tapered nose section.  The sections have been oriented such that they are in the same coordinate system as defined in HallD.  The yellow lines are the scintillator boundaries, while the red lines are the boundaries of the SiPM.}
-	\label{fig:beam_off}
-	\end{figure}  
+A simple GEANT4 simulation was conducted to investigate the aforementioned phenomenon. Only the two trapezoidal regions of a machined scintillator paddle were considered.  Namely, the wide straight section and the tapered nose section which are illustrated in the GEANT4 event display seen in Fig. \ref{fig:100_events}.
+% WB this plot can be skipped
+% EP done.
+%	\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{simulation/figs/beam_off}
+%	\caption{Simulated straight \& nose section geometries.  Shown is the GEANT4 event display.  Left: wide straight section.  Right: tapered nose section.  The sections have been oriented such that they are in the same coordinate system as defined in HallD.  The yellow lines are the scintillator boundaries, while the red lines are the boundaries of the SiPM.}
+%	\label{fig:beam_off}
+%	\end{figure}  
 
-The EJ-200 scintillator material ($\rho=1.023~\mathrm{g/cc^{3}}$, $n = 1.58$) \cite{ej200_specs} was simulated with only one free parameter utilized to characterize the scintillator bar \textit{i.e.}, the reflectivity of the \textit{G4LogicalSkinSurface}, was set to 98\% so there remained some finite probability that photons could be lost in the scintillator medium.  Furthermore, the SiPM readout detector was placed at the upstream end of the two sections, seen in Fig. \ref{fig:beam_off}.  Moreover, the SiPM was constructed as a \textit{G4SensitiveDetector} made of Silicon with a 100\% detection efficiency.  The SiPM was constructed to have an active area of $\mathrm{3 \times 12~mm^2}$ which is identical to the readout system described in Sec.~\ref{sec:design_sipms}.
+The EJ-200 scintillator material ($\rho=1.023~\mathrm{g/cc^{3}}$, $n = 1.58$) \cite{ej200_specs} was simulated with only one free parameter utilized to characterize the scintillator bar \textit{i.e.}, the reflectivity of the \textit{G4LogicalSkinSurface}, was set to 98\% so there remained some finite probability that photons could be lost in the scintillator medium.  Furthermore, the SiPM readout detector was placed at the upstream end of the two sections, seen in Fig. \ref{fig:100_events}.  Moreover, the SiPM was constructed as a \textit{G4SensitiveDetector} made of Silicon with a 100\% detection efficiency.  The SiPM was constructed to have an active area of $\mathrm{3 \times 12~mm^2}$ which is identical to the readout system described in Sec.~\ref{sec:design_sipms}.
 
 In order to simulate a charged particle traversing through the scintillator medium resulting in the production of photons along its path through the material, optical photons were generated inside the volume of the simulated scintillator material.  The scintillation yield was defined to be $\mathrm{10,000~ \gamma 's / 1~MeV}$ \cite{ej200_specs}. For visual purposes, Fig. \ref{fig:100_events} shows 100 optical photons being produced at the tip of the downstream end of the two sections of the simulated scintillator paddle.
-
 	\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{simulation/figs/100_events}
@@ -32,13 +30,14 @@ In order to simulate a charged particle traversing through the scintillator medi
 	\end{figure}
 
 In order to sample the entirety of the two sections, 10,000 optical photons were generated at 16 different locations inside the medium of the scintillator. 
-%WB this plot can be skipped
-	\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/gun_locations}
-	\caption{Optical photon gun locations along the straight \& nose sections. Left: wide straight section.  Right: tapered nose section.  The magenta geometries indicate the scintillator boundaries of the two sections.  The red box is the sensitive SiPM detector, and the green cylinders represent the location of the 16 optical photon gun locations. The locations of the source were chosen to be equal distances apart relative to each of the two sections.}
-	\label{fig:gun_locations}
-	\end{figure}
+% WB this plot can be skipped
+% EP done.
+%	\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{simulation/figs/gun_locations}
+%	\caption{Optical photon gun locations along the straight \& nose sections. Left: wide straight section.  Right: tapered nose section.  The magenta geometries indicate the scintillator boundaries of the two sections.  The red box is the sensitive SiPM detector, and the green cylinders represent the location of the 16 optical photon gun locations. The locations of the source were chosen to be equal distances apart relative to each of the two sections.}
+%	\label{fig:gun_locations}
+%	\end{figure}
 The photon energies ranged between $0.5 - 3.0$ eV \cite{krane_ch7} and were generated randomly in $4\pi$ along a 3 mm path $(y-axis)$ in the scintillator medium.  The path was oriented orthogonal to the wide surface of the scintillator.  In essence, this simulates a charged particle traversing through the medium with a $\theta_{track} = 90^{\circ}$ in hall coordinates.  The number of photons collected by the SiPM at each of the 16 source locations is counted and correlated to the source location.  The results can be seen in Fig. \ref{fig:sim_results}.
 %WB this plot can be skipped
 	\begin{figure}[!htb]
@@ -53,10 +52,11 @@ From the data it is clear that the geometry of the nose section results in an im
 
 Further simulations were conducted to simulate more realistically the effects of light collection that results from the ST scintillator geometry and optical surface quality.  The ST scintillator geometry was imported into GEANT4 from a Vectorworks CAD drawing utilizing the CADMesh utility \cite{cadmesh_g4} and is shown \textit{via} the GEANT4 event display in Fig. \ref{fig:pk_cadmesh}.
 % WB this figure needs to be bigger, 3d is enough
+% EP removed top view and added picture with 100 optical photons
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/pk_cadmesh}
-	\caption{Scintillator geometry imported into GEANT4 utilizing the CADMesh Utility.  The scintillator is  coupled to a SiPM detector.  Left: isometric view.  Right: top view.  The tapering of the nose section is clearly visible.}
+	\includegraphics[width=1.0\columnwidth]{simulation/figs/pk_cadmesh_v2}
+	\caption{Scintillator geometry imported into GEANT4 utilizing the CADMesh Utility.  The scintillator is  coupled to a SiPM detector.  Left: isometric view.  Right: isometric view with 100 optical photons being generated in the middle of the bend section.  The tapering of the nose section is clearly visible.}
 	\label{fig:pk_cadmesh}
 	\end{figure}
 The SiPM was constructed as a $12 \times 12 \times 10 \mathrm{mm^{3}}$ volume with a 100 $\mathrm{\mu m}$ air gap between it and the wide end of the straight section.  Furthermore, the volume surrounding the scintillator volume was air.  The EJ-200 scintillator material, SiPM silicon detector, and optical photons were defined in an identical manner discussed in Sec.~\ref{sec:sim_simple}.
@@ -80,5 +80,3 @@ As was done in section \ref{sec:sim_simple}, 10,000 optical photons were generat
 	\label{fig:transm_eff_vs_sig_alpha}
 	\end{figure}
 It is clear that if the transmission efficiency is increased while assuming a polished surface, the amount of light collected in the SiPM also increases as illustrated in Fig.~\ref{fig:transm_eff_vs_sig_alpha}.  Similarly, as the number of micro-facet orientations increase, meaning a more coarsely ground surface, the amount of light collection in the SiPM decreases.  Moreover, in the instances where the surface quality of the machined scintillators are good, the phenomenon of light increase in the nose region as the source moves further from the readout detector is observed.
-
-%

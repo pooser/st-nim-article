@@ -50,7 +50,7 @@ The various layers of material that comprise the ST support structure is illustr
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_materials}
-		\caption{Start Counter materials.}
+		\caption{Start Counter materials.  Neon green corresponds to the 3 layers of carbon fiber, orange is the upstream support chassis, yellow is the Rohacell support structure, and magenta is the scintillator paddles.  The gray squares are the individual SiPM detectors, dark green is the ST1 PCBs, blue is the light tightening collar, and the light-gray is Tedlar.}
 		\label{fig:stmaterials}
 	\end{figure}
 In order to ensure that the detector was light-tight, a plastic collar was placed around the top of the SiPMs at the upstream end as seen in Fig.~\ref{fig:stmaterials}.  The collar served as a lip to which a cylindrical sheet of black Tedlar was taped too.  At the tip of the nose, a cone of Tedlar was then connected to the aforementioned cylindrical section.  To make the downstream end of the ST light-tight, another cone of Tedlar was taped to the nose of the inner Rohacell support structure and then attached to the top Tedlar cone layer. 
@@ -58,14 +58,15 @@ In order to ensure that the detector was light-tight, a plastic collar was place
 
 \subsection{SiPM Readout Detectors} \label{sec:design_sipms}
 
-Eeach scintillator bar was read out using magnetic field insensitive Hamamatsu S10931-050P multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.
+Each scintillator bar was read out using magnetic field insensitive Hamamatsu S10931-050P multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.
 
 The SiPM detectors are housed in a ceramic case which is surface mounted to a custom fabricated printed circuit board (PCB).  The PCB is held in a fixed position while being attached to the lip of the upstream chassis \emph{via} two screws as illustrated in Fig.~\ref{fig:st1_mounted}.  The individual ST scintillators are coupled \emph{via} an air gap ($< 250 \mu m$) to groups of four SiPMs set in a circular arrangement as can be seen in Fig.~\ref{fig:st1_mounted}.
 % WB need to indicate the groups on this plot
+% EP done.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{design/figs/st1_mounted}
-		\caption{ST1 of Start Counter read out system. The ST1's are rigidly attached to the upstream support chassis.  Approximately 72\% of the scintillator light is collected at the upstream end.}
+		\includegraphics[width=1.0\columnwidth]{design/figs/st1_mounted_v2}
+		\caption{ST1 of Start Counter read out system. The ST1's are rigidly attached to the upstream support chassis.  Approximately 72\% of the scintillator light is collected at the upstream end.  The red box indicates a group of 4 SiPM detectors which are summed to readout a single scintillator paddle.}
 		\label{fig:st1_mounted}
 	\end{figure}
 
@@ -73,26 +74,26 @@ The SiPM detectors are housed in a ceramic case which is surface mounted to a cu
 
 The SiPMs reading out one individual paddle, are current summed prior to pre-amplification.  The output of each preamp is then split; buffered for the analog to digital converter (ADC) output, and amplified for the time to digital converter (TDC) output by a factor five relative to the ADC.  The ADC outputs are readout by JLab VME64x 250 MHz Flash ADC modules while the TDC outputs are input into JLab leading edge discriminators, followed by a high resolution 32 channel JLab VME64x F1TDC V2 module.  Furthermore, each group of four SiPMs utilizes a thermocouple for temperature monitoring. There are 120 SiPMs in total, for a total of 30 pre-amplifier channels as seen Fig.~\ref{fig:Start Counter Electronics}.
 
-%WB this diagram needs more explanations of what the various parts do. Is every thing relevant ? Maybe indicate ST1 ST2 and ST3
+% WB this diagram needs more explanations of what the various parts do. Is every thing relevant ? Maybe indicate ST1 ST2 and ST3
+% EP done.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{design/figs/ST_Electronics_v2}
+		\includegraphics[width=1.0\columnwidth]{design/figs/ST_Electronics_v3}
 		\caption{Start counter readout electronics diagram.}
 		\label{fig:Start Counter Electronics}
 	\end{figure}
 
-There are three components that comprise the ST detector readout system.  The first component (ST1) will collect light from three paddles individually and consists of 3 groups of 4 SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to fit the geometry of the 30 paddle design one group of SiPM's is rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  The ST1 implements the current sum and bias distribution for each group of 4 SiPMs.  It also has a thermocouple for temperature monitoring.  
+There are three components that comprise the ST detector readout system.  The first component (ST1), will collect light from three paddles individually and consists of 3 groups of 4 SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to fit the geometry of the 30 paddle design, one group of SiPM's is rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  The ST1 implements the current sum and bias distribution for each group of 4 SiPMs.  It also has a thermocouple for temperature monitoring.  
 
-The second component (ST2) , seen in Fig.~\ref{fig:stfullreadout}, houses the signal processing electronics of the readout system.  
+The second component (ST2), seen in Fig.~\ref{fig:stfullreadout}, houses the signal processing electronics of the readout system.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_full_readout}
 		\caption{Fully assembled ST readout system.}
 		\label{fig:stfullreadout}
 	\end{figure}
-It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor-five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors. 
-
-% The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.  
+It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor-five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors. % The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.
+  
 % WB I am not sure a picture is needed here
 The third component of the readout system (ST3) seen in Fig.~\ref{fig:st3}, provides the interface to the power and bias supplies.
 	\begin{figure}[!htb]
@@ -102,5 +103,3 @@ The third component of the readout system (ST3) seen in Fig.~\ref{fig:st3}, prov
 		\label{fig:st3}
 	\end{figure}
 It also routes the ADC and TDC outputs as well as the thermocouple output.  The ST3 connects to the ST2 \emph{via} a signal cable assembly seen in Fig.~\ref{fig:stfullreadout} and Fig.~\ref{fig:st3}.  The ST3 is installed upstream of the Start Counter and next to the beam pipe.
-
-%
