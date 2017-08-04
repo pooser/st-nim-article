@@ -27,12 +27,12 @@ A micrometer, with $25~\mathrm{\mu m}$ resolution, was utilized in order to cros
 \subsection{Vertical Alignment of SiPM \& Scintillator}
 \label{sec:misalign_vert}
 
-% WB make the text shorter,basically just describe the result an compare to simulations. 
+% WB make the text shorter, basically just describe the result an compare to simulations. 
 % EP done.
 % WB The scales in Fig. 19 and 18 should be similar in order to compare simulation to measurement.
 % EP the scales cannot be made similar since the simulation data no longer exists.
 
-In order to measure the time resolution at various vertical alignment configurations, the scintillator remained fixed while the SiPM scanned across the upstream end of the scintillator. The coupling distance between the active area of the SiPM and scintillator ($z$) was set to a distance of $\mathrm{100\ \mu m}$ and monitored closely during the vertical alignment scan.  We have defined that at $y = 0$ the SiPM and scintillator are aligned vertically.  %The SiPM was lowered to the minimum location governed by the range of the MT translation stage which was measured to be $y = \mathrm{-4~mm}$.  
+In order to measure the time resolution at various vertical alignment configurations, the scintillator remained fixed while the SiPM scanned across the upstream end of the scintillator. The coupling distance between the active area of the SiPM and scintillator ($z$) remained at a constant distance of $\mathrm{100\ \mu m}$ and was monitored closely during the vertical alignment scan.  We have defined that at $y = 0$ the SiPM and scintillator are aligned vertically.  %The SiPM was lowered to the minimum location governed by the range of the MT translation stage which was measured to be $y = \mathrm{-4~mm}$.  
 
 %``Coarse'' measurements were then taken at half turn intervals $(159\ \mathrm{\mu m})$ until the maximum height of the MT translation stage was reached which was approximately $y = +4\ \mathrm{mm}$.  In order to conduct ``precise'' measurements the SiPM was lowered to $y = \mathrm{-1~mm}$ and then the translation stage was moved in quarter turn intervals $(79.5\ \mathrm{\mu m})$ until it reached $y = \mathrm{+1~mm}$.  The results of these measurements can be seen in Fig. \ref{fig:sipm_va_coarse}.
 ``Coarse'' measurements were then taken at half turn intervals $(159\ \mathrm{\mu m})$ while ``precise'' measurements were taken in quarter turn intervals $(79.5\ \mathrm{\mu m})$.  The results of these measurements can be seen in Fig. \ref{fig:sipm_va_coarse}.
@@ -49,7 +49,7 @@ The results indicate that there is no significant variation of time resolution w
 Vertical misalignments were also simulated in a manner similar to what was discussed in section \ref{sec:sim_mach} and the results are seen in Fig. \ref{fig:vertical_sim}.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{misalignment/figs/vertical_sim}
+		\includegraphics[width=0.8\columnwidth]{misalignment/figs/vertical_sim}
 		\caption{Vertical alignment simulation studies \cite{puneet_sim_talk}.}
 		\label{fig:vertical_sim}
 	\end{figure}
@@ -68,10 +68,10 @@ With the vertical alignment between the scintillator and SiPM optimized, the eff
 %	\end{figure}
 
 %The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  In the coupling region $z < 1\ \mathrm{mm}$ the SiPM was receded from the face of the SiPM in 1/4 turn intervals ($79.5\ \mathrm{\mu m}$).  For $\mathrm{1\ mm < z < 2\ mm}$, the SiPM was receded from the face of the SiPM in 1/2 turn intervals ($159\ \mathrm{\mu m}$), and for $\mathrm{2\ mm < z < 4\ mm}$ data were collected in 1 turn intervals ($\mathrm{318\ \mu m}$) with the results being illustrated in Fig. \ref{fig:sipm_coupling_coarse}.
-The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  Further details regarding the three coupling intervals are discussed in Ref.~\cite{pooser16}.  The results of this study is illustrated in Fig. \ref{fig:sipm_coupling_coarse}.
+The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  Further details regarding the three coupling intervals shown in Fig. \ref{fig:sipm_coupling_coarse} are discussed further in Ref.~\cite{pooser16}.  The results of this study is illustrated in Fig. \ref{fig:sipm_coupling_coarse}.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{misalignment/figs/sipm_coupling_coarse}
+		\includegraphics[width=0.83\columnwidth]{misalignment/figs/sipm_coupling_coarse}
 		\caption{Coupling distance studies.  It is useful to note that at a coupling distance of $\mathrm{251\ \mu m}$ the time resolution was identical to what was measured in Fig. \ref{fig:sipm_va_coarse} while conducting the vertical alignment studies.}
 		\label{fig:sipm_coupling_coarse}
 	\end{figure}
@@ -79,7 +79,7 @@ The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We
 It is clear from the data that the optimal coupling range was $\mathrm{50\ \mu m < z < 350\ \mu m}$ and there was no significant reduction in time resolution performance over a $\mathrm{0\ \mu m < z < 600\ \mu m}$ range.  Similarly, the simulation results seen in Fig.~\ref{fig:spacing_sim} also indicate that there is no significant reduction in light collection in the $\mathrm{0\ \mu m < z < 600\ \mu m}$ range \cite{puneet_sim_talk}.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{misalignment/figs/spacing_sim}
+		\includegraphics[width=0.8\columnwidth]{misalignment/figs/spacing_sim}
 		\caption{Coupling distance simulations. Simulations indicated that the optimal coupling distance is in the $50\ \mu m < z < 350\ \mu m$ range.}
 		\label{fig:spacing_sim}
 	\end{figure}

@@ -37,7 +37,7 @@ After the straight scintillator bar was bent to the desired geometry, the two fl
 
 \subsection{Support Structure} \label{sec:design_support}
 
-The ST scintillator paddles are placed atop a low density Rohacell ($\mathrm{\rho = 0.075\ g/cm^{3}}$) foam support structure which envelopes the target vacuum chamber seen in Fig.~\ref{fig:stiso}.  
+The ST scintillator paddles are placed atop a low density Rohacell ($\mathrm{\rho = 0.075\ g/cm^{3}}$) foam support structure which envelopes the target vacuum chamber illustrated in Fig.~\ref{fig:stiso}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_iso}
@@ -66,7 +66,7 @@ The SiPM detectors are housed in a ceramic case which is surface mounted to a cu
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st1_mounted_v2}
-		\caption{ST1 of Start Counter read out system. The ST1's are rigidly attached to the upstream support chassis.  Approximately 72\% of the scintillator light is collected at the upstream end.  The red box indicates a group of 4 SiPM detectors which are summed to readout a single scintillator paddle.}
+		\caption{ST1 of Start Counter read out system. The ST1's are rigidly attached to the upstream support chassis.  Approximately 72\% of the scintillator light is collected at the upstream end.  The red box indicates a group of 4 SiPM detectors which are summed to readout a single scintillator paddle.  Three groups of 4 SiPM detectors are mounted to a single ST1 unit. The readout it comprised of 10 ST1 units.}
 		\label{fig:st1_mounted}
 	\end{figure}
 
@@ -88,18 +88,20 @@ There are three components that comprise the ST detector readout system.  The fi
 The second component (ST2), seen in Fig.~\ref{fig:stfullreadout}, houses the signal processing electronics of the readout system.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{design/figs/st_full_readout}
-		\caption{Fully assembled ST readout system.}
+		\includegraphics[width=1.0\columnwidth]{design/figs/st_full_readout_v2}
+		\caption{Fully assembled ST readout system.  The red box indicates a single ST2 unit.  The readout it comprised of 10 ST2 units.}
 		\label{fig:stfullreadout}
 	\end{figure}
 It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor-five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors. % The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.
-  
+
 % WB I am not sure a picture is needed here
-The third component of the readout system (ST3) seen in Fig.~\ref{fig:st3}, provides the interface to the power and bias supplies.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{design/figs/st3}
-		\caption{Start counter ST3 readout system.}
-		\label{fig:st3}
-	\end{figure}
-It also routes the ADC and TDC outputs as well as the thermocouple output.  The ST3 connects to the ST2 \emph{via} a signal cable assembly seen in Fig.~\ref{fig:stfullreadout} and Fig.~\ref{fig:st3}.  The ST3 is installed upstream of the Start Counter and next to the beam pipe.
+% EP agreed.
+%The third component of the readout system (ST3) seen in Fig.~\ref{fig:st3}, provides the interface to the power and bias supplies.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.0\columnwidth]{design/figs/st3}
+%		\caption{Start counter ST3 readout system.}
+%		\label{fig:st3}
+%	\end{figure}
+%It also routes the ADC and TDC outputs as well as the thermocouple output.  The ST3 connects to the ST2 \emph{via} a signal cable assembly seen in Fig.~\ref{fig:stfullreadout} and Fig.~\ref{fig:st3}.  The ST3 is installed upstream of the Start Counter and next to the beam pipe.
+The third component of the readout system (ST3) provides the interface to the power and bias supplies.  It also routes the ADC and TDC outputs as well as the thermocouple output.  The ST3 is installed upstream of the Start Counter and next to the beam pipe.

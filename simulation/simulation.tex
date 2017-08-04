@@ -44,10 +44,11 @@ In order to sample the entirety of the two sections, 10,000 optical photons were
 The photon energies ranged between $0.5 - 3.0$ eV \cite{krane_ch7} and were generated randomly in $4\pi$ along a 3 mm path $(y-axis)$ in the scintillator medium.  The path was oriented orthogonal to the wide surface of the scintillator.  
 %In essence, this simulates a charged particle traversing through the medium with a $\theta_{track} = 90^{\circ}$ in hall coordinates.  
 The number of photons collected by the SiPM at each of the source locations was counted and correlated to the source location.  The results can be seen in Fig. \ref{fig:sim_results}.
-%WB this plot can be skipped
+% WB this plot can be skipped
+% EP keeping this plot here so that the simple results are illustrated
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/sim_results_v2}
+	\includegraphics[width=1.0\columnwidth]{simulation/figs/sim_results_v3}
 	\caption{Simulation results for simplified two section scenario. The total number of photons which were collected by the SiPM detector at each of the 16 source locations is plotted against the sources distance from the sensitive detector. Left: wide straight section.  Right: tapered nose section.}
 	\label{fig:sim_results}
 	\end{figure}
@@ -58,7 +59,7 @@ These results are primarily due to the tapering trapezoidal geometry in the nose
 
 \subsection{Simulating Machined Scintillator Geometry} \label{sec:sim_mach}
 
-Further simulations were conducted to simulate more realistically the effects of light collection that results from the ST scintillator geometry and optical surface quality.  The ST scintillator geometry was imported into GEANT4 from a Vectorworks CAD drawing utilizing the CADMesh utility \cite{cadmesh_g4} and is shown \textit{via} the GEANT4 event display in Fig. \ref{fig:pk_cadmesh}.
+Further studies were conducted to simulate more realistically the effects of light collection that results from the ST scintillator geometry and optical surface quality.  The ST scintillator geometry was imported into GEANT4 from a Vectorworks CAD drawing utilizing the CADMesh utility \cite{cadmesh_g4} and is shown \textit{via} the GEANT4 event display in Fig. \ref{fig:pk_cadmesh}.
 % WB this figure needs to be bigger, 3d is enough
 % EP removed top view and added picture with 100 optical photons
 	\begin{figure}[!htb]
@@ -74,11 +75,11 @@ To simulate the imperfections of the scintillator surfaces due to manufacturing 
 The UNIFIED model allows one to define the finish of the scintillator surface as \textit{polished}, \textit{ground}, or \textit{unified} and is illustrated in Fig.~\ref{fig:polished_vs_ground} \cite{scint_surface_sim}.
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/polished_vs_ground}
-	\caption{UNIFIED Model of scintillator surfaces.  Left: Polar plot of the radiant intensity of the polished (left) and ground (right) models.  Right: Polar plot of the radiant intensity in the UNIFIED model.}
+	\includegraphics[width=1.0\columnwidth]{simulation/figs/polished_vs_ground_v2}
+	\caption{UNIFIED Model of scintillator surfaces.  Left: Polar plot of the radiant intensity of the polished (left) and ground (right) models.  Right: Polar plot of the radiant intensity in the UNIFIED model \cite{scint_surface_sim}.}
 	\label{fig:polished_vs_ground}
 	\end{figure}
-The details of the UNIFIED model parameters are discussed in detail in Ref.~\cite{pooser16}.
+The details of the UNIFIED model parameters are discussed in detail in Ref.~\cite{pooser16} \& \cite{scint_surface_sim}.
 
 %In the polished model, Fresnel reflection and refraction is assumed, where as the ground model allows for Lambertian reflection, Fresnel refraction, backscattering, as well as spike and lobe reflections.  The spike ($C_{ss}$) reflection parameter assumes the optical photons are reflected as if the surface was a perfect mirror.  The backscattering ($C_{bs}$) reflection parameter assumes the photon is reflected in the same direction of incidence.  The Lambertian ($C_{dl}$) reflection parameter assumes that the photons are reflected corresponding to a Lambertian distribution.  The lobe ($C_{sl}$) reflection parameter assumes that the photons will reflect based on the orientation of the micro-facet on the scintillator surface, where $\sigma_{\alpha}$ defines the standard deviation of the distribution of the micro-facets orientation \cite{scint_surface_sim}.  One caveat of the aforementioned models is that they assume identical parameters for the entire optical surface \cite{puneet_sim_wiki}.
 
