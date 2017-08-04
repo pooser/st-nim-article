@@ -2,8 +2,9 @@
 
 The Start Counter was installed in Hall-D just prior to the Fall 2014 \gx{} commissioning run.  It was not until the Spring 2015 commissioning run that enough statistics were obtained with an $\mathrm{LH_{2}}$ target to perform reliable calibrations.  With the aforementioned data set, the procedures to calibrate the detector and measure it's performance were developed and deployed.
 
-As was discussed in previous sections, the geometry of the ST nose section results in an increase of the light output as the scintillation source moves towards the downstream end.  While investigating FADC250 data under nominal beam conditions, this phenomenon was immediately observed through the pulse amplitude and pulse integral data. Figure~\ref{fig:pippvszint} illustrates that similar to the bench measurements the light output increases exponentially, as the scintillation source moves towards the downstream end.
+As was discussed in previous sections, the geometry of the ST nose section results in an increase of the light output as the scintillation source moves towards the downstream end.  While investigating FADC250 data under nominal beam conditions, this phenomenon was immediately observed through the pulse amplitude and pulse integral data. Figure~\ref{fig:pippvszint} illustrates that similar to the bench measurements the light output increases exponentially as the scintillation source moves towards the downstream end.
 % WB one spectrum would probly be enought Amplitude or Pulse integral (here both look the same)
+% EP They are in-fact the same.  They are place holders at the moment.  It will be a game-time decision as to whether or not we include both.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{performance/figs/pi_pp_vs_zint}
@@ -22,7 +23,9 @@ Once the proper attenuation corrections were applied to the data, the PID capabi
 
 After the previously discussed time-walk and propagation time corrections were complete, it was then possible to utilize the ST to measure the time of charged track vertices for tracks that are matched to the ST.  The vertex time is defined to be the time in which a polarized Bremsstrahlung photon interacted with the $\mathrm{LH_{2}}$ target and produced a charged track that intersected the ST.  An identical charged track selection process as outlined in Sec.~\ref{sec:calib_ptc} was utilized so that the time resolution of tracks matched to the ST could be measured.
 
-The equation to calculate the ST measure of the vertex time is given by Eq.~\ref{eq:st_prop_time}.  In an identical manner outlined in Sec.~\ref{sec:calib_ptc}, $T^{RF}_{vertex}$ must be ``stepped'' to the time the charged track vertex was produced so as to obtain a proper measure of the RF time.  The resulting distribution in the time difference of these two times provides a measure of the ST time resolution and is seen in Fig. \ref{fig:beam_tof_corr_chan_15}.
+The equation to calculate the ST measure of the vertex time is given by Eq.~\ref{eq:st_prop_time}.  
+%In an identical manner outlined in Sec.~\ref{sec:calib_ptc}, $T^{RF}_{vertex}$ must be ``stepped'' to the time the charged track vertex was produced so as to obtain a proper measure of the RF time.  
+The resulting distribution in the time difference of these times provides a measure of the ST time resolution and is seen in Fig. \ref{fig:beam_tof_corr_chan_15}.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=0.7\linewidth]{performance/figs/beam_tof_corr_chan_15}
@@ -52,5 +55,3 @@ Figure \ref{fig:timeresallinset} indicates that the average time resolution of 3
 It is clear from Table \ref{tab:time_res_section} that what is observed is that measurements made with beam data exhibit the same phenomenon of substantial improvement in light collection, and thus time resolution, as light is produced further downstream in the nose region.
 
 When these time resolution measurements were conducted with data collected in Spring 2017, approximately 3 years had elapsed since the paddles were first tested on the bench at FIU.  Prior experience with degrading scintillators indicates that degradation in time resolution will be visible in a matter of weeks.  However, after 3 years no degradation has been observed and the ST is still performing well below design resolution.
-
-%
