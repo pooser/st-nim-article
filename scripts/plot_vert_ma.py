@@ -5,8 +5,7 @@ import matplotlib.pyplot as plt
 
 cma, ctr, ctr_err = np.loadtxt("../data/vert_ma_coarse.dat", skiprows=1, unpack=True)
 fma, ftr, ftr_err = np.loadtxt("../data/vert_ma_fine.dat", skiprows=1, unpack=True)
-sma, shit = np.loadtxt("../data/vert_ma_sim.dat", skiprows=1, unpack=True)
-shit_err = np.sqrt(shit)
+sma, shit, shit_err = np.loadtxt("../data/vert_ma_sim.dat", skiprows=1, unpack=True)
 
 afs = 20
 

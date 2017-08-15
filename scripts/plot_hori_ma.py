@@ -4,8 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 cma, ctr, ctr_err = np.loadtxt("../data/hor_ma.dat", skiprows=1, unpack=True)
-sma, shit = np.loadtxt("../data/hor_ma_sim.dat", skiprows=1, unpack=True)
-shit_err = np.sqrt(shit)
+sma, shit, shit_err = np.loadtxt("../data/hor_ma_sim.dat", skiprows=1, unpack=True)
 
 afs = 20
 
