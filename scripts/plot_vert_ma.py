@@ -6,7 +6,11 @@ import matplotlib.pyplot as plt
 ma, tr, tr_err = np.loadtxt("../data/vert_ma.dat", skiprows=1, unpack=True)
 sma, shit, shit_err = np.loadtxt("../data/vert_ma_sim.dat", skiprows=1, unpack=True)
 
-afs = 20
+# Define font dictionary
+font = {'family': 'serif',
+        'color':  'black',
+        'weight': 'normal',
+        'size': 20}
 
 shit_max = np.amax(shit)
 shit_max_idx = np.argmax(shit)
@@ -22,11 +26,11 @@ plt.figure()
 plt.errorbar(ma, tr, yerr=tr_err, fmt='o', label='Bench Data', color='b')
 plt.errorbar(sma, sim_tr, yerr=sim_tr_err, fmt='o', label='Simulated Data', color='r')
 
-plt.title('Vertical Misalignment Studies', size=afs)
+plt.title('Vertical Misalignment Studies', fontdict=font)
 plt.xlim(-3.0, 3.0)
-plt.xlabel('Vertical Misalignment of SiPM (mm)', size=afs)
+plt.xlabel('Vertical Misalignment of SiPM (mm)', fontdict=font)
 plt.ylim(300, 550)
-plt.ylabel('Time Resolution (ps)', size=afs)
+plt.ylabel('Time Resolution (ps)', fontdict=font)
 
 plt.legend(loc=2, numpoints=1)
 

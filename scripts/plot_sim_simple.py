@@ -6,18 +6,22 @@ import matplotlib.pyplot as plt
 sdis, shit, shit_err = np.loadtxt("../data/sim_simple_straight.dat", skiprows=1, unpack=True)
 ndis, nhit, nhit_err = np.loadtxt("../data/sim_simple_nose.dat", skiprows=1, unpack=True)
 
-afs = 20
+# Define font dictionary
+font = {'family': 'serif',
+        'color':  'black',
+        'weight': 'normal',
+        'size': 20}
 
 plt.figure()
 
 plt.errorbar(ndis, nhit, yerr=nhit_err, fmt='o', label='Nose Section', color='g')
 plt.errorbar(sdis, shit, yerr=shit_err, fmt='o', label='Straight Section', color='b')
 
-plt.title('Simplified Model', size=afs)
+plt.title('Simplified Model', fontdict=font)
 plt.xlim(0, 400)
-plt.xlabel('Distance of Source From SiPM (mm)', size=afs)
+plt.xlabel('Distance of Source From SiPM (mm)', fontdict=font)
 plt.ylim(0, 1600)
-plt.ylabel('Number of Hits in SiPM', size=afs)
+plt.ylabel('Number of Hits in SiPM', fontdict=font)
 
 plt.legend(loc=1, numpoints=1)
 
