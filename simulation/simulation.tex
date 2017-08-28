@@ -10,13 +10,13 @@ In this section, Monte Carlo (MC) simulations of the performance and characteris
 
 As discussed in Sec.~\ref{sec:design_paddles}, the ST scintillator paddles have a unique geometry in which the nose section tapers in width as the paddles approach the beam line at the downstream end.  This tapering effect results in a unique phenomenon in which the light output of the scintillator paddle begins to increase as the source moves further away from the readout detector.  This phenomenon is completely contrary to what one might expect. In the traditional sense when the source moves further away from the end being readout, the photons have a larger effective path length and thus, have an increased probability in being lost for detection.  However, this is antithetical relative to what is observed on the bench and in Hall-D.
 
-A simple GEANT4 simulation was conducted to investigate the aforementioned phenomenon. The details of the simulation are discussed in Ref.~\cite{pooser16}.  Only the two trapezoidal regions of a machined scintillator paddle were considered.  Namely, the wide straight section and the tapered nose section which are illustrated in the GEANT4 event display seen in Fig. \ref{fig:100_events}.
-	\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/100_events}
-	\caption{100 Optical photons generated in the staight \& nose sections.  Left: wide straight section.  Right: tapered nose section.  The neon green lines are the paths of the optical photons.  It is clear that some photons do in fact escape the scintillator medium, while others are collected in the simulated SiPM detector.}
-	\label{fig:100_events}
-	\end{figure}
+A simple GEANT4 simulation was conducted to investigate the aforementioned phenomenon. The details of the simulation are discussed in Ref.~\cite{pooser16}.  Only the two trapezoidal regions of a machined scintillator paddle were considered.  Namely, the wide straight section and the tapered nose section. % which are illustrated in the GEANT4 event display seen in Fig. \ref{fig:100_events}.
+%	\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{simulation/figs/100_events}
+%	\caption{100 Optical photons generated in the staight \& nose sections.  Left: wide straight section.  Right: tapered nose section.  The neon green lines are the paths of the optical photons.  It is clear that some photons do in fact escape the scintillator medium, while others are collected in the simulated SiPM detector.}
+%	\label{fig:100_events}
+%	\end{figure}
 % WB this plot can be skipped
 % EP done.
 %	\begin{figure}[!htb]
@@ -48,8 +48,8 @@ The number of photons collected by the SiPM at each of the source locations was 
 % EP keeping this plot here so that the simple results are illustrated
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/sim_results_v3}
-	\caption{Simulation results for simplified two section scenario. The total number of photons which were collected by the SiPM detector at each of the 16 source locations is plotted against the sources distance from the sensitive detector. Left: wide straight section.  Right: tapered nose section.}
+	\includegraphics[width=1.0\columnwidth]{simulation/figs/sim_results_v4}
+	\caption{Simulation results for simplified two section scenario. The total number of photons which were collected by the SiPM detector at each of the 16 source locations is plotted against the source distance from the sensitive detector.}
 	\label{fig:sim_results}
 	\end{figure}
 
@@ -75,19 +75,20 @@ To simulate the imperfections of the scintillator surfaces due to manufacturing 
 The UNIFIED model allows one to define the finish of the scintillator surface as \textit{polished}, \textit{ground}, or \textit{unified} and is illustrated in Fig.~\ref{fig:polished_vs_ground} \cite{scint_surface_sim}.
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/polished_vs_ground_v2}
-	\caption{UNIFIED Model of scintillator surfaces.  Left: Polar plot of the radiant intensity of the polished (left) and ground (right) models.  Right: Polar plot of the radiant intensity in the UNIFIED model \cite{scint_surface_sim}.}
+	%\includegraphics[width=1.0\columnwidth]{simulation/figs/polished_vs_ground_v2}
+	\includegraphics[width=1.0\columnwidth]{simulation/figs/st_unified_sim_v2}
+	\caption{UNIFIED Model of scintillator surfaces.  Left: Polar plot of the radiant intensity of the polished model.  Right: Polar plot of the radiant intensity in the UNIFIED model \cite{scint_surface_sim}.}
 	\label{fig:polished_vs_ground}
 	\end{figure}
 The details of the UNIFIED model parameters are discussed in detail in Ref.~\cite{pooser16} \& \cite{scint_surface_sim}.
 
 %In the polished model, Fresnel reflection and refraction is assumed, where as the ground model allows for Lambertian reflection, Fresnel refraction, backscattering, as well as spike and lobe reflections.  The spike ($C_{ss}$) reflection parameter assumes the optical photons are reflected as if the surface was a perfect mirror.  The backscattering ($C_{bs}$) reflection parameter assumes the photon is reflected in the same direction of incidence.  The Lambertian ($C_{dl}$) reflection parameter assumes that the photons are reflected corresponding to a Lambertian distribution.  The lobe ($C_{sl}$) reflection parameter assumes that the photons will reflect based on the orientation of the micro-facet on the scintillator surface, where $\sigma_{\alpha}$ defines the standard deviation of the distribution of the micro-facets orientation \cite{scint_surface_sim}.  One caveat of the aforementioned models is that they assume identical parameters for the entire optical surface \cite{puneet_sim_wiki}.
 
-As was done in section \ref{sec:sim_simple}, 10,000 optical photons were generated in the scintillator medium every 2.5 cm and the number of hits collected in the SiPM were recorded.  The results of these simulations are show in Fig. \ref{fig:transm_eff_vs_sig_alpha}.
+As was done in section \ref{sec:sim_simple}, 10,000 optical photons were generated in the scintillator medium every 2.5 cm and the number of hits collected in the SiPM were recorded.  For the polished model, the transmission efficiency $\epsilon$ was varied and the attenuation length $\alpha$ was extracted for various values of $\epsilon$ in the straight region.  For the ground model, $\epsilon$ was held constant along with the radiant intensity parameters while $\sigma_{\alpha}$, which characterizes the standard deviation of the surfaces micro-facet orientation, was varied.  In a similar manner to the polished model, $\alpha$ was extracted in order to characterize the straight section.  The results of these simulations are show in Fig. \ref{fig:transm_eff_vs_sig_alpha}.
 	\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{simulation/figs/transm_eff_vs_sig_alpha}
-	\caption{UNIFIED Model results.  Left: polished model while varying the transmission efficiency.  Right: ground model with varying $\sigma_{\alpha}$ which characterizes the standard deviation of the surfaces micro-facet orientation.}
+	\caption{UNIFIED Model results.  The number of hits recorded in the SiPM are plotted against the source distance (cm).  Left: polished model while varying the transmission efficiency $\epsilon$.  Right: ground model while varying the standard deviation of the surfaces micro-facet orientation $\sigma_{\alpha}$.}
 	\label{fig:transm_eff_vs_sig_alpha}
 	\end{figure}
 
