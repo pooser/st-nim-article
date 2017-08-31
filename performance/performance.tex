@@ -5,12 +5,12 @@ The Start Counter was installed in Hall-D just prior to the Fall 2014 \gx{} comm
 As was discussed in previous sections, the geometry of the ST nose section results in an increase of the light output as the scintillation source moves towards the downstream end.  While investigating FADC250 data under nominal beam conditions, this phenomenon was immediately observed through the pulse amplitude and pulse integral data. Figure~\ref{fig:pippvszint} illustrates that similar to the bench measurements the light output increases exponentially as the scintillation source moves towards the downstream end.
 % WB one spectrum would probly be enought Amplitude or Pulse integral (here both look the same)
 % EP They are in-fact the same.  They are place holders at the moment.  It will be a game-time decision as to whether or not we include both.
-	\begin{figure}[!htb]
+	\begin{figure*}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{performance/figs/PP_Z}
-		\caption{FADC spectra from the Spring 2017 run. Left: pulse integral versus the z-intersection of charged tracks matched to the ST. Right: pulse amplitude versus the z-intersection of charged tracks matched to the ST. The straight section corresponds to $40\ \mathrm{cm} < z < 80\ \mathrm{cm}$, the bend section $80\ \mathrm{cm} < z < 84\ \mathrm{cm}$, and the nose section $84\ \mathrm{cm} < z < 98\ \mathrm{cm}$.}
+		\includegraphics[width=1.0\textwidth]{performance/figs/pp_z}
+		\caption{FADC spectra from the Spring 2017 run. Left: pulse amplitude versus the z-intersection of charged tracks matched to the ST. Right: pulse integral versus the z-intersection of charged tracks matched to the ST. The straight section corresponds to $40\ \mathrm{cm} < z < 80\ \mathrm{cm}$, the bend section $80\ \mathrm{cm} < z < 84\ \mathrm{cm}$, and the nose section $84\ \mathrm{cm} < z < 98\ \mathrm{cm}$.}
 		\label{fig:pippvszint}
-	\end{figure}
+	\end{figure*}
 This feature of the ST geometry is quite advantageous since the majority of the charged tracks produced under the nominal \gx{} beam conditions intersect the ST in the nose region and therefore have the largest light amount of light collected by the SiPM's as the upstream end.
 
 %Once the proper attenuation corrections were applied to the data, the PID capabilities of the ST were greatly enhanced.  Figure ~\ref{fig:dEdx_vs_p_uncorr}-b illustrates the PID capability of charged tracks intersecting the ST.  As compared to Fig.~\ref{fig:dEdx_vs_p_uncorr}-a, the reliable separation of protons and other hadrons occurs for charged tracks with $p < 1.1\ GeV/c$ which is a factor two improvement from the uncalibrated data.
@@ -28,14 +28,14 @@ The equation to calculate the ST measure of the vertex time is given by Eq.~\ref
 The resulting distribution in the time difference of these times provides a measure of the ST time resolution and is seen in Fig. \ref{fig:beam_tof_corr_chan_15}.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.1\linewidth]{performance/figs/NIM_TR_ALL_sector15}
+		\includegraphics[width=1.08\linewidth]{performance/figs/TR_15}
 		\caption[Typical Start Counter/RF time resolution distribution]{Typical Start Counter/RF time resolution distribution.  Shown is the time resolution distribution for sector 15 during the Spring 2017 run 30279. The x-axis is the time difference between $T^{ST}_{vertex}$ and $T^{BB}_{vertex}$. The orange histogram is the resolution in the straight section. The magenta and red histograms correspond to the resolution in the bend and nose sections respectively. The blue histogram is a sum of the three sections and corresponds to the resolution along the entire length of the paddle.}
 		\label{fig:beam_tof_corr_chan_15}
 	\end{figure}
 	
 \begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.05\columnwidth]{performance/figs/NIM_TR_ALL}
+		\includegraphics[width=1.08\columnwidth]{performance/figs/TR_All}
 		\caption{ST time resolutions as a function of sector number (Blue line). Orange and magenta lines are the average time resolution for the straight and bend sections respectively. The nose section resolution is greatly enhanced due to the exponential increase in light output (red).}
 		\label{fig:timeresallinset}
 	\end{figure}		

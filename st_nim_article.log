@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.17)  30 AUG 2017 10:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.17)  31 AUG 2017 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -645,83 +645,103 @@ Package pdftex.def Info: fabrication/figs/st_lt_v2.png used on input line 181.
 \openout2 = `calibration/calibration.aux'.
 
  (./calibration/calibration.tex
-<calibration/figs/ST_TW.pdf, id=652, 573.17262pt x 514.47432pt>
-File: calibration/figs/ST_TW.pdf Graphic file (type pdf)
+<calibration/figs/NIM_TW.pdf, id=652, 361.27878pt x 336.3025pt>
+File: calibration/figs/NIM_TW.pdf Graphic file (type pdf)
 
-<use calibration/figs/ST_TW.pdf>
-Package pdftex.def Info: calibration/figs/ST_TW.pdf used on input line 26.
-(pdftex.def)             Requested size: 222.0pt x 199.26253pt.
- [10 <./fabrication/figs/st_lt_ic_bw.jpg> <./fabrication/figs/st_lt_v2.png>] [1
-1 <./calibration/figs/ST_TW.pdf>]
-<calibration/figs/drawing.pdf, id=901, 569.15762pt x 267.5621pt>
+<use calibration/figs/NIM_TW.pdf>
+Package pdftex.def Info: calibration/figs/NIM_TW.pdf used on input line 26.
+(pdftex.def)             Requested size: 237.54163pt x 221.12389pt.
+
+Overfull \hbox (15.54163pt too wide) in paragraph at lines 26--27
+ [][] 
+ []
+
+[10 <./fabrication/figs/st_lt_ic_bw.jpg> <./fabrication/figs/st_lt_v2.png>]
+[11 <./calibration/figs/NIM_TW.pdf>]
+<calibration/figs/drawing.pdf, id=919, 569.15762pt x 267.5621pt>
 File: calibration/figs/drawing.pdf Graphic file (type pdf)
 
 <use calibration/figs/drawing.pdf>
 Package pdftex.def Info: calibration/figs/drawing.pdf used on input line 137.
-(pdftex.def)             Requested size: 222.0pt x 104.36513pt.
- [12 <./calibration/figs/drawing.pdf>]
-<calibration/figs/NIM_ATT.pdf, id=1114, 569.055pt x 495.60588pt>
-File: calibration/figs/NIM_ATT.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 468.0pt x 220.01881pt.
+ [12]
+<calibration/figs/PiFit_sector15_int3.pdf, id=938, 569.12625pt x 266.9975pt>
+File: calibration/figs/PiFit_sector15_int3.pdf Graphic file (type pdf)
 
-<use calibration/figs/NIM_ATT.pdf>
-Package pdftex.def Info: calibration/figs/NIM_ATT.pdf used on input line 185.
-(pdftex.def)             Requested size: 222.0pt x 193.34601pt.
+<use calibration/figs/PiFit_sector15_int3.pdf>
+Package pdftex.def Info: calibration/figs/PiFit_sector15_int3.pdf used on input
+ line 189.
+(pdftex.def)             Requested size: 491.40143pt x 230.54631pt.
 
-<calibration/figs/Paddle_15_fits.pdf, id=1118, 569.12625pt x 266.9975pt>
-File: calibration/figs/Paddle_15_fits.pdf Graphic file (type pdf)
+Overfull \hbox (23.40143pt too wide) in paragraph at lines 189--190
+ [][] 
+ []
 
-<use calibration/figs/Paddle_15_fits.pdf>
-Package pdftex.def Info: calibration/figs/Paddle_15_fits.pdf used on input line
- 215.
-(pdftex.def)             Requested size: 222.0pt x 104.14896pt.
- [13 <./calibration/figs/NIM_ATT.pdf>] <calibration/figs/Paddle15_MPV_Z.png, id
-=1361, 578.16pt x 433.62pt>
-File: calibration/figs/Paddle15_MPV_Z.png Graphic file (type png)
+[13 <./calibration/figs/drawing.pdf>]
+<calibration/figs/Att_Fit15.pdf, id=1146, 578.16pt x 433.62pt>
+File: calibration/figs/Att_Fit15.pdf Graphic file (type pdf)
 
-<use calibration/figs/Paddle15_MPV_Z.png>
-Package pdftex.def Info: calibration/figs/Paddle15_MPV_Z.png used on input line
- 239.
-(pdftex.def)             Requested size: 222.0pt x 166.4976pt.
+<use calibration/figs/Att_Fit15.pdf>
+Package pdftex.def Info: calibration/figs/Att_Fit15.pdf used on input line 222.
+
+(pdftex.def)             Requested size: 235.31946pt x 176.48851pt.
+
+Overfull \hbox (13.31946pt too wide) in paragraph at lines 222--223
+ [][] 
+ []
+
+[14 <./calibration/figs/PiFit_sector15_int3.pdf, page is rotated 90 degrees> <.
+/calibration/figs/Att_Fit15.pdf>]
+<calibration/figs/ATT_corr.pdf, id=1228, 569.12625pt x 251.94125pt>
+File: calibration/figs/ATT_corr.pdf Graphic file (type pdf)
+
+<use calibration/figs/ATT_corr.pdf>
+Package pdftex.def Info: calibration/figs/ATT_corr.pdf used on input line 245.
+(pdftex.def)             Requested size: 468.0pt x 207.18518pt.
 )
 \openout2 = `performance/performance.aux'.
 
  (./performance/performance.tex
-[14 <./calibration/figs/Paddle_15_fits.pdf, page is rotated 90 degrees> <./cali
-bration/figs/Paddle15_MPV_Z.png>]
-<performance/figs/PP_Z.pdf, id=1423, 569.12625pt x 266.9975pt>
-File: performance/figs/PP_Z.pdf Graphic file (type pdf)
+<performance/figs/pp_z.pdf, id=1235, 569.12625pt x 266.9975pt>
+File: performance/figs/pp_z.pdf Graphic file (type pdf)
 
-<use performance/figs/PP_Z.pdf>
-Package pdftex.def Info: performance/figs/PP_Z.pdf used on input line 10.
-(pdftex.def)             Requested size: 222.0pt x 104.14896pt.
+<use performance/figs/pp_z.pdf>
+Package pdftex.def Info: performance/figs/pp_z.pdf used on input line 10.
+(pdftex.def)             Requested size: 468.0pt x 219.56674pt.
 
-<performance/figs/NIM_TR_ALL_sector15.pdf, id=1427, 569.12625pt x 266.9975pt>
-File: performance/figs/NIM_TR_ALL_sector15.pdf Graphic file (type pdf)
+<performance/figs/TR_15.pdf, id=1239, 569.12625pt x 266.9975pt>
+File: performance/figs/TR_15.pdf Graphic file (type pdf)
 
-<use performance/figs/NIM_TR_ALL_sector15.pdf>
-Package pdftex.def Info: performance/figs/NIM_TR_ALL_sector15.pdf used on input
- line 31.
-(pdftex.def)             Requested size: 244.20135pt x 114.5663pt.
+<use performance/figs/TR_15.pdf>
+Package pdftex.def Info: performance/figs/TR_15.pdf used on input line 31.
+(pdftex.def)             Requested size: 239.7604pt x 112.4804pt.
 
-Overfull \hbox (22.20135pt too wide) in paragraph at lines 31--32
+Overfull \hbox (17.7604pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<performance/figs/NIM_TR_ALL.pdf, id=1428, 569.12625pt x 266.9975pt>
-File: performance/figs/NIM_TR_ALL.pdf Graphic file (type pdf)
+<performance/figs/TR_All.pdf, id=1240, 569.12625pt x 266.9975pt>
+File: performance/figs/TR_All.pdf Graphic file (type pdf)
 
-<use performance/figs/NIM_TR_ALL.pdf>
-Package pdftex.def Info: performance/figs/NIM_TR_ALL.pdf used on input line 38.
+<use performance/figs/TR_All.pdf>
+Package pdftex.def Info: performance/figs/TR_All.pdf used on input line 38.
+(pdftex.def)             Requested size: 239.7604pt x 112.4804pt.
 
-(pdftex.def)             Requested size: 233.10068pt x 109.35559pt.
-
-Overfull \hbox (11.10068pt too wide) in paragraph at lines 38--39
+Overfull \hbox (17.7604pt too wide) in paragraph at lines 38--39
  [][] 
  []
 
-[15 <./performance/figs/PP_Z.pdf, page is rotated 90 degrees> <./performance/fi
-gs/NIM_TR_ALL_sector15.pdf, page is rotated 90 degrees> <./performance/figs/NIM
-_TR_ALL.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `fig:timeresallinset' on page 15 undefined on input li
+ne 42.
+
+[15 <./performance/figs/TR_15.pdf, page is rotated 90 degrees>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: Reference `tab:time_res_section' on page 16 undefined on input l
 ine 54.
@@ -730,13 +750,15 @@ ine 54.
 LaTeX Warning: Reference `tab:time_res_section' on page 16 undefined on input l
 ine 56.
 
-)
+[16 <./calibration/figs/ATT_corr.pdf, page is rotated 90 degrees> <./performanc
+e/figs/pp_z.pdf, page is rotated 90 degrees>])
 \openout2 = `conclusion/conclusion.aux'.
 
  (./conclusion/conclusion.tex)
 \openout2 = `acknowledgment/acknowledgment.aux'.
 
- (./acknowledgment/acknowledgment.tex
+
+(./acknowledgment/acknowledgment.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -745,18 +767,29 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ­ in font cmr10!
-) [16
+) [17
 \@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces ST time 
+resolutions as a function of sector number (Blue line). Orange and magenta line
+s are the average time resolution for the straight and bend sections respective
+ly. The nose section resolution is greatly enhanced due to the exponential incr
+ease in light output (red).}}{17}{figure.29}}
+\newlabel{fig:timeresallinset}{{29}{17}{ST time resolutions as a function of se
+ctor number (Blue line). Orange and magenta lines are the average time resoluti
+on for the straight and bend sections respectively. The nose section resolution
+ is greatly enhanced due to the exponential increase in light output (red)}{fig
+ure.29}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Average ti
-me resolutions by section}}{16}{table.1}}
-\newlabel{tab:time_res_section}{{1}{16}{Average time resolutions by section}{ta
+me resolutions by section}}{17}{table.1}}
+\newlabel{tab:time_res_section}{{1}{17}{Average time resolutions by section}{ta
 ble.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{16}{section
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{17}{section
 .8}}
-\newlabel{sec:conclusion}{{8}{16}{Conclusion}{section.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {9}Acknowledgments}{16}{se
+\newlabel{sec:conclusion}{{8}{17}{Conclusion}{section.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Acknowledgments}{17}{se
 ction.9}}
-] (./st_nim_article.bbl
+ <./performance/figs/TR_All.pdf, page is rotated 90 degrees>]
+(./st_nim_article.bbl
 Underfull \hbox (badness 3138) in paragraph at lines 17--20
 []\OT1/cmr/m/n/8 General Pur-pose Plas-tic Scin-til-la-tor EJ-200, EJ-
  []
@@ -901,7 +934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [17]
+ [18]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./st_nim_article.aux (./authors/authors.aux) (./abstract/abstract.aux)
 (./keywords/keywords.aux) (./introduction/introduction.aux)
@@ -920,9 +953,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 7441 strings out of 495028
- 109878 string characters out of 6181496
- 223229 words of memory out of 5000000
+ 7442 strings out of 495028
+ 109805 string characters out of 6181496
+ 222837 words of memory out of 5000000
  10313 multiletter control sequences out of 15000+600000
  11321 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -951,10 +984,10 @@ mti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on st_nim_article.pdf (17 pages, 13474609 bytes).
+Output written on st_nim_article.pdf (18 pages, 13387966 bytes).
 PDF statistics:
- 1749 PDF objects out of 2073 (max. 8388607)
- 1086 compressed objects within 11 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 1613 PDF objects out of 1728 (max. 8388607)
+ 972 compressed objects within 10 object streams
+ 121 named destinations out of 1000 (max. 500000)
  346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
