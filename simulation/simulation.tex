@@ -59,15 +59,16 @@ These results are primarily due to the tapering trapezoidal geometry in the nose
 
 \subsection{Simulating Machined Scintillator Geometry} \label{sec:sim_mach}
 
-Further studies were conducted to simulate more realistically the effects of light collection that results from the ST scintillator geometry and optical surface quality.  The ST scintillator geometry was imported into GEANT4 from a Vectorworks CAD drawing utilizing the CADMesh utility \cite{cadmesh_g4} and is shown \textit{via} the GEANT4 event display in Fig. \ref{fig:pk_cadmesh}.
+Further studies were conducted to simulate more realistically the effects of light collection that results from the ST scintillator geometry and optical surface quality.  The ST scintillator geometry was imported into GEANT4 from a Vectorworks CAD drawing utilizing the CADMesh utility \cite{cadmesh_g4}. %and is shown \textit{via} the GEANT4 event display in Fig. \ref{fig:pk_cadmesh}.
 % WB this figure needs to be bigger, 3d is enough
 % EP removed top view and added picture with 100 optical photons
-	\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{simulation/figs/pk_cadmesh_v2}
-	\caption{Scintillator geometry imported into GEANT4 utilizing the CADMesh Utility.  The scintillator is  coupled to a SiPM detector.  Left: isometric view.  Right: isometric view with 100 optical photons being generated in the middle of the bend section.  The tapering of the nose section is clearly visible.}
-	\label{fig:pk_cadmesh}
-	\end{figure}
+% EP removed this figure
+%	\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{simulation/figs/pk_cadmesh_v2}
+%	\caption{Scintillator geometry imported into GEANT4 utilizing the CADMesh Utility.  The scintillator is  coupled to a SiPM detector.  Left: isometric view.  Right: isometric view with 100 optical photons being generated in the middle of the bend section.  The tapering of the nose section is clearly visible.}
+%	\label{fig:pk_cadmesh}
+%	\end{figure}
 The SiPM was constructed as a $12 \times 12 \times 10 \mathrm{mm^{3}}$ volume with a 100 $\mathrm{\mu m}$ air gap between it and the wide end of the straight section.  Furthermore, the volume surrounding the scintillator volume was air.  The EJ-200 scintillator material, SiPM silicon detector, and optical photons were defined in an identical manner discussed in Sec.~\ref{sec:sim_simple}.
 
 To simulate the imperfections of the scintillator surfaces due to manufacturing and machining, an optical surface ``skin'' was defined.  The ``skin'' material was defined to be of the type ``dielectric-dielectric'' and made use of the POLISH and UNIFIED physics models \cite{scint_surface_sim} to define an scintillator surfaces.  Both the transmission efficiency and reflection parameters were implemented as free parameters to study their various effects on light transmission.
@@ -88,7 +89,7 @@ As was done in section \ref{sec:sim_simple}, 10,000 optical photons were generat
 	\begin{figure}[!htb]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{simulation/figs/transm_eff_vs_sig_alpha}
-	\caption{POLISH and UNIFIED model results.  The number of hits recorded in the SiPM are plotted against the source distance (cm).  Left: POLISH model while varying the transmission efficiency $\epsilon$.  Right: UNIFIED model while varying the standard deviation of the surfaces micro-facet orientation $\sigma_{\alpha}$.}
+	\caption{POLISH and UNIFIED model results.  The number of hits recorded in the SiPM are plotted on the vertical axis the source distance (cm) is plotted on the x-axis.  Left: POLISH model while varying the transmission efficiency $\epsilon$.  Right: UNIFIED model while varying the standard deviation of the surfaces micro-facet orientation $\sigma_{\alpha}$.}
 	\label{fig:transm_eff_vs_sig_alpha}
 	\end{figure}
 
