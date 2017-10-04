@@ -23,13 +23,13 @@ Therefore, for events in which both the FADC and TDC register hits in the same c
 Figure \ref{fig:twdistuncorrch15} shows a typical time-walk spectrum, \textit{i.e.} $\delta t_{i}$ versus the pulse amplitude, for one sector of the ST.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/tw_dist_uncorr_ch15}
-		\caption{Typical Start Counter time-walk spectrum.  Shown is the time-walk spectrum for sector 15 of the Start Counter during the Spring 2017 run. On the y-axis is $\delta t_{15}$ and on the x-axis is the corresponding pedestal subtracted pulse peak spectrum. From this histogram it is clear that there is a correlation between the amplitude of the analog signal and the time in which the signal crosses the discriminator threshold.}
+		\includegraphics[width=1.07\columnwidth]{calibration/figs/NIM_TW.pdf}
+		\caption{a) Typical Start Counter time-walk spectrum.  Shown is the time-walk spectrum for sector 15 of the Start Counter during the Spring 2017 run. On the y-axis is $\delta t_{15}$ and on the x-axis is the corresponding pedestal subtracted pulse peak spectrum. b) Same spectrum after walk correction.}
 		\label{fig:twdistuncorrch15}
 	\end{figure}
 The FADC250's return both the amplitude and integral of events which are above threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections.
 
-Fig.~\ref{fig:twdistuncorrch15} shows the correlation between $\delta t{i}$ and the pedestal subtracted pulse amplitude for hits in sector 15 of the ST.  This correlation is nonlinear and requires a polynomial functional form to describe it. Equation~\ref{eq:tw_corr_func_form} from Ref.~\cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
+Fig.~\ref{fig:twdistuncorrch15}-a shows the correlation between $\delta t{i}$ and the pedestal subtracted pulse amplitude for hits in sector 15 of the ST.  This correlation is nonlinear and requires a polynomial functional form to describe it. Equation~\ref{eq:tw_corr_func_form} from Ref.~\cite{esmith_bcal} was chosen to characterize the correlation between $\delta t_{i}$ and the amplitude of the signal. 
 	\begin{equation} \label{eq:tw_corr_func_form}
 		f^{w}_{i}\left(a/a^{thresh}_{i}\right) = c0_{i} + \frac{c1_{i}}{(a/a^{thresh}_{i})^{c2_{i}}}
 	\end{equation}
@@ -59,20 +59,20 @@ Once the necessary time-walk correction parameters are determined, the correctio
 	\begin{equation} \label{eq:tw_corr}
 		T^{w}_{i} = t^{TDC}_{i} - f^{w}_{i}(a/a^{thresh}_{i}) + f^{w}_{i}(a^{0}_{i}/a^{thresh}_{i})
 	\end{equation}
-With the time walk corrections having been applied, the corrected timing distributions appear much more uniform in nature and exhibit a factor 1.75 improvement in resolution \cite{pooser16}.  Figure~\ref{fig:twdistcorrch15} illustrates the vast improvement in the time difference spectrum ($\delta t_{15}$) due to the applied time-walk corrections.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/tw_dist_corr_ch15}
-		\caption{Time-walk corrected time difference spectrum.  Shown is the time-walk corrected time difference spectrum for sector 3 during the Spring 2017 run. The time-walk corrected time difference spectrum has $\sigma_{\delta t_{15}} \approx 270 ps$}
-		\label{fig:twdistcorrch15}
-	\end{figure}
-Figure~\ref{fig:sttimeoverlaych15} illustrates the $\delta t_{15}$ distribution and the relative effects of the aforementioned time-walk correction.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/st_time_overlay_ch15}
-		\caption{Comparison of pre and post self-timing distributions.}
-		\label{fig:sttimeoverlaych15}
-	\end{figure}
+With the time walk corrections having been applied, the corrected timing distributions appear much more uniform in nature and exhibit a factor 1.75 improvement in resolution \cite{pooser16}.  Fig.~\ref{fig:twdistuncorrch15}-b illustrates the vast improvement in the time difference spectrum ($\delta t_{15}$) due to the applied time-walk corrections.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.0\columnwidth]{calibration/figs/tw_dist_corr_ch15}
+%		\caption{Time-walk corrected time difference spectrum.  Shown is the time-walk %corrected time difference spectrum for sector 3 during the Spring 2017 run. The time-walk %corrected time difference spectrum has $\sigma_{\delta t_{15}} \approx 270 ps$}
+%		\label{fig:twdistcorrch15}
+%	\end{figure}
+%Figure~\ref{fig:sttimeoverlaych15} illustrates the $\delta t_{15}$ distribution and the %relative effects of the aforementioned time-walk correction.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.0\columnwidth]{calibration/figs/st_time_overlay_ch15}
+%		\caption{Comparison of pre and post self-timing distributions.}
+%		\label{fig:sttimeoverlaych15}
+%	\end{figure}
 
 \subsection{Propagation Time Corrections} \label{sec:calib_ptc}
 
@@ -131,39 +131,39 @@ In order to properly calculate the propagation time ($T^{ST}_{prop}$) of photons
 		T^{ST}_{prop} = T^{ST}_{hit} - T^{ST}_{flight} - T^{BB}_{vertex}
 	\end{equation} 
 
-This time difference is a direct measure of the amount of time the detected light produced by the intersecting charged track spent traversing the scintillator medium.  In order to perform the propagation time corrections the $z$-coordinate of the tracks intersection point with the ST $(z^{ST}_{hit})$ was also recorded for every charged track intersecting the ST.  Once both $T^{ST}_{prop}$ and $z^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  Figure~\ref{fig:proptimeuncorr} illustrates correlation between these two quantities.
-	\begin{figure}[!htb]
+This time difference is a direct measure of the amount of time the detected light produced by the intersecting charged track spent traversing the scintillator medium.  In order to perform the propagation time corrections the $z$-coordinate of the tracks intersection point with the ST was also recorded for every charged track intersecting the ST relative to the upstream end $(z^{ST}_{hit})$.  Once both $T^{ST}_{prop}$ and $z^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  Figure~\ref{fig:proptimeuncorr}-a illustrates correlation between these two quantities.
+	\begin{figure*}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr}
-		\caption{Typical Start Counter propagation time correlation.  Shown is the ST propagation time correlation for sector 15 of the ST during the Spring 2015 run 2931. $T^{ST}_{prop}$ is plotted on the y-axis and the $z^{ST}_{hit}$ is plotted along the x-axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the charged track intersection point with the ST.  z is in hall coordinates.}
+		\includegraphics[width=1.0\textwidth]{calibration/figs/drawing}
+		\caption{a) Typical Start Counter propagation time correlation.  Shown is the ST propagation time correlation for sector 15 of the ST during the Spring 2017 run 30279. $T^{ST}_{prop}$ is plotted on the y-axis and the $z^{ST}_{hit}$ is plotted along the x-axis, which represent the path length in cm. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the charged track intersection point with the ST. b) Start Counter propagation time after correction}
 		\label{fig:proptimeuncorr}
-	\end{figure}
+	\end{figure*}
 
 The mean propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  These three regions were then fit utilizing the $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $i$ indicates which region the fit is being performed.
 	\begin{equation} \label{eq:pt_func_form}
 		f_{i}(z) = A_{i} + B_{i} \cdot z
 	\end{equation}
-The distributions and associated fits for the three regions are illustrated in Fig.~\ref{fig:proptimeuncorrfits}.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr_fits}
-		\caption{Typical Start Counter propagation time projection correlation.  Left: Typical propagation time projection correlation for sector 15 of the ST during the Spring 2015 run 2931.  The red line serves as a reference for the propagation time assuming it was a constant 15 cm/ns.  The magenta line is the fit corresponding to the straight section.  The green and dark blue solid lines correspond to the fits in the bend and nose section respectively.  Right: zoomed in view of data points.}
-		\label{fig:proptimeuncorrfits}
-	\end{figure}
+%The distributions and associated fits for the three regions are illustrated in %Fig.~\ref{fig:proptimeuncorrfits}.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr_fits}
+%		\caption{Typical Start Counter propagation time projection correlation.  Left: Typical propagation time projection correlation for sector 15 of the ST during the Spring 2015 run 2931.  The red line serves as a reference for the propagation time assuming it was a constant 15 cm/ns.  The magenta line is the fit corresponding to the straight section.  The green and dark blue solid lines correspond to the fits in the bend and nose section respectively.  Right: zoomed in view of data points.}
+%		\label{fig:proptimeuncorrfits}
+%	\end{figure}
 	
-With the fit parameters determined an explicit time difference correction for each of the ST sectors could then be applied to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time} which must be a function of where the charged track intersects with the ST.
+With the fit parameters determined an explicit time difference correction for each of the ST sectors could then be applied to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time}.
 	\begin{equation}\label{eq:st_vertex_time}
 	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - T^{ST}_{prop}(z)
 	\end{equation} 
 	
-Figure ~\ref{fig:proptimecorr} illustrates the propagation time corrected ST time as a function of the $z$-intersection of charged tracks match the the ST.
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{performance/figs/prop_time_corr}
-	\caption{Calibrated ST time versus the $z$-intersection of charged tracks matched to the ST.}
-	\label{fig:proptimecorr}
-\end{figure}
-In comparison to Fig.~\ref{fig:proptimeuncorr}, Fig.~\ref{fig:proptimecorr} no longer illustrates a dependence on the where the charged track intersects with the ST paddles as expected.
+Figure ~\ref{fig:proptimeuncorr}-b illustrates the propagation time corrected ST time as a function of the path length of charged tracks match the the ST along the paddle up to the upstream end.
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{performance/figs/prop_time_corr}
+%	\caption{Calibrated ST time versus the $z$-intersection of charged tracks matched to the %ST.}
+%	\label{fig:proptimecorr}
+%\end{figure}
+In comparison to Fig.~\ref{fig:proptimeuncorr}-a, Fig.~\ref{fig:proptimeuncorr}-b no longer illustrates a dependence on the where the charged track intersects with the ST paddles as expected.
 	
 After the propagation time corrections are applied the ST corrected time now measures the vertex time for the track in the event and is discussed further in Sec.~\ref{sec:perform}
 
@@ -179,16 +179,18 @@ The measured energy deposited $(dE_{meas})$ from a charged particle traversing a
 
 One can define an \textit{attenuation coefficient} which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is desirable to have a scintillator material with a long attenuation length.  For reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4~m \cite{ej200_specs}.
 
-In order to determine the attenuation coefficients of interest tracks hitting the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral, energy deposition per unit length $(dE_{meas} / dx)$, and $z$-intersection with the ST were recorded.  A plot of the uncorrected energy deposition per unit length versus the track momentum $(dE_{meas} / dx\ vs.\ p)$ for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/dEdx_vs_p_uncorr}
-		\caption{Typical uncorrected $dE_{meas}/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the uncorrected $dE_{meas}/dx\ vs.\ p$ distribution for tracks matched to the Start Counter in the Spring 2015 run 2931. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.}
-		\label{fig:dEdx_vs_p_uncorr}
-	\end{figure}
-It is clear from Fig.~\ref{fig:dEdx_vs_p_uncorr} that no reliable PID can occur for tracks with $p > 0.6\ GeV/c$.
+In order to determine the attenuation coefficients of interest tracks hitting the ST, while passing identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral, energy deposition per unit length $(dE_{meas} / dx)$, and $z$-intersection with the ST relative to the upstream end, where the SiPM is located, were recorded.  
 
-The pedestal corrected pulse integral (PI), normalized to the path length $\mathrm{d}x$, data were binned in 3.5~cm $z$-intersection bins along the full length of the paddle. 
+%A plot of the uncorrected energy deposition per unit length versus the track momentum $(dE_{meas} / dx\ vs.\ p)$ for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
+	
+%It is clear from Fig.~\ref{fig:dEdx_vs_p_uncorr}-a that no reliable PID can occur for tracks with $p > 0.6\ GeV/c$.
+\begin{figure*}
+		\centering
+		\includegraphics[width=1.05\textwidth]{calibration/figs/PiFit_sector15_int3}
+		\caption{Empirical fits to extract the MPV of pedestal subtracted pulse integral FADC250 data in interval 3 along paddle 15.}
+		\label{fig:pisecnosefits}
+	\end{figure*}
+The pedestal corrected pulse integral (PI), normalized to the path length $\mathrm{d}x$, data were binned in 3.5~cm $z$-intersection bins along the full length of the paddle. In order to properly quantify this data, the most probable value (MPV) of the data was extracted utilizing an empirical function given by equation \ref{mul:Fit Function}. 
 %These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
 % WB these variations can also come from different track angles, the pulse integrals should be corrected by dx
 % EP agreed
@@ -198,19 +200,29 @@ The pedestal corrected pulse integral (PI), normalized to the path length $\math
 %		\caption{Pedestal subtracted FADC pulse integral spectrum corresponding to the three ST sections.}
 %		\label{fig:pisecnose}
 %	\end{figure}
-In order to properly quantify this data, the most probable value (MPV) of the data was extracted utilizing the energy straggling distribution known as the Vavilov distribution \cite{vavilov_1957}.
 
-The Vavilov distribution, a generalization of the Landau distribution, is often utilized to describe the corresponding energy loss of charged particles traversing a thin layer of matter \cite{seltzer_1964}.  Unlike the more restrictive Landau distribution, the Vavilov distribution accounts for the maximum allowable energy transfer in a collision between a particle and an atomic electron \cite{schorr_1973}.  Therefore, the pulse integral data for each 1~cm bin along the the length of the ST paddles were fit utilizing the Vavilov distribution and the associated MPV was extracted.  The fits to the data are illustrated in Fig.~\ref{fig:pisecnosefits}. 
-	\begin{figure}
-		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/pi_sec_nose_fits}
-		\caption{Vavilov fits to extract the MPV of pedestal subtracted pulse integral FADC250 data in the nose section.}
-		\label{fig:pisecnosefits}
-	\end{figure}
-With the MPV values extracted for each 3.5~cm $z$-intersection bin, the MPV values are plotted against the the central value for each $z$-intersection bin as seen in Fig.~\ref{fig:attfits}.  This allows for one to quantitatively measure the attenuation of photons in the ST scintillators.
 
-As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST causes for the the two distinct regions, \textit{i.e} straight and nose, to have differing properties in terms of light output and thus, time resolution.  Therefore, when performing attenuation corrections the two regions were treated independently in order to properly characterize photon attenuation.  
+%	\begin{equation}\label{eq:Fit Function}
+	\begin{multline}\label{mul:Fit Function}
+	f(z)  = p_3 e^{(-p_0(z -Mean))} \\
+	       \times (1+ \tanh(p_2(z-Mean))) 
+	\end{multline}   
+	
+%In order to properly quantify this data, the most probable value (MPV) of the data was extracted utilizing the energy straggling distribution known as the Vavilov distribution \cite{vavilov_1957}.
 
+%The Vavilov distribution, a generalization of the Landau distribution, is often utilized to describe the corresponding energy loss of charged particles traversing a thin layer of matter \cite{seltzer_1964}.  Unlike the more restrictive Landau distribution, the Vavilov distribution accounts for the maximum allowable energy transfer in a collision between a particle and an atomic electron \cite{schorr_1973}.  Therefore, the pulse integral data for each 1~cm bin along the the length of the ST paddles were fit utilizing the Vavilov distribution and the associated MPV was extracted.  
+The fits to the data are illustrated in Fig.~\ref{fig:pisecnosefits}. 
+	
+With the MPV values extracted for each 3.5~cm $z$-intersection bin, the MPV values are plotted against the average $z$- value for each $z$-intersection bin as seen in Fig.~\ref{fig:attfits}.  This allows for one to quantitatively measure the attenuation of photons in the ST scintillators.
+
+
+As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST causes for mainly two distinct regions, \textit{i.e} straight and nose, to have differing properties in terms of light output and thus, time resolution.  Therefore, when performing attenuation corrections the two regions were treated independently in order to properly characterize photon attenuation.  
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1.06\columnwidth]{calibration/figs/Att_Fit15}
+	\caption{Fits to the attenuation data.  The green line is the exponential fit from the upstream end up to the $Z_c$ while the red line is the exponential fit post $Z_c$ to the end of the nose section.  Results for sector 15 is shown before (blue error bars) and after corrections (cyan error bars).}
+	\label{fig:attfits}
+\end{figure}
 It was empirically determined that the ideal fit function for the straight section would follow Eq. \ref{eq:ss_attn_ff_fit}.
 	\begin{equation} \label{eq:ss_attn_ff_fit}
 		f_{S}(z) = A_{S}e^{B_{S} \cdot z}
@@ -219,22 +231,29 @@ Similarly, the functional form of the nose section follows Eq. \ref{eq:bn_attn_f
 	\begin{equation} \label{eq:bn_attn_ff_fit}
 		f_{N}(z) = A_{N}e^{B_{N} \cdot z} + C_{N}
 	\end{equation}
-Exponential decay functions are typically used to describe the attenuations of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized.  In order to investigate the possibility of utilizing a single functional form to describe the entire length of a scintillator paddle, a polynomial of $\mathcal{O}(5)$ was also studied however was deemed unsuitable at the boundary regions \cite{pooser16}.
+Exponential decay functions are typically used to describe the attenuations of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized. The boundary between applying the straight or the nose fit functions is determined by calculating the intersection point of the two fit functions $(Z_c)$. If ($z$) coordinate of the intersection point of the track is less than  $(Z_c)$, the straight correction is applied. Otherwise, the nose correction is used.
 
 % WB I would skip the polynmial
 % EP done.
-Figure~\ref{fig:attfits} illustrates the pulse integral mean vs. $z$-intersection along the paddle for sectors 5 and 23.  
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/attn_fits}
-	\caption{Fits to the attenuation data.  The magenta line is the exponential fit to straight section [0 cm, 40 cm] while the green line is the exponential fit to the nose section [40 cm, 60 cm].  Sector 5 is on the left while sector 23 is on the right.  The red horizontal dashed line corresponds to the value of the exponential fit in the straight section evaluated at z = 0 cm.}
-	\label{fig:attfits}
-\end{figure}
+Figure~\ref{fig:attfits} illustrates the pulse integral mean vs. average $z$-intersection along the paddle for sector 15.  
+
 It is clear that the aforementioned exponential functions, corresponding to their respective geometrical sections, fit the data in a robust manner. 
 
-Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction to the deposited energy measurement $(dE_{meas})$ to preserve the information regardless of where the track intersects the paddles.  The corrected energy deposition $(dE_{corr})$ is given by Eq.~\ref{eq:gen_attn_corr} where the index $i$ indicates which section the charged track intersected with.
+Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction to the deposited energy measurement $(dE_{meas})$ to preserve the information regardless of where the track intersects the paddles.  
+\begin{figure*}[!htb]
+		\centering
+		\includegraphics[width=1.0\textwidth]{calibration/figs/ATT_corr}
+		\caption{Corrected $dE_{meas}/dx\ vs.\ p$ distribution in the Start Counter.  Shown is the distribution for tracks matched to the Start Counter in the Spring 2017 run 30279. The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.}
+		\label{fig:dEdx_vs_p_uncorr}
+	\end{figure*}
+The gain of each paddle is not the same. Therefore a gain matching is performed using $f_{S}(0)$ of paddle 15 as a reference paddle. The gain matching factor is defined by equation 
+ \ref{eq:GM}.
+	\begin{equation} \label{eq:GM}
+		GM = f_{S}(0)/f_{S}(0)_{Paddle 15}
+	\end{equation}
+	The corrected energy deposition $(dE_{corr})$ is given by Eq.~\ref{eq:gen_attn_corr} where the index $i$ indicates which section the charged track intersected with.
 	\begin{equation} \label{eq:gen_attn_corr}
-		dE_{corr} = dE_{meas} \cdot R_{i}
+		dE_{corr} = dE_{meas} \cdot R_{i} /GM
 	\end{equation}
 For the straight section we have Eq.~\ref{eq:ss_attn_corr}.
 	\begin{equation} \label{eq:ss_attn_corr}
@@ -244,13 +263,5 @@ For the nose section we have Eq.~\ref{eq:bn_attn_corr}.
 	\begin{equation} \label{eq:bn_attn_corr}
 		R_{N} = \frac{f_{S}(0.0)}{f_{N}(z)} = \frac{A_{S}}{A_{N}e^{B_{N} \cdot z} + C_{N}}
 	\end{equation}
-Thus, for every hit along the length of the ST paddles we find Eq.~\ref{eq:ss_attn_corr_const} \& Eq.~\ref{eq:bn_attn_corr_const}.
-	\begin{equation} \label{eq:ss_attn_corr_const}
-		f_{S}(z) \cdot R_{S} = A_{S}
-	\end{equation}
-	\begin{equation} \label{eq:bn_attn_corr_const}
-		f_{N}(z) \cdot R_{N} = A_{S}
-	\end{equation}
 
 Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}.
-
