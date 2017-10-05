@@ -3,20 +3,20 @@
 In this section we discuss the details of the \gx{} Start Counter design.  The general engineering specifics pertaining to the scintillators, support structure, detector readout system and electronics are discussed.
 
 \subsection{Overview} \label{sec:design_overview}
-The Start Counter (ST) detector, seen in Fig.~\ref{fig:sttargetiso}, surrounds a 30~cm long super cooled liquid $\mathrm{H_{2}}$ target while providing $\sim 90 \%\ \mathrm{of\ 4 \pi}$ solid angle coverage relative to the target center.
+The Start Counter detector (ST), seen in Fig.~\ref{fig:sttargetiso}, surrounds a 30~cm long super cooled liquid $\mathrm{H_{2}}$ target while providing $\sim 90 \%\ \mathrm{of\ 4 \pi}$ solid angle coverage relative to the target center.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/start_counter_all.pdf}
-		\caption{The \gx{} Start Counter mounted to the liquid $\mathrm{H_2}$ target.}
+		\caption{The \gx{} Start Counter mounted to the liquid $\mathrm{H_2}$ target.  The beam direction is oriented from left to right down the central axis of the ST.}
 		\label{fig:sttargetiso}
 	\end{figure}
-The primary purpose of the ST detector is, in coincidence with the tagger, to properly identify the photon beam bucket associated with detected particles produced by linearly polarized photons incident on the target. It is designed to operate at tagged photon intensities of up to $10^{8}\,\mathrm{\gamma/s}$ in the coherent peak.  Moreover, the ST has a high degree of segmentation for background rejection, is utilized in particle identification, and is a primary component of the level 1 trigger of the \gx{} experiment during high luminosity running\cite{pooser16}.
+The primary purpose of the ST is, in coincidence with the tagger, to properly identify the photon beam bucket associated with detected particles produced by linearly polarized photons incident on the target. It is designed to operate at tagged photon intensities of up to $10^{8}\,\mathrm{\gamma/s}$ in the coherent peak.  Moreover, the ST has a high degree of segmentation for background rejection, is utilized in particle identification, and is a primary component of the level 1 trigger of the \gx{} experiment during high luminosity running\cite{pooser16}.
 
-The ST detector consists of an array of 30 scintillators with pointed ends that bend towards the beam at the downstream end. 
+The ST consists of an array of 30 scintillators with pointed ends that bend towards the beam at the downstream end. 
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_2d_labels_fig_2.pdf}
-		\caption{2-D cross section of the Start Counter detector.}
+		\caption{2-D cross section of the Start Counter.}
 		\label{fig:st2dlabels}
 	\end{figure}
 EJ-200 scintillator material from Eljen Technology\cite{eljen}, which has a decay time of 2.1~ns and a long attenuation length\cite{ej200_specs}, was selected for this application.  The amount of support structure material was kept to an absolute minimum in the active region of the detector and is made up of low density Rohacell\cite{rohacell}. Silicon Photomultiplier (SiPM) detectors were selected as the readout system. The detectors are not affected by the high magnetic field produced by the superconducting solenoid magnet. Moreover, the SiPMs were placed as close as possible to the upstream end of each scintillator element, thereby minimizing the loss of scintillation light\cite{pooser16}.
@@ -27,7 +27,7 @@ Each individual paddle of the Start Counter was machined from a long, thin,  EJ-
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/scintillator.pdf}
-		\caption{Start Counter single paddle geometry. All dimensions shown are in mm.}
+		\caption{Start Counter single paddle geometry. Unlabeled dimensions shown are in mm.}
 		\label{fig:stpaddleiso}
 	\end{figure}
 
@@ -44,13 +44,13 @@ The ST scintillator paddles are placed atop a low density Rohacell ($\mathrm{\rh
 %		\caption{Corss section of the Start Counter support structure.}
 %		\label{fig:stiso}
 %	\end{figure}
-The Rohacell, which is 11~mm thick, is rigidly attached to the upstream support chassis and extends down the length of paddles however, not to include the last few centimeters of the conical nose section.  Glued to the inner diameter of the Rohacell support structure are 3 layers of carbon fiber ($\mathrm{\rho = 1.523\ g/cm^{3}}$) each of which are $\mathrm{650\ \mu m}$ thick.  A cross section of the ST can be seen in Fig.~\ref{fig:sttargetiso} where the carbon fiber is visible.  The carbon fiber provides additional support during the assembly process as well as long term rigidity.  
+The Rohacell, which is 11~mm thick, is rigidly attached to the upstream support chassis and extends down the length of paddles however, not to include the last few centimeters of the conical nose section.  Glued to the inner diameter of the Rohacell support structure are three layers of carbon fiber ($\mathrm{\rho = 1.523\ g/cm^{3}}$) each of which are $\mathrm{650\ \mu m}$ thick.  A cross section of the ST can be seen in Fig.~\ref{fig:sttargetiso} where the carbon fiber is visible.  The carbon fiber provides additional support during the assembly process as well as long term rigidity.  
 
 The various layers of material that comprise the ST support structure is illustrated in Fig.~\ref{fig:stmaterials}.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{design/figs/st_materials.pdf}
-		\caption{Start Counter materials.  Neon green corresponds to the 3 layers of carbon fiber, orange is the upstream support chassis, yellow is the Rohacell support structure, and magenta is the scintillator paddles.  The gray squares are the individual SiPM detectors, dark green is the readout printed circuit boards, blue is the light tightening collar, and the light-gray is Tedlar.}
+		\includegraphics[width=1.0\columnwidth]{design/figs/st_materials_v2}
+		\caption{Start Counter materials.}
 		\label{fig:stmaterials}
 	\end{figure}
 In order to ensure that the detector was light-tight, a plastic collar was placed around the top of the SiPMs at the upstream end as seen in Fig.~\ref{fig:stmaterials}.  The collar served as a lip to which a cylindrical sheet of black Tedlar was taped too.  At the tip of the nose, a cone of Tedlar was then connected to the aforementioned cylindrical section.  To make the downstream end of the ST light-tight, another cone of Tedlar was taped to the nose of the inner Rohacell support structure and then attached to the top Tedlar cone layer. 
@@ -58,16 +58,16 @@ In order to ensure that the detector was light-tight, a plastic collar was place
 
 \subsection{SiPM Readout Detectors} \label{sec:design_sipms}
 
-Each scintillator bar was read out using magnetic field insensitive Hamamatsu S10931-050P multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.  Three groups of 4 SiPMs comprise what is referred to as the ``ST1'' of the readout system.
+Each scintillator bar was read out using magnetic field insensitive Hamamatsu S10931-050P multi-pixel photon counters (MPPCs)\cite{hamamatsu}.  An individual $\mathrm{3 \times 3\ mm^2}$ MPPC, also known as a SiPM, in the aforementioned configuration is comprised of 3600 individual, $\mathrm{50 \times 50\ \mu m^2}$, Avalanche Photo-Diode (APD) pixel counters operating in Geiger mode. The signal output from each SiPM is the total sum of the outputs from all 3600 APD pixels\cite{sipm_spec}.  The scintillation light from an individual scintillator bar is collected by an array of four of these SiPMs.  Three groups of four SiPMs comprise what is referred to as the ``ST1'' of the readout system.
 
-The SiPM detectors are housed in a ceramic case which is surface mounted to a custom fabricated printed circuit board (PCB).  The PCB is held in a fixed position while being attached to the lip of the upstream chassis.  The individual ST scintillators are coupled \emph{via} an air gap ($< 250 \mu m$) to groups of four SiPMs set in a circular arrangement as can be seen in Fig.~\ref{fig:st1_mounted}.  
+The SiPM detectors are housed in a ceramic case which is surface mounted to a custom fabricated printed circuit board (PCB).  The PCB is held in a fixed position while being attached to the lip of the upstream chassis.  The individual ST scintillators are coupled \emph{via} an air gap ($< 250 \mu m$) to groups of four SiPMs, seen in Fig.~\ref{fig:st1_mounted}, which are set in a circular arrangement.
 % WB need to indicate the groups on this plot
 % EP done.
 	\begin{figure}[!htb]
 		\centering
 		%\includegraphics[width=1.0\columnwidth]{design/figs/st1_mounted_v2}
 		\includegraphics[width=1.0\columnwidth]{design/figs/st1_ruler}
-		\caption{ST1 of Start Counter read out system. The ST1's are rigidly attached to the upstream support chassis.  Approximately 72\% of the scintillator light is collected at the upstream end.  Groups of 4 SiPM detectors are summed to readout a single scintillator paddle.  Three groups of 4 SiPM detectors are mounted to a single ST1 unit. The readout it comprised of 10 ST1 units.  The ruler shown is in inches.}
+		\caption{ST1 of Start Counter read out system. Approximately 72\% of the scintillator light is collected at the upstream end.  The readout is comprised of 10 ST1 units in total.  The units of the ruler shown is in inches.}
 		\label{fig:st1_mounted}
 	\end{figure}
 
@@ -80,11 +80,11 @@ The SiPMs reading out one individual paddle, are current summed prior to pre-amp
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{design/figs/st_electronics_diagram}
-		\caption{Start counter readout electronics diagram.}
+		\caption{Start Counter readout electronics diagram.}
 		\label{fig:Start Counter Electronics}
 	\end{figure}
 
-There are three components that comprise the ST detector readout system.  The first component (ST1), will collect light from three paddles individually and consists of 3 groups of 4 SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to fit the geometry of the 30 paddle design, one group of SiPM's is rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  The ST1 implements the current sum and bias distribution for each group of 4 SiPMs.  It also has a thermocouple for temperature monitoring.  
+There are three components that comprise the ST detector readout system.  The first component (ST1), will collect light from three paddles individually and consists of three groups of four SiPMs as can be seen in Fig.~\ref{fig:st1_mounted}.  In order to fit the geometry of the 30 paddle design, adjacent groups of SiPM's are rotated by $12^{\circ}$ relative to the central group, while the other adjacent group is rotated by $-12^{\circ}$.  The ST1 implements the current sum and bias distribution for each group of four SiPMs.  It also has a thermocouple for temperature monitoring.  
 
 The second component (ST2), seen in Fig.~\ref{fig:stfullreadout}, houses the signal processing electronics of the readout system.
 	\begin{figure}[!htb]
@@ -93,7 +93,7 @@ The second component (ST2), seen in Fig.~\ref{fig:stfullreadout}, houses the sig
 		\caption{Fully assembled ST readout system.  The ST2 unit is connected behind the ST1.  The full readout system is comprised of 10 ST2 units.}
 		\label{fig:stfullreadout}
 	\end{figure}
-It has 3 channels of pre-amplifiers, 3 buffers, and 3 factor-five amplifiers.  Furthermore, it has 3 bias distribution channels with individual temperature compensation \emph{via} thermistors. % The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.
+It has three channels of pre-amplifiers, three buffers, and three factor-five amplifiers.  Furthermore, it has three bias distribution channels with individual temperature compensation \emph{via} thermistors. % The ST2 is attached to the ST1 \emph{via} $90^{\circ}$ hermaphroditic connector.
 
 % WB I am not sure a picture is needed here
 % EP agreed.
