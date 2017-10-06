@@ -19,9 +19,9 @@ plt.errorbar(sdis, shit, yerr=shit_err, fmt='o', label='Straight Section', color
 
 plt.title('Simplified Model', fontdict=font)
 plt.xlim(0, 400)
-plt.xlabel('Distance of Source From SiPM (mm)', fontdict=font)
+plt.xlabel('Source Distance (mm)', fontdict=font)
 plt.ylim(0, 1600)
-plt.ylabel('Number of Hits in SiPM', fontdict=font)
+plt.ylabel('SiPM Hits', fontdict=font)
 
 plt.legend(loc=1, numpoints=1)
 

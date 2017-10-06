@@ -28,7 +28,7 @@ plt.errorbar(sma, sim_tr, yerr=sim_tr_err, fmt='o', label='Simulated Data', colo
 
 plt.title('Vertical Misalignment Studies', fontdict=font)
 plt.xlim(-3.0, 3.0)
-plt.xlabel('Vertical Misalignment of SiPM (mm)', fontdict=font)
+plt.xlabel('Misalignment (mm)', fontdict=font)
 plt.ylim(300, 550)
 plt.ylabel('Time Resolution (ps)', fontdict=font)
 

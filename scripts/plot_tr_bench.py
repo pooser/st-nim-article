@@ -86,10 +86,10 @@ plt.show()
 ntr = np.multiply(1., tr)
 ntr_err = np.multiply(1., tr_err)
 plt.figure()
-plt.xlabel("Distance of Source from SiPM (cm)", fontdict=font)
+plt.xlabel("Source Distance (cm)", fontdict=font)
 plt.ylabel("Time Resolution (ps)", fontdict=font)
-plt.title("Weighted Average ST Bench Performance", fontdict=font)
-plt.text(41, 425, "Nose Region", fontdict=font, color='darkred')
+plt.title("ST Bench Performance", fontdict=font)
+plt.text(42.25, 425, "Nose Region", fontdict=font, color='darkred')
 for i in range(0, 12):
     if i < 11:
         pyl.fill([zpos[0][i] - xhw, zpos[0][i] + xhw, zpos[0][i] + xhw, zpos[0][i] - xhw],
