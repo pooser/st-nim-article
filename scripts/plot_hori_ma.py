@@ -29,7 +29,7 @@ plt.errorbar(sma, sim_tr, yerr=sim_tr_err, fmt='o', label='Simulated Data', colo
 
 plt.title('Horizontal Misalignment Studies', fontdict=font)
 plt.xlim(-0.1, 4.0)
-plt.xlabel('Coupling Distance of Scintillator & SiPM (mm)', fontdict=font)
+plt.xlabel('Coupling Distance (mm)', fontdict=font)
 plt.ylim(300, 550)
 plt.ylabel('Time Resolution (ps)', fontdict=font)
 

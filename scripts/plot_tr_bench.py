@@ -86,10 +86,10 @@ plt.show()
 ntr = np.multiply(1., tr)
 ntr_err = np.multiply(1., tr_err)
 plt.figure()
-plt.xlabel("Distance of Source from SiPM (cm)", fontdict=font)
+plt.xlabel("Source Distance (cm)", fontdict=font)
 plt.ylabel("Time Resolution (ps)", fontdict=font)
-plt.title("Weighted Average ST Bench Performance", fontdict=font)
-plt.text(41, 425, "Nose Region", fontdict=font, color='darkred')
+plt.title("ST Bench Performance", fontdict=font)
+plt.text(42.25, 425, "Nose Region", fontdict=font, color='darkred')
 for i in range(0, 12):
     if i < 11:
         pyl.fill([zpos[0][i] - xhw, zpos[0][i] + xhw, zpos[0][i] + xhw, zpos[0][i] - xhw],
@@ -101,9 +101,12 @@ for i in range(0, 12):
                  'b', alpha=0.2, edgecolor='b', label='Relative Spread of Time Resolutions')
 plt.errorbar(zpos[0], mu, yerr=var, fmt='o', label='Weighted Avg. of Time Resolutions')
 pyl.fill([sob, xmax, xmax, sob], [ymin, ymin, ymax, ymax], 'g', alpha=0.2, edgecolor='g')
-plt.axhline(y=total_mu, color='r', linestyle='--',
-            label=r'$\sigma_{avg} = %d \pm %1.1f\ ps$'%(total_mu, total_mu_var))
-pyl.fill([xmin, xmax, xmax, xmin], [total_mu_min, total_mu_min, total_mu_max, total_mu_max], 'r', alpha=0.2, edgecolor='r')
+#plt.axhline(y=total_mu, color='r', linestyle='--',
+#            label=r'$\sigma_{avg} = %d \pm %1.1f\ ps$'%(total_mu, total_mu_var))
+#pyl.fill([xmin, xmax, xmax, xmin], [total_mu_min, total_mu_min, total_mu_max, total_mu_max], 'r', alpha=0.2, edgecolor='r')
+plt.axhline(y=total_mu, color='r', linestyle='--', linewidth=3,
+            label=r'$\sigma_{avg} = %d\ \/ ps$'%(total_mu))
+#pyl.fill([xmin, xmax, xmax, xmin], [total_mu_min, total_mu_min, total_mu_max, total_mu_max], 'r', alpha=0.2, edgecolor='r')
 plt.legend(loc=3, numpoints=1)         
 plt.ylim(ymin, ymax)
 plt.xlim(xmin, xmax)

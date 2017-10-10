@@ -10,7 +10,7 @@ A custom fabricated test stand, further discussed in Sec.~\ref{sec:fab_test}, an
 
 %To study the effects of the various horizontal (translations along the $z-axis$) coupling distances, the relative position of the active area of the SiPM and the top edge of the scintillator paddle, or vertical (translations along the $y-ais$) alignment, was required to be known prior too.
 
-Utilizing an Edmund Optics complementary metal oxide semiconductor (CMOS) camera, the vertical alignment and horizontal alignment (coupling distance) of the active area of the SiPM and scintillator were measured with $25~\mathrm{\mu m}$ accuracy.
+Utilizing an Edmund Optics complementary metal oxide semiconductor (CMOS) camera, both the vertical and horizontal alignment (coupling distance) of the active area of the SiPM and scintillator was measured with $25~\mathrm{\mu m}$ accuracy.
 % WB make this schematical, the photos are no clear.
 % EP done.
 	\begin{figure}[!htb]
@@ -19,9 +19,7 @@ Utilizing an Edmund Optics complementary metal oxide semiconductor (CMOS) camera
 		%\caption{Vertical alignment optics set-up.  The reference line corresponds to the top surface of the scintillator, while the micrometer position on the ST2 is clearly marked so that the absolute difference could be measured both optically and manually with a micrometer.}
 		%\includegraphics[width=1.0\columnwidth]{misalignment/figs/sipm_va_optics_schematic}
 		\includegraphics[width=1.0\columnwidth]{misalignment/figs/st_misalignment}
-		\caption{Optics setup for misalignment studies.  Left: SiPM \&
-		scintillator vertical misalignment. Right: SiPM \&
-		scintillator horizontal misalignment}
+		\caption{Optics setup for misalignment studies.  Left: SiPM \& scintillator vertical misalignment. Right: SiPM \& scintillator horizontal misalignment}
 		\label{fig:sipm_va_optics}
 	\end{figure}
 A micrometer, with $25~\mathrm{\mu m}$ resolution, was utilized in order to cross check the optical measurements and to provide absolute measurements of fixed distances in the experimental set-up. Further details of the experimental set-up are discussed in Ref.~\cite{pooser16}.
@@ -76,7 +74,7 @@ With the vertical alignment between the scintillator and SiPM optimized, the eff
 %	\end{figure}
 
 %The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  In the coupling region $z < 1\ \mathrm{mm}$ the SiPM was receded from the face of the SiPM in 1/4 turn intervals ($79.5\ \mathrm{\mu m}$).  For $\mathrm{1\ mm < z < 2\ mm}$, the SiPM was receded from the face of the SiPM in 1/2 turn intervals ($159\ \mathrm{\mu m}$), and for $\mathrm{2\ mm < z < 4\ mm}$ data were collected in 1 turn intervals ($\mathrm{318\ \mu m}$) with the results being illustrated in Fig. \ref{fig:sipm_coupling_coarse}.
-The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  Further details regarding the three coupling intervals shown in Fig. \ref{fig:sipm_coupling} are discussed further in Ref.~\cite{pooser16}.  The results of this study is illustrated in Fig. \ref{fig:sipm_coupling}.
+The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We defined $z = 0$ to be the instance when the active area of the SiPM was flush against the face of the machined scintillator paddle.  Further details regarding the three coupling intervals shown in Fig. \ref{fig:sipm_coupling} are discussed further in Ref.~\cite{pooser16}.  The results of this study are illustrated in Fig. \ref{fig:sipm_coupling}.
 %	\begin{figure}[!htb]
 %		\centering
 %		\includegraphics[width=0.83\columnwidth]{misalignment/figs/sipm_coupling_coarse}
@@ -85,12 +83,12 @@ The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We
 %	\end{figure}
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.83\columnwidth]{misalignment/figs/hori_ma}
+	\includegraphics[width=1.0\columnwidth]{misalignment/figs/hori_ma}
 	\caption{Coupling distance studies.  It is useful to note that at a coupling distance of $\mathrm{251\ \mu m}$ the time resolution was identical to what was measured in Fig. \ref{fig:sipm_va} while conducting the vertical alignment studies.}
 	\label{fig:sipm_coupling}
 	\end{figure}
 
-It is clear from the data that the optimal coupling range was $\mathrm{50\ \mu m < z < 350\ \mu m}$ and there was no significant reduction in time resolution performance over a $\mathrm{0\ \mu m < z < 600\ \mu m}$ range.  Similarly, the simulation results seen in Fig.~\ref{fig:sipm_coupling} also indicate that there is no significant reduction in light collection in the $\mathrm{0\ \mu m < z < 600\ \mu m}$ range \cite{puneet_sim_talk}.
+The slight disagreement between bench data and simulation observed at large coupling distances ($\mathrm{> 1 mm}$) in the horizontal misalignment studies is attributed to a systematic error in which the active area of the SiPM was not parallel to the upstream end of the scintillator paddle during these measurements. It is clear from the data that the optimal coupling range was $\mathrm{50\ \mu m < z < 350\ \mu m}$ and there was no significant reduction in time resolution performance or light collection over a $\mathrm{0\ \mu m < z < 600\ \mu m}$ range.
 %	\begin{figure}[!htb]
 %		\centering
 %		\includegraphics[width=0.8\columnwidth]{misalignment/figs/spacing_sim}
