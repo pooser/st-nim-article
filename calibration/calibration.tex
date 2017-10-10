@@ -85,7 +85,7 @@ In order to conduct the propagation time corrections for the ST a distinct set o
 
 For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a good tracking confidence level were considered.  Secondly all charged tracks were required to have their vertex located within the target and radially within 1 cm from the beam. Only tracks passing these conditions were considered for analysis.
 
-At least two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has hit the time of flight (TOF) detector and not the ST provides the reference time for that event.  All subsequent tracks were required to intersect the ST and not the TOF and were used to provide the ST measure of the vertex time for that event.  This was done in order to avoid any potential bias in the calibration.  
+At least two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has hit the time of flight (TOF) detector and not the ST provides the reference time for that event.  All subsequent tracks were required to intersect the ST and not the TOF.  These tracks were used to provide the ST measure of the vertex time for that event.  This was done in order to avoid any potential bias in the calibration.  
 	
 % WB this is too detailed and technical. Refer to thesis and summarize the essential. From here to ...	
 % EP done.
@@ -132,17 +132,18 @@ In order to properly calculate the propagation time ($T^{ST}_{prop}$) of photons
 
 This time difference is a direct measure of the amount of time the detected light produced by the intersecting charged track spent traversing the scintillator medium.  In order to perform the propagation time corrections the $z$-coordinate of the tracks intersection point with the ST $(z^{ST}_{hit})$ was also recorded for every charged track intersecting the ST relative to the upstream end.  However, $z^{ST}_{hit}$ only provides information of where the track intersected the ST along the $z$-axis and is not an accurate measure of the distance from the SiPM readout to the source of the scintillation light due to the unique ST paddle geometry.  This distance, $d^{ST}_{hit}$, was calculated for each for each $z^{ST}_{hit}$ directly while taking into account the paddle geometry. 
 
-Once both $T^{ST}_{prop}$ and $d^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  Figure~\ref{fig:proptimeuncorr} (a) illustrates the correlation between these two quantities.
-	\begin{figure*}[!htb]
-		\centering
-		\includegraphics[width=1.0\textwidth]{calibration/figs/drawing}
-		\caption{a) Single paddle propagation time correlation.  $T^{ST}_{prop}$ is plotted on the vertical axis and $d^{ST}_{hit}$ is plotted along the horizontal axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the scintillation light along the length of the paddle. b) Single paddle propagation time after correction.}
-		\label{fig:proptimeuncorr}
-	\end{figure*}
-The calculated propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  The correlations seen in Figure~\ref{fig:proptimeuncorr} (a) for these three regions were then fit utilizing the $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $j$ indicates which region the fit is being performed relative to the $i^{th}$ paddle.
+Once both $T^{ST}_{prop}$ and $d^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  The calculated propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  These three regions were then fit utilizing a $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $j$ indicates which region the fit is being performed relative to the $i^{th}$ paddle.
 	\begin{equation} \label{eq:pt_func_form}
-		f^{i}_{j}(z) = A^{i}_{j} + B^{i}_{j} \cdot z
+	f^{i}_{j}(z) = A^{i}_{j} + B^{i}_{j} \cdot z
 	\end{equation}
+Figure~\ref{fig:proptimeuncorr} (a) illustrates the correlation between the two aforementioned quantities which has had an offset applied such that when $d^{ST}_{hit} = 0.0\ \mathrm{cm}$, $T^{ST}_{prop} = 0.0\ \mathrm{ns}$ and thus a well-defined correction could be applied across the full length of the paddle.
+\begin{figure*}[!htb]
+	\centering
+	\includegraphics[width=1.0\textwidth]{calibration/figs/drawing}
+	\caption{a) Single paddle propagation time correlation.  $T^{ST}_{prop}$ is plotted on the vertical axis and $d^{ST}_{hit}$ is plotted along the horizontal axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the scintillation light along the length of the paddle. b) Single paddle propagation time after correction.}
+	\label{fig:proptimeuncorr}
+\end{figure*}
+
 %The distributions and associated fits for the three regions are illustrated in %Fig.~\ref{fig:proptimeuncorrfits}.
 %	\begin{figure}[!htb]
 %		\centering
@@ -151,9 +152,9 @@ The calculated propagation times were then grouped into three distinct regions c
 %		\label{fig:proptimeuncorrfits}
 %	\end{figure}
 	
-With the fit parameters determined, an explicit time difference correction for each of the ST sectors could then be applied to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time}.
+With the fit parameters determined, an explicit time difference correction for each of the ST sectors could then be applied in order to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time}.
 	\begin{equation}\label{eq:st_vertex_time}
-	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - T^{ST}_{prop}(z)
+	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - f^{i}_{j}(z)
 	\end{equation} 
 	
 Figure ~\ref{fig:proptimeuncorr} (b) illustrates the propagation time corrected time as a function of the distance between the SiPM readout and the source of the scintillation light along the path of the ST paddles.
@@ -169,7 +170,7 @@ With the propagation time corrections applied it is clear that the ST time is no
 
 %Photons propagating in a scintillator medium can be lost through scattering, absorption, or escape at the boundaries.  
 
-The measured energy deposited $(dE_{meas})$ from a charged particle traversing a scintillator medium is proportional to the number of photons created, which is in turn proportional to the integrated pulse read out by the FADC250. However, since the photons created \textit{via.} ionization can be lost through scattering, absorption, or escape at the boundaries as they propagate through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator and therefore must be corrected.
+The measured energy deposited $(dE_{M})$ from a charged particle traversing a scintillator medium is proportional to the number of photons created, which is in turn proportional to the integrated pulse read out by the FADC250. However, since the photons created \textit{via.} ionization can be lost through scattering, absorption, or escape at the boundaries as they propagate through the scintillator medium, the energy deposition measured by the SiPM does not correctly measure the energy deposited by the charged particle at the location of intersection with the scintillator and therefore must be corrected.
 
 % WB this was already described above
 % EP agreed.
@@ -177,7 +178,7 @@ The measured energy deposited $(dE_{meas})$ from a charged particle traversing a
 
 One can define an \textit{attenuation coefficient} which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is desirable to have a scintillator material with a long attenuation length.  For reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4~m \cite{ej200_specs}.
 
-In order to determine the attenuation coefficients of interest, tracks hitting the ST which passed identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral (PI), track length inside the scintillator medium $(dx)$, energy deposition $(dE_{meas})$, track momentum $(p)$, and the $z$-component of the tracks intersection point with the ST relative to the upstream end ($z^{ST}_{hit}$), where the SiPM is located, were recorded.  
+In order to determine the attenuation coefficients of interest, tracks hitting the ST which passed identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral (PI), track length inside the scintillator medium $(dx)$, energy deposition $(dE_{M})$, track momentum $(p)$, and the $z$-component of the tracks intersection point with the ST relative to the upstream end ($z^{ST}_{hit}$), where the SiPM is located, were recorded.  
 
 A plot of the uncorrected energy deposition per unit length versus the track momentum for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
 	\begin{figure}[!htb]
@@ -186,7 +187,7 @@ A plot of the uncorrected energy deposition per unit length versus the track mom
 	\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.}
 	\label{fig:dEdx_vs_p_uncorr}
 	\end{figure}  
-It is clear that no reliable PID can occur for tracks with $p > 0.6\ GeV/c$.
+It is clear that no reliable PID can occur for tracks with $p > 0.6\ \mathrm{GeV/c}$.
 
 The pedestal corrected pulse integral (PI) data, normalized to the path length $dx$ of the track in the scintillator medium, were binned in 3.5~cm $z^{ST}_{hit}$ bins along the full length of the paddle. In order to properly quantify the amount of scintillation light created in the event, the most probable value (MPV) of the PI was extracted utilizing an empirical function which is both continuous and differentiable is given by equation \ref{eq:mpv}.
 %These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
@@ -217,13 +218,13 @@ As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST is com
 	\begin{equation} \label{eq:attn_fit_disc_pw}
 	f_{d}^{i}(z) = 
 	\begin{cases} 
-		A^{i}_{S}e^{-B^{i}_{S} \cdot z} & z < 39.5 cm \\
-		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > 39.5 cm \\
+		A^{i}_{S}e^{-B^{i}_{S} \cdot z} & z < 39.5\ \mathrm{cm} \\
+		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > 39.5\ \mathrm{cm} \\
 	\end{cases}
 	\end{equation}
 Exponential decay functions are typically used to describe the attenuations of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized.  It is clear from Fig.~\ref{fig:attfits} that the aforementioned exponential functions, corresponding to their respective geometrical sections, fit the data in a robust manner.
 
-Since a piecewise discontinuous function was required to describe the attenuation data, the intersection of the two exponential fit functions was calculated ($Z^{i}_{b}$) so that the corrections applied were piecewise continuous and is given by Eq.~\ref{eq:attn_fit_cont_pw}. 
+Since a piecewise discontinuous function was required to describe the attenuation data, the intersection (or correction boundary) of the two exponential fit functions was calculated ($Z^{i}_{b}$) so that the corrections applied were piecewise continuous and is given by Eq.~\ref{eq:attn_fit_cont_pw}. 
 	\begin{equation} \label{eq:attn_fit_cont_pw}
 	f_{c}^{i}(z) = 
 	\begin{cases} 
@@ -236,11 +237,11 @@ Since a piecewise discontinuous function was required to describe the attenuatio
 % WB I would skip the polynmial
 % EP done.
 
-Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement $(dE_{meas})$ to preserve the information regardless of where the track intersects the paddles.
+Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement per unit track-length $(dE_{M} / dx)$ to preserve the information regardless of where the track intersects the paddles.
 
-The corrected energy deposition $(dE^{i}_{corr}(z))$ for paddle $i$ is given by Eq.~\ref{eq:de_corr_init}. 
+The corrected energy deposition per unit track length $(dE^{i}_{C}(z) / dx)$ for paddle $i$ is given by Eq.~\ref{eq:de_corr_init}. 
 	\begin{equation} \label{eq:de_corr_init}
-	dE^{i}_{corr} (z) = dE_{meas} \cdot R^{i}(z) = dE_{meas} \cdot \dfrac{f^{15}_{c}(0)}{f^{i}_{c}(z)}
+	\dfrac{dE^{i}_{C} (z)}{dx} = \dfrac{dE_{M}}{dx} \cdot R^{i}(z) = \dfrac{dE_{M}}{dx} \cdot \dfrac{f^{15}_{c}(0)}{f^{i}_{c}(z)}
 	\end{equation}
 It is required to note that paddle 15 was chosen as a reference paddle in an arbitrary manner.  Thus, for all tracks intersecting the full length of the ST we obtain the following relationship, seen in Eq.~\ref{eq:de_corr_final}, as desired.
 	\begin{equation} \label{eq:de_corr_final}
