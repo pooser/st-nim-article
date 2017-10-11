@@ -21,7 +21,7 @@ Therefore, for events in which both the FADC and TDC register hits in the same c
 		\delta t_{i} = t^{TDC}_{i} - t^{FADC}_{i}
 	\end{equation}
 	
-The FADC250's return both the amplitude and integral of events which are above the programmed threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections.  Figure~\ref{fig:time_walk} (a) shows a typical time-walk spectrum, \textit{i.e.} $\delta t$ versus the pulse amplitude, for one sector of the ST.
+The FADC250's return both the amplitude and integral of events which are above the programmed threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections.  Figure~\ref{fig:time_walk} (a) shows a typical time-walk spectrum, \textit{i.e.} $\delta t$ versus the pulse amplitude, for one paddle of the ST.
 	\begin{figure}[!htb]
 		\centering
 		\includegraphics[width=1.0\columnwidth]{calibration/figs/NIM_TW.pdf}
@@ -33,11 +33,11 @@ This correlation is nonlinear and requires a polynomial functional form to descr
 		f^{w}_{i}\left(a/a^{thresh}_{i}\right) = c0_{i} + \frac{c1_{i}}{(a/a^{thresh}_{i})^{c2_{i}}}
 	\end{equation}
 
-In Eq.~\ref{eq:tw_corr_func_form} $f^{w}_{i}$ is the functional form of time-walk fit for the $i^{th}$ sector, while $a$ and $a^{thresh}_{i}$ are the pulse amplitude and discriminator threshold converted to ADC units respectively.  Furthermore, $c0_{i}, c1_{i}, c2_{i}$ are the time-walk correction fit parameters.  This empirical function was chosen so that as the pulse amplitude increases, the correction function will asymptotically approach a constant, namely $c0_{i}$.  Therefore, at large pulse amplitudes the correction $f^{w}_{i}$ for $\delta t_{i}$ will reduce to an effective offset.  Moreover, signals with small amplitudes will have $\delta t_{i}$, corrected \textit{via.} $f^{w}_{i}$, so as to match the signals with large amplitudes.  Thus, signals of varying amplitude will exhibit a constant $\delta t_{i}$ as desired.
+In Eq.~\ref{eq:tw_corr_func_form} $f^{w}_{i}$ is the functional form of time-walk fit for the $i^{th}$ paddle, while $a$ and $a^{thresh}_{i}$ are the pulse amplitude and discriminator threshold converted to ADC units respectively.  Furthermore, $c0_{i}, c1_{i}, c2_{i}$ are the time-walk correction fit parameters.  This empirical function was chosen so that as the pulse amplitude increases, the correction function will asymptotically approach a constant, namely $c0_{i}$.  Therefore, at large pulse amplitudes the correction $f^{w}_{i}$ for $\delta t_{i}$ will reduce to an effective offset.  Moreover, signals with small amplitudes will have $\delta t_{i}$, corrected \textit{via.} $f^{w}_{i}$, so as to match the signals with large amplitudes.  Thus, signals of varying amplitude will exhibit a constant $\delta t_{i}$ as desired.
 % WB what is the relation between \delta t_i  and f here. I think this would be useful 
 % EP done.
 
-The data in Fig.~\ref{fig:time_walk} (a) were fit using Eq.~\ref{eq:tw_corr_func_form} and ROOT's MINUIT $\chi^{2}$ minimization fitting library \cite{root_minuit} for pulse peak values ranging from [50, 2100].  An identical fit was carried out for each of the ST sectors.
+The data in Fig.~\ref{fig:time_walk} (a) were fit using Eq.~\ref{eq:tw_corr_func_form} and ROOT's MINUIT $\chi^{2}$ minimization fitting library \cite{root_minuit} for pulse peak values ranging from [50, 2100].  An identical fit was carried out for each of the ST paddles.
 
 % WB I would show the fitted function as illustration on the same graph
 % EP Agreed, I was am on MK to provide the plots/fits
@@ -49,10 +49,10 @@ The most probable value (MPV) of the minimum ionizing peak, as observed \textit{
 %	\begin{figure}[!htb]
 %		\centering
 %		\includegraphics[width=1.0\columnwidth]{calibration/figs/pulse_peak_ch15}
-%		\caption{Typical pulse peak minimum ionizing distribution.  Shown is the pulse peak minimum ionizing distribution for sector 3 during the Spring 2017 run. The red, vertical, dashed line in the histogram corresponds to the ``pseudo'' MPV ($a^{0}_{15}$) which was determined to be 500.}
+%		\caption{Typical pulse peak minimum ionizing distribution.  Shown is the pulse peak minimum ionizing distribution for paddle 3 during the Spring 2017 run. The red, vertical, dashed line in the histogram corresponds to the ``pseudo'' MPV ($a^{0}_{15}$) which was determined to be 500.}
 %		\label{fig:pulsepeakch15}
 %	\end{figure}
-The MPV $(a^{0}_{i})$ was determined on a sector by sector basis by simply acquiring the pulse peak channel bin which had the most number of entries after the pulse peak channel 200.  The large spike in the pulse peak spectrum at very low pulse peak values are due to various electromagnetic background events clipping threshold and do not correspond to a true minimum ionizing particle traversing the scintillator medium.
+The MPV $(a^{0}_{i})$ was determined on a paddle by paddle basis by simply acquiring the pulse peak channel bin which had the most number of entries after the pulse peak channel 200.  The large spike in the pulse peak spectrum at very low pulse peak values are due to various electromagnetic background events clipping threshold and do not correspond to a true minimum ionizing particle traversing the scintillator medium.
 
 Once the necessary time-walk correction parameters are determined, the correction is applied to the TDC time and is given by Eq. \ref{eq:tw_corr}.
 	\begin{equation} \label{eq:tw_corr}
@@ -62,7 +62,7 @@ With the time walk corrections having been applied, the corrected timing distrib
 %	\begin{figure}[!htb]
 %		\centering
 %		\includegraphics[width=1.0\columnwidth]{calibration/figs/tw_dist_corr_ch15}
-%		\caption{Time-walk corrected time difference spectrum.  Shown is the time-walk %corrected time difference spectrum for sector 3 during the Spring 2017 run. The time-walk %corrected time difference spectrum has $\sigma_{\delta t_{15}} \approx 270 ps$}
+%		\caption{Time-walk corrected time difference spectrum.  Shown is the time-walk %corrected time difference spectrum for paddle 3 during the Spring 2017 run. The time-walk %corrected time difference spectrum has $\sigma_{\delta t_{15}} \approx 270 ps$}
 %		\label{fig:twdistcorrch15}
 %	\end{figure}
 %Figure~\ref{fig:sttimeoverlaych15} illustrates the $\delta t_{15}$ distribution and the %relative effects of the aforementioned time-walk correction.
@@ -75,11 +75,11 @@ With the time walk corrections having been applied, the corrected timing distrib
 
 \subsection{Propagation Time Corrections} \label{sec:calib_ptc}
 
-As a charged particle traverses through the ST scintillator material the molecules become excited and a small fraction $(\approx 3\%)$ \cite{pdg_2012} of the excitation energy is released in the form of ``optical'' photons.  The photons produced will be emitted uniformly in all directions and some will escape the medium, some will be reflected back into the medium by virtue of the reflective Al foil wrapping, and some will be lost for detection.  However, the majority of detected  photons will have undergone many total internal reflections while they propagated from their source to the SiPM detector placed at the upstream end.  The time between production in the ST scintillator paddles and detection is position dependent and must be accounted for and is discussed below.
+As a charged particle traverses through the ST scintillator material the molecules become excited and a small fraction $(\approx 3\%)$ \cite{pdg_2012} of the excitation energy is released in the form of ``optical'' photons emitted uniformly in all directions.  Some photons will propagate along the scintillator by means of total internal reflection, some will escape the medium and be reflected back into the medium by virtue of the reflective Al foil wrapping, and some will be lost for detection by absorption and other loss mechanisms.  However, the majority of detected  photons will have undergone many total internal reflections while they propagated from their source to the SiPM detector placed at the upstream end.  The time between production in the ST scintillator paddles and detection is position dependent and must be accounted for as is discussed below.
 
-The EJ-200 scintillator material has a refractive index of 1.58 \cite{ej200_specs} and the corresponding speed of light is $\approx \mathrm{19\ cm/ns}$.  However, what is measured in the lab is known as the effective velocity which is slower due to the fact that the majority of photons are not traveling in straight lines parallel to the medium boundaries.  Instead they are constantly reflecting off the boundaries resulting in increased respective path lengths which contributes to a reduced velocity known as the effective velocity.  
+The EJ-200 scintillator material has a refractive index of 1.58 \cite{ej200_specs} and the corresponding speed of light is $\approx \mathrm{19\ cm/ns}$.  However, what is measured in the lab is slower due to the fact that the majority of photons are not traveling in straight lines parallel to the medium boundaries. Instead they are constantly reflecting off the boundaries resulting in increased respective path lengths which contributes to the oberved reduced velocity known as the effective velocity.  
 
-Correcting for the time in which light spends traversing through the scintillator material is a necessary correction since the ST paddles are 60~cm in length.  Thus, light produced in the tip of the nose will take on the order of 4~ns to reach the SiPM at the upstream end.  Performing the propagation time corrections utilizing the common effective velocity method is not the most robust procedure for the case of the ST.  Studies performed with simulation and data showed that the unique geometry in the nose causes the effective velocity of light to be larger than that of the straight section and therefore they must be treated in an independent manner.
+Correcting for the time which light spends propagating in the scintillator material is a necessary correction since the ST paddles are 60~cm in length leading to a time difference of the order of 4~ns between photons produced in the tip of the nose and photons originating close to the upstream end where the SiPM resides.  Performing the propagation time corrections utilizing a common effective velocity is not the most optimal procedure for the case of the ST.  Studies performed with simulation and data showed that the unique geometry in the nose causes the effective velocity of light to be larger than that of the straight section and therefore they must be treated in an independent manner.
 
 In order to conduct the propagation time corrections for the ST a distinct set of events needed to be selected so that a well defined reference time was being utilized.  This reference time was utilized as a measure of the event time for all other charged tracks intersecting the ST within the same event.  
 
@@ -148,11 +148,11 @@ Figure~\ref{fig:proptimeuncorr} (a) illustrates the correlation between the two 
 %	\begin{figure}[!htb]
 %		\centering
 %		\includegraphics[width=1.0\columnwidth]{calibration/figs/prop_time_uncorr_fits}
-%		\caption{Typical Start Counter propagation time projection correlation.  Left: Typical propagation time projection correlation for sector 15 of the ST during the Spring 2015 run 2931.  The red line serves as a reference for the propagation time assuming it was a constant 15 cm/ns.  The magenta line is the fit corresponding to the straight section.  The green and dark blue solid lines correspond to the fits in the bend and nose section respectively.  Right: zoomed in view of data points.}
+%		\caption{Typical Start Counter propagation time projection correlation.  Left: Typical propagation time projection correlation for paddle 15 of the ST during the Spring 2015 run 2931.  The red line serves as a reference for the propagation time assuming it was a constant 15 cm/ns.  The magenta line is the fit corresponding to the straight section.  The green and dark blue solid lines correspond to the fits in the bend and nose section respectively.  Right: zoomed in view of data points.}
 %		\label{fig:proptimeuncorrfits}
 %	\end{figure}
 	
-With the fit parameters determined, an explicit time difference correction for each of the ST sectors could then be applied in order to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time}.
+With the fit parameters determined, an explicit time difference correction for each of the ST paddles could then be applied in order to calculate the ST measure of the vertex time given by Eq. \ref{eq:st_vertex_time}.
 	\begin{equation}\label{eq:st_vertex_time}
 	 	T^{ST}_{vertex}(z) = T^{ST}_{hit} - T^{ST}_{flight} - f^{i}_{j}(z)
 	\end{equation} 
@@ -214,38 +214,38 @@ Once the fits were successfully performed the MPV was extracted analytically and
 \end{figure}
 With the above data in hand, one can quantitatively measure the attenuation of photons in the ST scintillators and is discussed below.
 
-As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST is comprised of two distinct regions, \textit{i.e} the straight and nose sections.  These sections have differing properties in terms of light output and thus, time resolution.  Therefore, when performing attenuation corrections the two regions were treated independently in order to properly characterize photon attenuation.  It was empirically determined that the ideal fit function was piecewise discontinuous and follows Eq. \ref{eq:attn_fit_disc_pw}.
+% WB these are piecewise CONTINUOUS !
+
+As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST is comprised of two distinct regions, \textit{i.e} the straight and nose sections.  These sections have differing properties in terms of light output and thus, time resolution.  Therefore, when performing attenuation corrections the two regions were treated independently in order to properly characterize photon attenuation.  It was empirically determined that the ideal fit function was piecewise continuous and follows Eq. \ref{eq:attn_fit_disc_pw} where the intersection (or correction boundary) of the two exponential fit functions was calculated ($Z^{i}_{b}$).
 	\begin{equation} \label{eq:attn_fit_disc_pw}
-	f_{d}^{i}(z) = 
+	f_{c}^{i}(z) = 
 	\begin{cases} 
-		A^{i}_{S}e^{-B^{i}_{S} \cdot z} & z < 39.5\ \mathrm{cm} \\
-		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > 39.5\ \mathrm{cm} \\
+		A^{i}_{S}e^{-B^{i}_{S} \cdot z} & z \leq Z^{i}_{b}\ \mathrm{cm} \\
+		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > Z^{i}_{b}\ \mathrm{cm} \\
 	\end{cases}
 	\end{equation}
 Exponential decay functions are typically used to describe the attenuations of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized.  It is clear from Fig.~\ref{fig:attfits} that the aforementioned exponential functions, corresponding to their respective geometrical sections, fit the data in a robust manner.
-
-Since a piecewise discontinuous function was required to describe the attenuation data, the intersection (or correction boundary) of the two exponential fit functions was calculated ($Z^{i}_{b}$) so that the corrections applied were piecewise continuous and is given by Eq.~\ref{eq:attn_fit_cont_pw}. 
-	\begin{equation} \label{eq:attn_fit_cont_pw}
-	f_{c}^{i}(z) = 
-	\begin{cases} 
-		A^{i}_{S}e^{-B^{i}_{S} \cdot z} & z < Z^{i}_{b} \\
-		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > Z^{i}_{b} \\
-		A^{i}_{S}e^{-B^{i}_{S} \cdot Z^{i}_{b}} & z = Z^{i}_{b} \\
-		A^{i}_{N}e^{B^{i}_{N} \cdot Z^{i}_{b}} + C^{i}_{N} & z = Z^{i}_{b} \\
-	\end{cases}
-	\end{equation}
 % WB I would skip the polynmial
 % EP done.
 
-Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus subject to no effects of attenuation.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement per unit track-length $(dE_{M} / dx)$ to preserve the information regardless of where the track intersects the paddles.
-
-The corrected energy deposition per unit track length $(dE^{i}_{C}(z) / dx)$ for paddle $i$ is given by Eq.~\ref{eq:de_corr_init}. 
+Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus not subject to attenuation effects.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement per unit track-length $(dE_{M} / dx)$ to preserve the information regardless of where the track intersects the paddles. The corrected energy deposition per unit track length $(dE^{i}_{C}(z) / dx)$ for paddle $i$ is then given by Eq.~\ref{eq:de_corr_init}. 
 	\begin{equation} \label{eq:de_corr_init}
-	\dfrac{dE^{i}_{C} (z)}{dx} = \dfrac{dE_{M}}{dx} \cdot R^{i}(z) = \dfrac{dE_{M}}{dx} \cdot \dfrac{f^{15}_{c}(0)}{f^{i}_{c}(z)}
+	\dfrac{dE^{i}_{C} (z)}{dx} = \dfrac{dE_{M}}{dx} \cdot R^{i}(z) = \dfrac{dE_{M}}{dx} \cdot \dfrac{f^{i}_{c}(0)}{f^{i}_{c}(z)}
 	\end{equation}
-It is required to note that paddle 15 was chosen as a reference paddle in an arbitrary manner.  Thus, for all tracks intersecting the full length of the ST we obtain the following relationship, seen in Eq.~\ref{eq:de_corr_final}, as desired.
-	\begin{equation} \label{eq:de_corr_final}
-	f^{i}_{c}(z) \cdot R^{i}(z) = A^{15}_{S}\ \forall\ z \in\ [0, 60]\ (cm)
-	\end{equation}
+	
+	
+% there is a question: if we use the correct dEdX in MeV then it is not necessary to align all 'raw dE/dx' to a selected paddle but we fit the real dedx (as provided by PID knowlegde). This makes it dependent on existing calibation settings. 
 
-Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}.
+% Then the part below is not necessary. 
+
+% On the other hand when we use raw data, then we need to determine an overall scale factors to make sure the corrected raw dEdx is the same for all paddles. The expression below is in both cases not correct. I think this is one of the reasons we do not see a real improvement in dEdx.
+
+% I would suggest we stay with raw data and do the additonal step and then are independent on energy calibrations. 
+
+
+% It is required to note that paddle 15 was chosen as a reference paddle in an arbitrary manner.  Thus, for all tracks intersecting the full length of the ST we obtain the following relationship, seen in Eq.~\ref{eq:de_corr_final}, as desired.
+%	\begin{equation} \label{eq:de_corr_final}
+%	f^{i}_{c}(z) \cdot R^{i}(z) = A^{15}_{S}\ \forall\ z \in\ [0, 60]\ (cm)
+%	\end{equation}
+%
+%Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}.
