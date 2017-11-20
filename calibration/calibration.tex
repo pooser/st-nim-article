@@ -22,13 +22,13 @@ Therefore, for events in which both the FADC and TDC register hits in the same c
 	\end{equation}
 	
 The FADC250's return both the amplitude and integral of events which are above the programmed threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections.  Figure~\ref{fig:time_walk} (a) shows a typical time-walk spectrum, \textit{i.e.} $\delta t$ versus the pulse amplitude, for one paddle of the ST.
-	\begin{figure}[!htb]
+	\begin{figure*}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{calibration/figs/NIM_TW.pdf}
-		\caption{a) Single paddle time-walk spectrum, b) post walk correction.  Plotted on the vertical axis is $\delta t$ and on the horizontal axis is the corresponding pedestal subtracted pulse amplitude spectrum.  The red line shown in a) is a least squares fit to the time-walk spectrum.}
+		\includegraphics[width=1.0\textwidth]{calibration/figs/TW_correction.pdf}
+		\caption{Left: Single paddle time-walk spectrum; the line shown is the fitted function used to determine the correction factor. Right: post walk correction.  Plotted on the vertical axis is $\delta t$ and on the horizontal axis is the corresponding pedestal subtracted pulse amplitude spectrum.  }
 		\label{fig:time_walk}
-	\end{figure}
-This correlation is nonlinear and requires a polynomial functional form to describe it which is given by Eq.~\ref{eq:tw_corr_func_form} from Ref.~\cite{esmith_bcal}.
+	\end{figure*}
+This correlation is nonlinear and requires a functional form to describe it which is given by Eq.~\ref{eq:tw_corr_func_form} from Ref.~\cite{esmith_bcal}.
 	\begin{equation} \label{eq:tw_corr_func_form}
 		f^{w}_{i}\left(a/a^{thresh}_{i}\right) = c0_{i} + \frac{c1_{i}}{(a/a^{thresh}_{i})^{c2_{i}}}
 	\end{equation}
@@ -139,8 +139,8 @@ Once both $T^{ST}_{prop}$ and $d^{ST}_{hit}$ were calculated, the propagation co
 Figure~\ref{fig:proptimeuncorr} (a) illustrates the correlation between the two aforementioned quantities which has had an offset applied such that when $d^{ST}_{hit} = 0.0\ \mathrm{cm}$, $T^{ST}_{prop} = 0.0\ \mathrm{ns}$ and thus a well-defined correction could be applied across the full length of the paddle.
 \begin{figure*}[!htb]
 	\centering
-	\includegraphics[width=1.0\textwidth]{calibration/figs/drawing}
-	\caption{a) Single paddle propagation time correlation.  $T^{ST}_{prop}$ is plotted on the vertical axis and $d^{ST}_{hit}$ is plotted along the horizontal axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the scintillation light along the length of the paddle. b) Single paddle propagation time after correction.}
+	\includegraphics[width=1.0\textwidth]{calibration/figs/PT_correction.pdf}
+	\caption{Left: Single paddle propagation time correlation.  $T^{ST}_{prop}$ is plotted on the vertical axis and $d^{ST}_{hit}$ is plotted along the horizontal axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the scintillation light along the length of the paddle. Right: Single paddle propagation time after correction.}
 	\label{fig:proptimeuncorr}
 \end{figure*}
 
@@ -183,13 +183,13 @@ In order to determine the attenuation coefficients of interest, tracks hitting t
 A plot of the uncorrected energy deposition per unit length versus the track momentum for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/NoCorr_ATT}
-	\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to charged electrons, pions, and kaons.}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/ATT_UnCorr.pdf}
+	\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to  electrons, pions, and kaons.}
 	\label{fig:dEdx_vs_p_uncorr}
 	\end{figure}  
 It is clear that no reliable PID can occur for tracks with $p > 0.6\ \mathrm{GeV/c}$.
 
-The pedestal corrected pulse integral (PI) data, normalized to the path length $dx$ of the track in the scintillator medium, were binned in 3.5~cm $z^{ST}_{hit}$ bins along the full length of the paddle. In order to properly quantify the amount of scintillation light created in the event, the most probable value (MPV) of the PI was extracted utilizing an empirical function which is both continuous and differentiable is given by equation \ref{eq:mpv}.
+The pedestal corrected pulse integral (PI) data, normalized to the path length $dx$ of the track in the scintillator medium, were binned in 3.5~cm $z^{ST}_{hit}$ bins along the full length of the paddle. In order to properly quantify the amount of scintillation light created in the event, the most probable value (MPV) of the PI was extracted utilizing an empirical function which is both continuous and differentiable (Eq.~\ref{eq:mpv}).
 %These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
 % WB these variations can also come from different track angles, the pulse integrals should be corrected by dx
 % EP agreed
@@ -201,18 +201,18 @@ The pedestal corrected pulse integral (PI) data, normalized to the path length $
 A fit to the data in a single 3.5~cm $z^{ST}_{hit}$ bin is illustrated in Fig.~\ref{fig:mpv_fit}. 
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/PiFit_sector15_int3}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/FitMPV.pdf}
 	\caption{Pedestal subtracted pulse integral integral data normalized to the the track length in the scintillator medium for a single 3.5~cm bin along the paddle length.}
 	\label{fig:mpv_fit}
 	\end{figure}
 Once the fits were successfully performed the MPV was extracted analytically and then plotted against the average value for each $z^{ST}_{hit}$ bin as seen in Fig.~\ref{fig:attfits}.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/Att_Fit15}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/Att_fit_Paddle19.pdf}
 	\caption{Fits to the attenuation data.}
 	\label{fig:attfits}
 \end{figure}
-With the above data in hand, one can quantitatively measure the attenuation of photons in the ST scintillators and is discussed below.
+% With the above data in hand, one can quantitatively measure the attenuation of photons in the ST scintillators and is discussed below.
 
 % WB these are piecewise CONTINUOUS !
 
