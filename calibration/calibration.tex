@@ -77,7 +77,7 @@ With the time walk corrections having been applied, the corrected timing distrib
 
 As a charged particle traverses through the ST scintillator material the molecules become excited and a small fraction $(\approx 3\%)$ \cite{pdg_2012} of the excitation energy is released in the form of ``optical'' photons emitted uniformly in all directions.  Some photons will propagate along the scintillator by means of total internal reflection, some will escape the medium and be reflected back into the medium by virtue of the reflective Al foil wrapping, and some will be lost for detection by absorption and other mechanisms.  However, the majority of detected  photons will have undergone many total internal reflections while they propagated from their source to the SiPM detector placed at the upstream end.  The time between production in the ST scintillator paddles and detection is position dependent and must be accounted for as is discussed below.
 
-The EJ-200 scintillator material has a refractive index of 1.58 \cite{ej200_specs} and the corresponding speed of light is $\approx \mathrm{19\ cm/ns}$.  However, what is measured in the lab is slower due to the fact that the majority of photons are not traveling in straight lines parallel to the medium boundaries. Instead they are constantly reflecting off the boundaries resulting in increased respective path lengths which contributes to the oberved reduced velocity known as the effective velocity.  
+The EJ-200 scintillator material has a refractive index of 1.58 \cite{ej200_specs} and the corresponding speed of light is $\approx \mathrm{19\ cm/ns}$.  However, what is measured in the lab is slower due to the fact that the majority of photons are not traveling in straight lines parallel to the medium boundaries. Instead they are constantly reflecting off the boundaries resulting in increased respective path lengths which contributes to the observed reduced velocity known as the effective velocity.  
 
 Correcting for the time which light spends propagating in the scintillator material is a necessary correction since the ST paddles are 60~cm in length leading to a time difference of the order of 4~ns between photons produced in the tip of the nose and photons originating close to the upstream end where the SiPM resides.  Performing the propagation time corrections utilizing a common effective velocity is not the most optimal procedure for the case of the ST.  Studies performed with simulation and data showed that the unique geometry in the nose causes the effective velocity of light to be larger than that of the straight section and therefore they must be treated in an independent manner.
 
@@ -233,15 +233,16 @@ Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is r
 	\dfrac{dE^{i}_{C} (z)}{dx} = \dfrac{dE_{M}}{dx} \cdot R^{i}(z) = \dfrac{dE_{M}}{dx} \cdot \dfrac{f^{i}_{c}(0)}{f^{i}_{c}(z)}
 	\end{equation}
 	
+Once all energy deposition measurements have had the appropriate attenuation corrections applied as was discussed above, the PID capabilities of the ST are considerably enhanced and are discussed further in Sec.~\ref{sec:perform}.
 	
-% there is a question: if we use the correct dEdX in MeV then it is not necessary to align all 'raw dE/dx' to a selected paddle but we fit the real dedx (as provided by PID knowlegde). This makes it dependent on existing calibation settings. 
+	
+% WB there is a question: if we use the correct dEdX in MeV then it is not necessary to align all 'raw dE/dx' to a selected paddle but we fit the real dedx (as provided by PID knowlegde). This makes it dependent on existing calibation settings. 
 
 % Then the part below is not necessary. 
 
 % On the other hand when we use raw data, then we need to determine an overall scale factors to make sure the corrected raw dEdx is the same for all paddles. The expression below is in both cases not correct. I think this is one of the reasons we do not see a real improvement in dEdx.
 
 % I would suggest we stay with raw data and do the additonal step and then are independent on energy calibrations. 
-
 
 % It is required to note that paddle 15 was chosen as a reference paddle in an arbitrary manner.  Thus, for all tracks intersecting the full length of the ST we obtain the following relationship, seen in Eq.~\ref{eq:de_corr_final}, as desired.
 %	\begin{equation} \label{eq:de_corr_final}
