@@ -5,28 +5,36 @@ The Start Counter was installed in Hall-D just prior to the Fall 2014 \gx{} comm
 As was discussed in previous sections, the geometry of the ST nose section results in an increase of the light output as the scintillation source moves towards the downstream end.  While investigating FADC250 data under nominal beam conditions, this phenomenon was immediately observed through both the pulse amplitude and pulse integral data. Figure~\ref{fig:pippvszint} illustrates that, similar to the bench measurements, the light output increases exponentially as the scintillation source moves towards the downstream end.
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{performance/figs/PPZ}
+		\includegraphics[width=1.0\columnwidth]{performance/figs/pa_vs_zint}
 		\caption{Typical FADC250 pulse amplitude spectrum versus the $z$-component of charged tracks intersecting the ST for an individual ST sector. The vertical lines  indicate (from left to right) the end of the straight section, and the start of the tapered nose section respectively.}
 		\label{fig:pippvszint}
 	\end{figure}
 This feature of the ST geometry is quite advantageous since the majority of the charged tracks produced under the nominal \gx{} beam conditions intersect the ST in the nose region and therefore have the largest light amount of light collected by the SiPM's at the upstream end.
 
-Once the proper attenuation corrections discussed in Sec.~\ref{sec:calib_ac} were applied to the data, the PID capabilities of the ST were improved.  Figure ~\ref{fig:dEdx_vs_p_corr} illustrates the PID capability of charged tracks intersecting the ST.  
-	\begin{figure}[!htb]
+Once the proper attenuation corrections discussed in Sec.~\ref{sec:calib_ac} were applied to the data, the PID capabilities of the ST were improved.  Figure ~\ref{fig:dEdx_vs_p} illustrates the PID capability of charged tracks intersecting the ST.  
+	\begin{figure*}[!htb]
 		\centering
-		\includegraphics[width=1.0\columnwidth]{performance/figs/Att_corr}
-		\caption{Corrected $dE/dx\ vs.\ p$ distribution for tracks matched to the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to electrons, pions, and kaons.  It is clear that pion/proton separation is achievable for tracks with $p < 0.9\ \mathrm{GeV/c}$.}
-		\label{fig:dEdx_vs_p_corr}
-	\end{figure}  
+		\subfigure{\includegraphics[width=0.5\textwidth]{performance/figs/dEdx_vs_p_before}}\hfill
+		\subfigure{\includegraphics[width=0.5\textwidth]{performance/figs/dEdx_vs_p_after}}
+		\caption{Left: Typical uncorrected $dE/dx\ vs.\ p$ distribution. Right: Corrected $dE/dx\ vs.\ p$ distribution.  The ``banana band'' corresponds to protons while the horizontal band corresponds to electrons, pions, and kaons. It is clear that after the corrections have been applied, pion/proton separation is achievable for tracks with $p < 0.9\ \mathrm{GeV/c}$.}
+		\label{fig:dEdx_vs_p}
+	\end{figure*}  
+
 The reliable separation of protons and other hadrons occurs for charged tracks with $p < 0.9\ \mathrm{GeV/c}$ which is a factor 1.5 improvement relative to the uncalibrated data.  The PID capabilities of the ST are particularly advantageous for successfully identifying low momentum and backwards going protons which do not propagate into the central drift chamber surrounding the ST.
 
 After the time-walk and propagation time corrections discussed in Sec.~\ref{sec:calib_tw} \& \ref{sec:calib_ptc} were complete, it was then possible to utilize the ST to measure times associated with charged track vertices for tracks matched to it.  The vertex time (Eq.~\ref{eq:st_vertex_time})  is defined to be the time when a polarized Bremsstrahlung photon interacted with the $\mathrm{LH_{2}}$ target and produced a charged track.  Measuring the ST vertex time relative to the beam bunch vertex time provided by the accelerator is the most robust way to determine the ST ability to successfully identify the beam buckets associated with a particular event.  An identical charged track selection process, as outlined in Sec.~\ref{sec:calib_ptc}, was utilized so that the time resolution of tracks matched to the ST could be measured.  
 
 The resulting time difference distribution is seen in Fig. \ref{fig:st_time_res}.
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1.08\linewidth]{performance/figs/TR_2gaussian}
+%		\caption{Start Counter  resolution  histograms and their full width half maxima (FWHM) values in ns.  The x-axis is the time difference between $T^{ST}_{vertex}$ and $T^{BB}_{vertex}$. The vertical lines indicate the cuts necessary to identify a beam bunch, a) The resolution in the straight section. b) The resolution in the bend section. c) The resolution in the nose. d) The resolution along the entire length of the paddle. }
+%		\label{fig:st_time_res}
+%	\end{figure}
 	\begin{figure}[!htb]
 		\centering
-		\includegraphics[width=1.08\linewidth]{performance/figs/TR_2gaussian}
-		\caption{Start Counter  resolution  histograms and their full width half maxima (FWHM) values in ns.  The x-axis is the time difference between $T^{ST}_{vertex}$ and $T^{BB}_{vertex}$. The vertical lines indicate the cuts necessary to identify a beam bunch, a) The resolution in the straight section. b) The resolution in the bend section. c) The resolution in the nose. d) The resolution along the entire length of the paddle. }
+		\includegraphics[width=1.0\linewidth]{performance/figs/tr_fit}
+		\caption{Time resolution histogram for the full length of one paddle with its full width half maximum (FWHM) value indicated in ns.  The x-axis is the time difference between $T^{ST}_{vertex}$ and $T^{BB}_{vertex}$. The vertical lines indicate the cuts necessary to identify a 500~MHz beam bunch.}
 		\label{fig:st_time_res}
 	\end{figure}
 % EP This plot is not needed, the results should be summarized in a table.
@@ -41,13 +49,26 @@ Fitting a single Gaussian to the top $\approx 70\%$ percent of the measured dist
 %The aforementioned fits were carried out for each of the ST sectors with $\sigma$ and its associated error being calculated.  Then a weighted average of the 30 $\sigma$'s were calculated so that the ST could have its time resolution characterized in its entirety.  
 
 The aforementioned fits were carried out for the three individual geometrical sections and all 30 paddles and  Table~\ref{tab:time_res_section} details the results.
+%	\begin{table}[htbp]
+%		\centering
+%		\begin{tabular}{|c|c|c|c|c|}
+%			\hline  \textbf{Section} & $\mathbf{All}$ & $\mathbf{Straight}$ & $\mathbf{Bend}$ & $\mathbf{Nose}$ \\ 
+%			\hline $\mathbf{\sigma_{FWHM}}$ & 550 ps & 690 ps & 700 ps & 450 ps \\
+%			\hline $\mathbf{Fraction}$ & 93\% & 92\% & 91\% &  94\% \\ 
+%			\hline 
+%		\end{tabular}
+%		\caption{Average time resolutions (FWHM) and event fractions within a $\pm$ 1~ns window for all 30 ST sectors by independent geometrical regions.}
+%		\label{tab:time_res_section}
+%	\end{table}
+
 	\begin{table}[htbp]
 		\centering
-		\begin{tabular}{|c|c|c|c|c|}
-			\hline  \textbf{Section} & $\mathbf{All}$ & $\mathbf{Straight}$ & $\mathbf{Bend}$ & $\mathbf{Nose}$ \\ 
-			\hline $\mathbf{\sigma_{FWHM}}$ & 550 ps & 690 ps & 700 ps & 450 ps \\
-			\hline $\mathbf{Fraction}$ & 93\% & 92\% & 91\% &  94\% \\ 
-			\hline 
+		\begin{tabular}{@{} l *4c @{}}
+			\toprule
+			\multicolumn{1}{c}{\textbf{Section}}    & \textbf{All}  & \textbf{Straight}  & \textbf{Bend}  & \textbf{Nose}  \\ 
+			\midrule
+			$\mathbf{\sigma_{FWHM}}$ & 550~ps & 690~ps & 700~ps & 450~ps \\ 
+			\textbf{Fraction} & 93\% & 92\% & 91\% & 94\% \\\bottomrule
 		\end{tabular}
 		\caption{Average time resolutions (FWHM) and event fractions within a $\pm$ 1~ns window for all 30 ST sectors by independent geometrical regions.}
 		\label{tab:time_res_section}

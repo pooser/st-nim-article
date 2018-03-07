@@ -25,7 +25,7 @@ sim_tr_err = (np.sqrt(shit_max)/2. * shit**(-1.5) * shit_err) * tr_min
 plt.figure()
 
 plt.errorbar(ma, tr, yerr=tr_err, fmt='o', label='Bench Data', color='b')
-plt.errorbar(sma, sim_tr, yerr=sim_tr_err, fmt='o', label='Simulated Data', color='r')
+plt.errorbar(sma, sim_tr, yerr=sim_tr_err, fmt='^', label='Simulated Data', color='r')
 
 plt.title('Horizontal Misalignment Studies', fontdict=font)
 plt.xlim(-0.1, 4.0)
