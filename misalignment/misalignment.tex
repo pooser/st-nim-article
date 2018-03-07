@@ -44,7 +44,7 @@ In order to measure the time resolution at various vertical alignment configurat
 %	\end{figure}
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{misalignment/figs/vert_ma}
+	\includegraphics[width=1.0\columnwidth]{misalignment/figs/vert_ma_v2}
 	\caption{Vertical misalignment results.  The minimum time resolution obtained was approximately 350 ps which was expected.  Once the SiPM exceeded $y = \pm 3\ mm$, no active area of the SiPM was directly coupled to the face of the scintillator.}
 	\label{fig:sipm_va}
 \end{figure}
@@ -59,7 +59,7 @@ Vertical misalignments were also simulated in a manner similar to what was discu
 %		\caption{Vertical alignment simulation studies \cite{puneet_sim_talk}.}
 %		\label{fig:vertical_sim}
 %	\end{figure}
-The GEANT4 simulations indicate that the acceptable range of vertical misalignment is approximately $\pm 250\ \mathrm{\mu m}$ \cite{puneet_sim_talk} which is consistent with what was measured on the bench.
+The GEANT4 simulations that were conducted simulated the variation of light output as a function of misalignment which matched data taken on the bench.  Ergo, the time resolution is dominated purely by photon collection statistics.  Thus, we determined the simulated time resolutions empirically through scaling light collection to the time resolutions measured on the bench.  The aforementioned simulations indicate that the acceptable range of vertical misalignment is approximately $\pm 250\ \mathrm{\mu m}$ \cite{puneet_sim_talk} which is consistent with what was measured on the bench.  
 
 \subsection{Coupling Distance of SiPM \& Scintillator}
 
@@ -83,7 +83,7 @@ The SiPM was moved \textit{via} the MT translation stage along the $z-axis$.  We
 %	\end{figure}
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{misalignment/figs/hori_ma}
+	\includegraphics[width=1.0\columnwidth]{misalignment/figs/hori_ma_v2}
 	\caption{Coupling distance studies.  It is useful to note that at a coupling distance of $\mathrm{251\ \mu m}$ the time resolution was identical to what was measured in Fig. \ref{fig:sipm_va} while conducting the vertical alignment studies.}
 	\label{fig:sipm_coupling}
 	\end{figure}

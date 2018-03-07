@@ -14,8 +14,8 @@ font = {'family': 'serif',
 
 plt.figure()
 
-plt.errorbar(ndis, nhit, yerr=nhit_err, fmt='o', label='Nose Section', color='g')
-plt.errorbar(sdis, shit, yerr=shit_err, fmt='o', label='Straight Section', color='b')
+plt.errorbar(ndis, nhit, yerr=nhit_err, fmt='^', label='Nose Section', color='g')
+plt.errorbar(sdis, shit, yerr=shit_err, fmt='v', label='Straight Section', color='b')
 
 plt.title('Simplified Model', fontdict=font)
 plt.xlim(0, 400)

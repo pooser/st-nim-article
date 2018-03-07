@@ -13,7 +13,7 @@ The time-walk effect is a well understood consequence of leading edge discrimina
 %	\end{figure}
 Thus, the corresponding logic signal output from the LED will ``\textit{walk about}'' in time, resulting in an undesirable smearing of the measured ST TDC times.
 
-The FADC250's provide a high resolution pulse time (62.5~ps/channel) that is time-walk independent \cite{pooser16} \cite{dong_fadc}.  
+The FADC250's provide a high resolution pulse time (62.5~ps/channel) that is time-walk independent\cite{pooser16}\cite{dong_fadc}.  
 % WB here the question will come why bother with a discriminator then ?  
 % EP I would argue the the mutihit capability (> number of FADC hits) and better resolution of the TDC's justify it's existance
 Therefore, for events in which both the FADC and TDC register hits in the same channel, the pulse time can serve as a reference time for that event.  The TDC/FADC time difference is given by Eq.~\ref{eq:tdc_adc_tdiff} where $i$ is the paddle number index.
@@ -21,10 +21,11 @@ Therefore, for events in which both the FADC and TDC register hits in the same c
 		\delta t_{i} = t^{TDC}_{i} - t^{FADC}_{i}
 	\end{equation}
 	
-The FADC250's return both the amplitude and integral of events which are above the programmed threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections.  Figure~\ref{fig:time_walk} (a) shows a typical time-walk spectrum, \textit{i.e.} $\delta t$ versus the pulse amplitude, for one paddle of the ST.
-	\begin{figure*}[!htb]
+The FADC250's return both the amplitude and integral of events which are above the programmed threshold \cite{dong_fadc}.  Since the amplitude better characterizes the rise time of the ADC pulse profile as compared to the pulse integral, it was selected for the time-walk corrections\cite{pooser16}.  Figure~\ref{fig:time_walk} (a) shows a typical time-walk spectrum, \textit{i.e.} $\delta t$ versus the pulse amplitude, for one paddle of the ST.
+	\begin{figure*}[!htp]
 		\centering
-		\includegraphics[width=1.0\textwidth]{calibration/figs/TW_correction.pdf}
+		\subfigure{\includegraphics[width=0.5\textwidth]{calibration/figs/before_tw_corr}}\hfill
+		\subfigure{\includegraphics[width=0.5\textwidth]{calibration/figs/after_tw_corr}}
 		\caption{Left: Single paddle time-walk spectrum; the line shown is the fitted function used to determine the correction factor. Right: post walk correction.  Plotted on the vertical axis is $\delta t$ and on the horizontal axis is the corresponding pedestal subtracted pulse amplitude spectrum.  }
 		\label{fig:time_walk}
 	\end{figure*}
@@ -83,19 +84,19 @@ Correcting for the time which light spends propagating in the scintillator mater
 
 In order to conduct the propagation time corrections for the ST a distinct set of events needed to be selected so that a well defined reference time was being utilized.  This reference time was utilized as a measure of the event time for all other charged tracks intersecting the ST within the same event.  
 
-For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a good tracking confidence level were considered.  Secondly all charged tracks were required to have their vertex located within the target and radially within 1 cm from the beam. Only tracks passing these conditions were considered for analysis.
+For every charged track in a given event, two global tracking requirements were required.  First, only charged tracks with a good tracking confidence level were considered.  Secondly all charged tracks were required to have their vertex located within the target and radially within 1 cm from the beam. Only tracks passing these conditions were considered for analysis.  Further details regarding the event and track selection are found in Ref.~\cite{pooser16}.
 
-At least two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has hit the time of flight (TOF) detector and not the ST provides the reference time for that event.  All subsequent tracks were required to intersect the ST and not the TOF.  These tracks were used to provide the ST measure of the vertex time for that event.  This was done in order to avoid any potential bias in the calibration.  
+%At least two specific tracks were required in each event in order to conduct the ST propagation time corrections.  One track that has hit the time of flight (TOF) detector and not the ST provides the reference time for that event.  All subsequent tracks were required to intersect the ST and not the TOF.  These tracks were used to provide the ST measure of the vertex time for that event.  This was done in order to avoid any potential bias in the calibration.  
 	
 % WB this is too detailed and technical. Refer to thesis and summarize the essential. From here to ...	
 % EP done.
 
-The advantage of using the time associated with a track matched to the TOF is that the time resolution of the TOF is the best of any detector in Hall-D $(\approx 96\ \mathrm{ps})$ \cite{zihlmann_tof}. The calibrated (time-walk \& propagation) hit time returned by the TOF $(T^{TOF}_{hit})$ was then corrected for the flight time from the track vertex to the TOF $(T^{TOF}_{flight})$.  Equation~\ref{eq:tof_vertex_time} is the TOF measure of the track vertex time.
-	\begin{equation} \label{eq:tof_vertex_time}
-		T^{TOF}_{vertex} = T^{TOF}_{hit} - T^{TOF}_{flight}
-	\end{equation}
+%The advantage of using the time associated with a track matched to the TOF is that the time resolution of the TOF is the best of any detector in Hall-D $(\approx 96\ \mathrm{ps})$ \cite{zihlmann_tof}. The calibrated (time-walk \& propagation) hit time returned by the TOF $(T^{TOF}_{hit})$ was then corrected for the flight time from the track vertex to the TOF $(T^{TOF}_{flight})$.  Equation~\ref{eq:tof_vertex_time} is the TOF measure of the track vertex time.
+%	\begin{equation} \label{eq:tof_vertex_time}
+%		T^{TOF}_{vertex} = T^{TOF}_{hit} - T^{TOF}_{flight}
+%	\end{equation}
 
-In order to determine the time in which the beam bunch arrived at the interaction point ($T^{BB}_{vertex}$) the $T^{TOF}_{vertex}$ time must first be corrected for the RF measure of the vertex time ($T^{RF}_{vertex}$).  The steps required to correctly calculate $T^{BB}_{vertex}$ are discussed in detail in Ref.~\cite{pooser16}.  For every event, the first track satisfying the aforementioned fiducial track selection and is matched to the TOF will then have the associated $T^{BB}_{vertex}$ time calculated.  This time serves as the reference time for all other tracks that have intersected the ST in that event.
+%In order to determine the time in which the beam bunch arrived at the interaction point ($T^{BB}_{vertex}$) the $T^{TOF}_{vertex}$ time must first be corrected for the RF measure of the vertex time ($T^{RF}_{vertex}$).  The steps required to correctly calculate $T^{BB}_{vertex}$ are discussed in detail in Ref.~\cite{pooser16}.  For every event, the first track satisfying the aforementioned fiducial track selection and is matched to the TOF will then have the associated $T^{BB}_{vertex}$ time calculated.  This time serves as the reference time for all other tracks that have intersected the ST in that event.
 
 %The RF signal that is readout in Hall-D is provided by the CEBAF accelerator at a rate of 499 MHz (2.004 ns) while the beam bunches are produced at a rate of  249.5 MHz (4.008 ns).  The RF signal from the accelerator is multiplexed into TDC's however, the provided signal rate is too high to readout without causing overflow in the TDC buffers thus the RF signal is pre-scaled \cite{mattione_rf_wiki}.  The pre-scale factor was 128 and consequently the RF signal was readout every $\mathrm{128 \times 2.004\ ns = 256.512\ ns}$.  Thus, the time associated with the beam bucket that produced the event of interest must be calculated since it is not provided directly.
 
@@ -125,21 +126,22 @@ In order to determine the time in which the beam bunch arrived at the interactio
 
 % here
 
-In order to properly calculate the propagation time ($T^{ST}_{prop}$) of photons produced by a charged track intersecting the ST, a few quantities must be known.  Particularly the time-walk corrected hit time ($T^{ST}_{hit}$), the flight time from the track vertex to the ST intersection point ($T^{ST}_{flight}$), and a well defined reference time corresponding to the event ($T^{BB}_{vertex}$).  With the reference time determined, all other charged tracks passing the previously discussed fiducial track selection and which have a match to the ST (and not the TOF) are analyzed.  Equation~\ref{eq:st_prop_time} illustrates the ST measure of the vertex time.
+In order to properly calculate the propagation time ($T^{ST}_{prop}$) of photons produced by a charged track intersecting the ST, a few quantities must be known.  Particularly the time-walk corrected hit time ($T^{ST}_{hit}$), the flight time from the track vertex to the ST intersection point ($T^{ST}_{flight}$), and a well defined reference time corresponding to the event ($T^{BB}_{vertex}$).  With the reference time determined, all other charged tracks passing the previously discussed fiducial track selection and which have a match to the ST are analyzed.  Equation~\ref{eq:st_prop_time} illustrates the ST measure of the vertex time.
 	\begin{equation} \label{eq:st_prop_time}
 		T^{ST}_{prop} = T^{ST}_{hit} - T^{ST}_{flight} - T^{BB}_{vertex}
 	\end{equation} 
 
 This time difference is a direct measure of the amount of time the detected light produced by the intersecting charged track spent traversing the scintillator medium.  In order to perform the propagation time corrections the $z$-coordinate of the tracks intersection point with the ST $(z^{ST}_{hit})$ was also recorded for every charged track intersecting the ST relative to the upstream end.  However, $z^{ST}_{hit}$ only provides information of where the track intersected the ST along the $z$-axis and is not an accurate measure of the distance from the SiPM readout to the source of the scintillation light due to the unique ST paddle geometry.  This distance, $d^{ST}_{hit}$, was calculated for each for each $z^{ST}_{hit}$ directly while taking into account the paddle geometry. 
 
-Once both $T^{ST}_{prop}$ and $d^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  The calculated propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  These three regions were then fit utilizing a $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $j$ indicates which region the fit is being performed relative to the $i^{th}$ paddle.
+Once both $T^{ST}_{prop}$ and $d^{ST}_{hit}$ were calculated, the propagation correction calculation could be performed.  The calculated propagation times were then grouped into three distinct regions corresponding to the three unique geometrical sections of the ST namely the straight, bend, and nose regions.  These three regions were then fit utilizing a $\chi^{2}$ minimization technique with a linear function whose functional form is given by Eq. \ref{eq:pt_func_form} where the index $j$ indicates which region the fit is being performed relative to the $i^{th}$ paddle while $A$ and $B$ are the linear fit parameters.
 	\begin{equation} \label{eq:pt_func_form}
 	f^{i}_{j}(z) = A^{i}_{j} + B^{i}_{j} \cdot z
 	\end{equation}
 Figure~\ref{fig:proptimeuncorr} (a) illustrates the correlation between the two aforementioned quantities which has had an offset applied such that when $d^{ST}_{hit} = 0.0\ \mathrm{cm}$, $T^{ST}_{prop} = 0.0\ \mathrm{ns}$ and thus a well-defined correction could be applied across the full length of the paddle.
 \begin{figure*}[!htb]
 	\centering
-	\includegraphics[width=1.0\textwidth]{calibration/figs/PT_correction.pdf}
+	\subfigure{\includegraphics[width=0.5\textwidth]{calibration/figs/before_pt_corr}}\hfill
+	\subfigure{\includegraphics[width=0.5\textwidth]{calibration/figs/after_pt_corr}}
 	\caption{Left: Single paddle propagation time correlation.  $T^{ST}_{prop}$ is plotted on the vertical axis and $d^{ST}_{hit}$ is plotted along the horizontal axis. There is a clear correlation between the time in which optical photons are detected by the SiPM and the location of the scintillation light along the length of the paddle. Right: Single paddle propagation time after correction.}
 	\label{fig:proptimeuncorr}
 \end{figure*}
@@ -178,18 +180,18 @@ The measured energy deposited $(dE_{M})$ from a charged particle traversing a sc
 
 One can define an \textit{attenuation coefficient} which characterizes a particular materials ability to absorb photons. The attenuation coefficient is defined to be the length in the medium in which the initial number of primary photons are reduced by a factor of $1/e$ (36.8\%).  Since the loss of photons in scintillators equates to the loss of information relative to the event of interest, it is desirable to have a scintillator material with a long attenuation length.  For reference a flat $2 \times 20 \times 300\ \mathrm{cm^{3}}$ EJ-200 scintillator has a relatively long attenuation length on the order of 4~m \cite{ej200_specs}.
 
-In order to determine the attenuation coefficients of interest, tracks hitting the ST which passed identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral (PI), track length inside the scintillator medium $(dx)$, energy deposition $(dE_{M})$, track momentum $(p)$, and the $z$-component of the tracks intersection point with the ST relative to the upstream end ($z^{ST}_{hit}$), where the SiPM is located, were recorded.  
+In order to determine the attenuation coefficients of interest, tracks hitting the ST which passed identical fiducial track selection cuts as discussed in Sec.~\ref{sec:calib_ptc}, were selected for analysis.  Furthermore, the tracks pedestal subtracted pulse integral (PI), track length inside the scintillator medium $(dx)$, energy deposition $(dE_{M})$, track momentum $(p)$, and the $z$-component of the tracks intersection point with the ST relative to the upstream end ($z^{ST}_{hit}$), where the SiPM is located, were recorded.  A plot of the uncorrected energy deposition per unit length versus the track momentum for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p}.  It is clear that no reliable PID can occur for tracks with $p > 0.6\ \mathrm{GeV/c}$.
 
-A plot of the uncorrected energy deposition per unit length versus the track momentum for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
-	\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/ATT_UnCorr.pdf}
-	\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to  electrons, pions, and kaons.}
-	\label{fig:dEdx_vs_p_uncorr}
-	\end{figure}  
-It is clear that no reliable PID can occur for tracks with $p > 0.6\ \mathrm{GeV/c}$.
+%A plot of the uncorrected energy deposition per unit length versus the track momentum for tracks matched to the ST are shown in Fig.~\ref{fig:dEdx_vs_p_uncorr}.
+%	\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{calibration/figs/ATT_UnCorr.pdf}
+%	\caption{Typical uncorrected $dE/dx\ vs.\ p$ distribution in the Start Counter.  The ``banana band'' corresponds to protons while the horizontal band corresponds to  electrons, pions, and kaons.}
+%	\label{fig:dEdx_vs_p_uncorr}
+%	\end{figure}  
+%It is clear that no reliable PID can occur for tracks with $p > 0.6\ \mathrm{GeV/c}$.
 
-The pedestal corrected pulse integral (PI) data, normalized to the path length $dx$ of the track in the scintillator medium, were binned in 3.5~cm $z^{ST}_{hit}$ bins along the full length of the paddle. In order to properly quantify the amount of scintillation light created in the event, the most probable value (MPV) of the PI was extracted utilizing an empirical function which is both continuous and differentiable (Eq.~\ref{eq:mpv}).
+The pedestal corrected pulse integral (PI) data, normalized to the path length $dx$ of the track in the scintillator medium, were binned in 3.5~cm $z^{ST}_{hit}$ bins along the full length of the paddle. In order to properly quantify the amount of scintillation light created in the event, the most probable value (MPV) of the PI was extracted utilizing an empirical function which is both continuous and differentiable and is given by Eq.~\ref{eq:mpv} which utilizes three fit parameters namely $p_{0},\ p_{1},\ p_{2}$.
 %These data in the nose section are represented in Fig.~\ref{fig:pisecnose}.
 % WB these variations can also come from different track angles, the pulse integrals should be corrected by dx
 % EP agreed
@@ -201,14 +203,14 @@ The pedestal corrected pulse integral (PI) data, normalized to the path length $
 A fit to the data in a single 3.5~cm $z^{ST}_{hit}$ bin is illustrated in Fig.~\ref{fig:mpv_fit}. 
 	\begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/FitMPV.pdf}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/mpv_fit}
 	\caption{Pedestal subtracted pulse integral integral data normalized to the the track length in the scintillator medium for a single 3.5~cm bin along the paddle length.}
 	\label{fig:mpv_fit}
 	\end{figure}
 Once the fits were successfully performed the MPV was extracted analytically and then plotted against the average value for each $z^{ST}_{hit}$ bin as seen in Fig.~\ref{fig:attfits}.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=1.0\columnwidth]{calibration/figs/Att_fit_Paddle19.pdf}
+	\includegraphics[width=1.0\columnwidth]{calibration/figs/attn_fit}
 	\caption{Fits to the attenuation data.}
 	\label{fig:attfits}
 \end{figure}
@@ -224,11 +226,11 @@ As was discussed in Sec.~\ref{sec:sim_mach} the unique geometry of the ST is com
 		A^{i}_{N}e^{B^{i}_{N} \cdot z} + C^{i}_{N} & z > Z^{i}_{b}\ \mathrm{cm} \\
 	\end{cases}
 	\end{equation}
-Exponential decay functions are typically used to describe the attenuation of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized.  It is clear from Fig.~\ref{fig:attfits} that the aforementioned exponential functions, corresponding to their respective geometrical sections, fit the data in a robust manner.
+In Eq. \ref{eq:attn_fit_disc_pw}, the subscripts $S$ and $N$ denote the straight and nose sections respectively while $A^{i}, B^{i},$ and $C^{i}$ are the fit parameters for the $i^{th}$ paddle.  Exponential decay functions are typically used to describe the attenuation of photons in scintillator material.  However, for the unique case of the nose section, an exponential growth function was utilized.  It is clear from Fig.~\ref{fig:attfits} that the aforementioned exponential functions, corresponding to their respective geometrical sections, fit the data in a robust manner.
 % WB I would skip the polynmial
 % EP done.
 
-Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus not subject to attenuation effects.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement per unit track-length $(dE_{M} / dx)$ to preserve the information regardless of where the track intersects the paddles. The corrected energy deposition per unit track length $(dE^{i}_{C}(z) / dx)$ for paddle $i$ is then given by Eq.~\ref{eq:de_corr_init}. 
+Evaluating the fit function in the straight section at $z = 0\ \mathrm{cm}$ is representative of a minimum ionizing particle traversing through the upstream end closest to the SiPM readout.  In this instance the detected photons traverse through virtually no scintillator material, and are thus not subject to attenuation effects.  Therefore, for all charged particles passing trough the ST scintillator paddles we apply an attenuation correction factor $(R^{i}(z))$ to the deposited energy measurement per unit track-length $(dE_{M} / dx)$ to preserve the information regardless of where the track intersects the paddles. The corrected energy deposition per unit track length $(dE^{i}_{C}(z) / dx)$ for paddle $i$ is then given by Eq.~\ref{eq:de_corr_init} where the subscripts $C$ and $M$ are the corrected and measured quantities respectively. 
 	\begin{equation} \label{eq:de_corr_init}
 	\dfrac{dE^{i}_{C} (z)}{dx} = \dfrac{dE_{M}}{dx} \cdot R^{i}(z) = \dfrac{dE_{M}}{dx} \cdot \dfrac{f^{i}_{c}(0)}{f^{i}_{c}(z)}
 	\end{equation}
